@@ -7,13 +7,13 @@ title: "DataShield Consulting"
 tagline: "Cumplimiento modular para la nueva ley de datos."
 description: "Consultoría modular y plataforma de cumplimiento para empresas chilenas sujetas a la Ley 21.719 de Protección de Datos Personales."
 url: "" # pon tu dominio cuando lo conectes, ej: https://datashield.cl
-baseurl: ""
+baseurl: "/web-page"
 
 # Autor / empresa
 author:
   name: "DataShield Consulting"
   email: "hola@datashield.cl"
-  location: "Santiago, Chile"
+  location: "Chile"
 
 # Redes sociales
 social:
