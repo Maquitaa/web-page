@@ -1,8 +1,8 @@
 # Mi sitio web — DataShield Consulting
 
-Hice este sitio con Jekyll y lo publico gratis en GitHub Pages. No pago servidor. El dominio (datashield.cl) sí está pagado aparte.
+Hice este sitio con Jekyll para publicarlo pronto
 
-Si en algún momento no me acuerdo cómo funciona algo, está todo explicado aquí.
+Si en algún momento no me acuerdo cómo funciona algo, está todo aquí creo.
 
 ---
 
@@ -64,7 +64,7 @@ El sitio lo muestra automático, no hay que tocar HTML.
 
 ## Cómo ver el sitio en local antes de publicar
 
-Necesito tener Ruby instalado (RubyInstaller for Windows, la versión WITH DEVKIT). Una vez instalado:
+Necesito tener Ruby (RubyInstaller for Windows, la versión WITH DEVKIT)
 
 ```bash
 # Primera vez — instala las dependencias
