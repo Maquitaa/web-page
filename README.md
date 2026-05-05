@@ -1,181 +1,126 @@
-# DataShield Consulting — Sitio Web
+# Mi sitio web — DataShield Consulting
 
-Sitio construido con **Jekyll + GitHub Pages**. No requiere servidor de pago.
+Hice este sitio con Jekyll y lo publico gratis en GitHub Pages. No pago servidor. El dominio (datashield.cl) sí está pagado aparte.
+
+Si en algún momento no me acuerdo cómo funciona algo, está todo explicado aquí.
 
 ---
 
-## Estructura del proyecto
+## Cómo está organizado
+
+Lo importante a entender es que hay dos tipos de archivos: los que no debería tocar casi nunca (la estructura HTML, el CSS) y los que edito seguido porque tienen el contenido real del sitio.
+
+El contenido editable está todo en la carpeta `_data/`. Cada archivo `.yml` controla una sección de la página:
 
 ```
-datashield-web/
-│
-├── _config.yml          ← Configuración global (título, dominio, etc.)
-├── _data/               ← CONTENIDO EDITABLE (sin tocar código)
-│   ├── site.yml         ← Nombre, nav, hero, footer, contacto
-│   ├── stats.yml        ← Números de la barra de estadísticas
-│   ├── modulos.yml      ← Módulos del servicio
-│   ├── ley.yml          ← Sección Ley 21.719
-│   ├── plataforma.yml   ← Features de la plataforma
-│   ├── metodologia.yml  ← Etapas de la metodología
-│   ├── porque.yml       ← Razones para elegir DataShield
-│   └── cta.yml          ← CTA final (botón de agendar)
-│
-├── _includes/           ← Secciones HTML (una por sección de la página)
-│   ├── nav.html
-│   ├── hero.html
-│   ├── stats.html
-│   ├── ley.html
-│   ├── modulos.html
-│   ├── plataforma.html
-│   ├── metodologia.html
-│   ├── porque.html
-│   ├── cta.html
-│   └── footer.html
-│
-├── _layouts/
-│   └── default.html     ← Plantilla base HTML (head, fonts, scripts)
-│
-├── assets/
-│   ├── css/main.css     ← Todos los estilos
-│   ├── js/main.js       ← Interacciones (scroll, animaciones)
-│   └── img/             ← Imágenes y favicon
-│
-├── index.html           ← Página principal (ensambla los includes)
-├── Gemfile              ← Dependencias Ruby (no tocar)
-├── _config.yml          ← Configuración Jekyll
-└── robots.txt           ← SEO
+_data/
+├── site.yml         → nombre, nav, hero, footer, datos de contacto
+├── stats.yml        → los números grandes (2026, 72h, etc.)
+├── modulos.yml      → los módulos M.01 al M.05 + DPO
+├── ley.yml          → sección de la Ley 21.719
+├── plataforma.yml   → las 4 features del dashboard
+├── metodologia.yml  → las 4 etapas del proceso
+├── porque.yml       → los 3 principios de por qué DataShield
+└── cta.yml          → el botón y texto de "agendar diagnóstico"
+```
+
+El resto de la estructura, para referencia:
+
+```
+_includes/    → cada sección de la página es un archivo HTML separado
+_layouts/     → la plantilla base (head, fonts, scripts) — no tocar
+assets/       → CSS, JS e imágenes
+index.html    → solo ensambla los includes, no tiene contenido propio
 ```
 
 ---
 
-## Cómo editar contenido (SIN código)
+## Cómo edito el contenido sin tocar código
 
-**La carpeta `_data/` es tu panel de control.** Todos los textos, números y secciones están en archivos `.yml` — el formato es simple:
+Entro a github.com, busco el archivo que quiero cambiar en `_data/`, le doy al lápiz ✏️, edito y guardo con "Commit changes". En unos 2 minutos el sitio se actualiza solo.
 
-```yaml
-# Ejemplo: cambiar el email de contacto
-email: "nuevo@datashield.cl"
-
-# Ejemplo: agregar un item de trust en el hero
-trust_items:
-  - "Diagnóstico gratuito de 60 min"
-  - "Nuevo item que quieras agregar"
-```
-
-### Editar desde GitHub (más fácil)
-1. Ve a tu repositorio en github.com
-2. Entra a la carpeta `_data/`
-3. Haz click en el archivo que quieras cambiar
-4. Haz click en el ícono de lápiz ✏️
-5. Edita el texto
-6. Haz click en "Commit changes"
-7. El sitio se actualiza automáticamente en ~2 minutos
+El formato YAML es bastante legible, se entiende solo. La única regla importante es respetar la indentación (los espacios al principio de cada línea).
 
 ---
 
-## Cómo agregar un nuevo módulo
+## Cómo agrego un módulo nuevo (FinOps, Ciberseguridad, etc.)
 
-Abre `_data/modulos.yml` y copia/pega este bloque al final:
+Abro `_data/modulos.yml` y pego esto al final del archivo:
 
 ```yaml
 - codigo: "M.06"
   etiqueta: "M.06"
   icono: "◈"
-  tipo: "angosto"          # opciones: featured / medio / angosto / oscuro
-  titulo: "Nombre del<br><em>nuevo módulo</em>"
+  tipo: "angosto"       # opciones: featured / medio / angosto / oscuro
+  titulo: "Nombre<br><em>del módulo</em>"
   descripcion: >
     Descripción del módulo.
   cta: "Ver módulo →"
 ```
 
----
-
-## Cómo publicar en GitHub Pages
-
-### Primera vez
-
-1. Crea una cuenta en [github.com](https://github.com) si no tienes
-2. Crea un repositorio nuevo (ej: `datashield-web`)
-3. Sube todos los archivos de esta carpeta al repositorio
-4. Ve a Settings → Pages → Source: "Deploy from a branch" → Branch: `main`
-5. GitHub publica el sitio en `https://tunombre.github.io/datashield-web/`
-
-### Conectar tu dominio propio (datashield.cl)
-
-1. En GitHub: Settings → Pages → Custom domain → escribe `datashield.cl`
-2. En tu proveedor de dominio, agrega estos registros DNS:
-   ```
-   Tipo A   @   185.199.108.153
-   Tipo A   @   185.199.109.153
-   Tipo A   @   185.199.110.153
-   Tipo A   @   185.199.111.153
-   CNAME    www datashield.cl.
-   ```
-3. Activa "Enforce HTTPS" en GitHub Pages
-4. ¡Listo! El sitio vivirá en https://datashield.cl con HTTPS gratuito
+El sitio lo muestra automático, no hay que tocar HTML.
 
 ---
 
-## Cómo correr el sitio localmente (para previsualizar cambios)
+## Cómo ver el sitio en local antes de publicar
 
-Necesitas Ruby instalado. Luego:
+Necesito tener Ruby instalado (RubyInstaller for Windows, la versión WITH DEVKIT). Una vez instalado:
 
 ```bash
-# Instalar dependencias (solo la primera vez)
+# Primera vez — instala las dependencias
 bundle install
 
-# Correr el servidor local
+# Cada vez que quiero ver el sitio
 bundle exec jekyll serve
-
-# Abrir en el navegador
-http://localhost:4000
 ```
+
+Luego abro `http://localhost:4000` en el navegador. Cualquier cambio que haga en los archivos se refleja solo, sin tener que reiniciar nada.
 
 ---
 
-## Conectar el formulario de agendamiento
+## Cómo conectar el dominio datashield.cl
 
-Abre `_data/cta.yml` y cambia `cta_href`:
+En GitHub: Settings → Pages → Custom domain → escribo `datashield.cl`.
+
+En el proveedor donde compré el dominio, agrego estos registros DNS:
+
+```
+A    @    185.199.108.153
+A    @    185.199.109.153
+A    @    185.199.110.153
+A    @    185.199.111.153
+CNAME    www    datashield.cl.
+```
+
+Activo "Enforce HTTPS" y listo. El certificado SSL lo genera GitHub automáticamente, no cuesta nada.
+
+---
+
+## Cómo conectar el formulario de contacto
+
+En `_data/cta.yml` cambio la línea `cta_href` por mi link de Calendly o por un formulario de Formspree (también gratis):
 
 ```yaml
-# Opción 1: Calendly
-cta_href: "https://calendly.com/tu-usuario/diagnostico-60min"
+# Con Calendly:
+cta_href: "https://calendly.com/mi-usuario/diagnostico"
 
-# Opción 2: Formspree (formulario integrado en la web)
-# 1. Crea cuenta en formspree.io (gratis)
-# 2. Crea un form y copia el endpoint
-cta_href: "https://formspree.io/f/xabcdefg"
+# Con Formspree (formulario embebido):
+cta_href: "https://formspree.io/f/mi-codigo"
 ```
 
 ---
 
-## Seguridad
+## Por qué no me van a hackear
 
-Este sitio es **estático** — no tiene base de datos ni servidor que hackear.
-- HTTPS automático vía GitHub Pages
-- Headers de seguridad en `_headers` y meta tags en el layout
-- `security.txt` en `/.well-known/security.txt`
-- Sin plugins de terceros con acceso a datos
-- Sin cookies propias (solo las de Google Fonts, que puedes eliminar usando fuentes locales)
+El sitio es estático — no hay base de datos, no hay servidor corriendo código, no hay login de admin. Lo que ven los visitantes es exactamente lo que está en los archivos HTML. No hay nada que atacar. GitHub maneja el HTTPS automático.
 
-Para eliminar las cookies de Google Fonts y mejorar privacidad, descarga las fuentes y ponlas en `assets/fonts/`.
+Lo único que tengo que cuidar es la contraseña de mi cuenta de GitHub.
 
 ---
 
-## Agregar nuevas páginas (blog, casos de uso, etc.)
+## Cómo trabajar desde otro computador
 
-Crea un archivo `.html` o `.md` en la raíz con front matter:
-
-```markdown
----
-layout: default
-title: "Casos de éxito"
-description: "Empresas que ya implementaron DataShield"
----
-
-## Contenido de la página aquí
-```
-
----
-
-*Construido con ❤️ usando Jekyll + GitHub Pages — hosting gratuito, código abierto.*
+1. Instalo GitHub Desktop
+2. Inicio sesión con mi cuenta
+3. `File → Clone Repository` → busco `web-page` → Clone
+4. Ya tengo todo el proyecto local y sincronizado
