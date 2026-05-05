@@ -1,0 +1,79 @@
+## ─────────────────────────────────────────────
+##  Módulos del servicio
+##  Agrega, edita o elimina módulos aquí.
+##  tipo: "featured" | "medio" | "angosto" | "oscuro"
+## ─────────────────────────────────────────────
+
+- codigo: "M.01"
+  etiqueta: "M.01 · FUNDACIONAL"
+  icono: "▦"
+  tipo: "featured"
+  tag: "PUNTO DE PARTIDA"
+  titulo: "Inventario &amp;<br><em>Mapeo de Datos</em>"
+  descripcion: >
+    Saber qué datos tienes es el único requisito previo para todo lo demás.
+    Conectamos tus fuentes (Salesforce, HubSpot, ERPs, bases propias) y
+    descubrimos dónde viven los datos personales, quién los usa y con
+    qué propósito legal.
+  features:
+    - "Data Discovery y clasificación automática"
+    - "Catálogo centralizado con metadatos legales"
+    - "Visualización de flujos de datos end-to-end"
+    - "Evaluaciones de impacto (EIPD/PIA) guiadas"
+    - "Conectores nativos a SaaS comunes"
+  cta: "Ver el módulo M.01 →"
+
+- codigo: "M.02"
+  etiqueta: "M.02"
+  icono: "◉"
+  tipo: "medio"
+  titulo: "Consentimientos &amp;<br><em>Derechos del Titular</em>"
+  descripcion: >
+    Plataforma de gestión de consentimientos para cookies y avisos, portal de
+    solicitudes DSAR y automatización de plazos ARCO con búsqueda consolidada
+    en todos tus sistemas.
+  features:
+    - "CMP cookies + avisos legales"
+    - "Portal DSAR con workflow auditable"
+    - "Automatización de plazos ARCO"
+  cta: "Ver el módulo M.02 →"
+
+- codigo: "M.03"
+  etiqueta: "M.03"
+  icono: "⚠"
+  tipo: "angosto"
+  titulo: "Riesgos &amp;<br><em>Seguridad</em>"
+  descripcion: >
+    Gestión de incidentes y notificación dentro de 72 horas, integración con
+    SIEM y políticas de acceso auditables.
+  cta: "Ver módulo →"
+
+- codigo: "M.04"
+  etiqueta: "M.04"
+  icono: "▤"
+  tipo: "angosto"
+  titulo: "Cumplimiento &amp;<br><em>Auditoría</em>"
+  descripcion: >
+    RAT versionado, dashboards ejecutivos y gestión de DPAs con proveedores.
+    Listo para fiscalización.
+  cta: "Ver módulo →"
+
+- codigo: "M.05"
+  etiqueta: "M.05"
+  icono: "◎"
+  tipo: "angosto"
+  titulo: "Capacitación &amp;<br><em>Cultura</em>"
+  descripcion: >
+    E-learning con contenido específico de la 21.719, alertas contextuales y
+    métricas de cultura de privacidad.
+  cta: "Ver módulo →"
+
+- codigo: "OPC"
+  etiqueta: "+ OPCIONAL"
+  icono: "+"
+  tipo: "oscuro"
+  titulo: "DPO externo<br><em>+ acompañamiento</em>"
+  descripcion: >
+    Para empresas que prefieren delegar el rol de Delegado de Protección de
+    Datos. Cobertura legal y operacional continua.
+  cta: "Hablar con un consultor →"

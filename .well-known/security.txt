@@ -1,0 +1,11 @@
+## ─────────────────────────────────────────────────────────
+##  security.txt — Estándar RFC 9116
+##  Los investigadores de seguridad usan este archivo para
+##  reportar vulnerabilidades responsablemente.
+##  Muévelo a /.well-known/security.txt antes de publicar.
+## ─────────────────────────────────────────────────────────
+
+Contact: mailto:hola@datashield.cl
+Expires: 2027-01-01T00:00:00.000Z
+Preferred-Languages: es, en
+Canonical: https://datashield.cl/.well-known/security.txt

@@ -1,0 +1,24 @@
+<!-- ─── SECCIÓN POR QUÉ DATASHIELD ──────────────────────────
+     Edita razones en _data/porque.yml
+     ──────────────────────────────────────────────────────── -->
+<section class="why-section">
+  <div class="why-inner">
+
+    <div class="section-header">
+      <div class="section-number">§05</div>
+      <h2>Por qué trabajar con <em>DataShield</em>.</h2>
+      <div class="mono">Tres principios</div>
+    </div>
+
+    <div class="why-grid">
+      {% for reason in site.data.porque %}
+      <div class="why-card">
+        <div class="number">{{ reason.numero }}</div>
+        <h3>{{ reason.titulo }}</h3>
+        <p>{{ reason.descripcion }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

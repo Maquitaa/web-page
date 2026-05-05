@@ -1,0 +1,59 @@
+<!-- ─── SECCIÓN MÓDULOS ──────────────────────────────────────
+     Edita módulos en _data/modulos.yml
+     Para agregar un nuevo módulo, añade un bloque con los
+     campos: codigo, etiqueta, icono, tipo, titulo, descripcion, cta
+     ──────────────────────────────────────────────────────── -->
+<section class="mods-section" id="modulos">
+  <div class="mods-inner">
+
+    <div class="section-header">
+      <div class="section-number">§02</div>
+      <h2>Cinco <em>módulos</em> independientes. Un solo sistema.</h2>
+      <div class="mono">Composición libre</div>
+    </div>
+
+    <div class="modules-grid">
+      {% for mod in site.data.modulos %}
+
+        {% comment %}Determinar clase CSS según tipo{% endcomment %}
+        {% if mod.tipo == "featured" %}
+          {% assign mod_class = "mod featured" %}
+        {% elsif mod.tipo == "medio" %}
+          {% assign mod_class = "mod half" %}
+        {% elsif mod.tipo == "angosto" %}
+          {% assign mod_class = "mod third" %}
+        {% elsif mod.tipo == "oscuro" %}
+          {% assign mod_class = "mod dark" %}
+        {% else %}
+          {% assign mod_class = "mod" %}
+        {% endif %}
+
+      <article class="{{ mod_class }}">
+        <div class="mod-top">
+          <span class="mod-code">{{ mod.etiqueta }}</span>
+          <div class="mod-icon" aria-hidden="true">{{ mod.icono }}</div>
+        </div>
+
+        {% if mod.tag %}
+          <span class="mod-tag">{{ mod.tag }}</span>
+        {% endif %}
+
+        <h3 class="mod-title">{{ mod.titulo }}</h3>
+        <p class="mod-desc">{{ mod.descripcion }}</p>
+
+        {% if mod.features %}
+          <ul class="mod-features">
+            {% for feat in mod.features %}
+              <li>{{ feat }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        <a href="#cta" class="mod-link">{{ mod.cta }}</a>
+      </article>
+
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

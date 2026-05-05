@@ -1,0 +1,94 @@
+<!-- ─── HERO + BLUEPRINT ────────────────────────────────────
+     Edita textos en _data/site.yml → hero
+     ──────────────────────────────────────────────────────── -->
+{% assign h = site.data.site.hero %}
+
+<section class="hero">
+
+  <div class="hero-meta">
+    <div>{{ site.data.site.nombre }} {{ site.data.site.apellido }} · {{ site.data.site.ciudad }} · {{ site.data.site.ano }}</div>
+    <div class="pill">{{ h.pill }}</div>
+  </div>
+
+  <div class="hero-grid">
+
+    <div class="hero-left">
+      <h1>
+        {% for line in h.titulo_lineas %}
+          <span class="line">{{ line }}</span>
+        {% endfor %}
+      </h1>
+    </div>
+
+    <div class="hero-right">
+      <div class="badge-pill">
+        <span class="badge-label">{{ h.badge_label }}</span>
+        <span class="badge-text">{{ h.badge_text }}</span>
+      </div>
+      <p>{{ h.descripcion }}</p>
+      <div class="hero-cta">
+        <a href="{{ h.cta_primario.href }}" class="btn btn-primary">{{ h.cta_primario.label }}</a>
+        <a href="{{ h.cta_secundario.href }}" class="btn btn-ghost">{{ h.cta_secundario.label }}</a>
+      </div>
+      <div class="hero-trust">
+        {% for item in h.trust_items %}
+          <div class="trust-item">
+            <span class="check" aria-hidden="true">✓</span>
+            {{ item }}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BLUEPRINT MODULAR -->
+  <div class="blueprint" id="modulos-mini">
+    <div class="bp-head">
+      <div class="bp-head-left">
+        <span class="bp-badge">DS-2026 / v.04</span>
+        <h3>El sistema, <em>compuesto pieza por pieza</em></h3>
+      </div>
+      <div class="bp-legend">
+        <span class="fill">Fundacional</span>
+        <span class="gold">Operacional</span>
+        <span class="dash">Opcional</span>
+      </div>
+    </div>
+    <div class="bp-grid">
+      <div class="bp-cell fill span-4">
+        <div class="bp-cell-label"><span>M.01</span></div>
+        <div class="bp-cell-value">Inventario &amp; Mapeo de Datos</div>
+      </div>
+      <div class="bp-cell gold span-3">
+        <div class="bp-cell-label"><span>M.02</span></div>
+        <div class="bp-cell-value">Consentimientos &amp; Derechos</div>
+      </div>
+      <div class="bp-cell span-3">
+        <div class="bp-cell-label"><span>M.03</span></div>
+        <div class="bp-cell-value">Riesgos &amp; Seguridad</div>
+      </div>
+      <div class="bp-cell dash span-2">
+        <div class="bp-cell-label"><span>OPC.</span></div>
+        <div class="bp-cell-value" style="font-size:14px">DPO externo</div>
+      </div>
+      <div class="bp-cell span-3">
+        <div class="bp-cell-label"><span>M.04</span></div>
+        <div class="bp-cell-value">Cumplimiento &amp; Auditoría</div>
+      </div>
+      <div class="bp-cell span-3">
+        <div class="bp-cell-label"><span>M.05</span></div>
+        <div class="bp-cell-value">Capacitación &amp; Cultura</div>
+      </div>
+      <div class="bp-cell dash span-4">
+        <div class="bp-cell-label"><span>ACOMPAÑAMIENTO</span></div>
+        <div class="bp-cell-value" style="font-size:14px">Soporte continuo y revisiones periódicas</div>
+      </div>
+      <div class="bp-cell gold span-2">
+        <div class="bp-cell-label"><span>DIAG.</span></div>
+        <div class="bp-cell-value" style="font-size:14px">60 min · gratis</div>
+      </div>
+    </div>
+  </div>
+
+</section>

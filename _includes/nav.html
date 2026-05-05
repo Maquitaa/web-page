@@ -1,0 +1,31 @@
+<!-- ─── NAVEGACIÓN ─────────────────────────────────────────
+     Edita los links en _data/site.yml → nav_links
+     ──────────────────────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+
+  <a href="/" class="logo" aria-label="{{ site.data.site.nombre }} {{ site.data.site.apellido }}">
+    <div class="logo-mark" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="logo-text">
+      {{ site.data.site.nombre }} <em>{{ site.data.site.apellido }}</em>
+    </div>
+  </a>
+
+  <div class="nav-links">
+    {% for item in site.data.site.nav_links %}
+      <a href="{{ item.href }}"
+         {% if item.dropdown %}class="has-dropdown"{% endif %}>
+        {{ item.label }}
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="nav-cta">
+    <a href="#">Iniciar sesión</a>
+    <a href="{{ site.data.site.cta_nav.href }}" class="btn btn-primary">
+      {{ site.data.site.cta_nav.label }}
+    </a>
+  </div>
+
+</nav>

@@ -1,0 +1,44 @@
+## ─────────────────────────────────────────────
+##  Sección de la Ley 21.719
+## ─────────────────────────────────────────────
+
+cards:
+  - etiqueta: "Alcance"
+    numero: "i."
+    titulo: "Todo dato personal, en todo soporte."
+    descripcion: >
+      Desde un RUT en una planilla hasta registros biométricos o de salud.
+      Aplica a toda empresa que trate datos en Chile, sin importar su tamaño.
+
+  - etiqueta: "Derechos del titular"
+    numero: "ii."
+    titulo: "Acceso, rectificación, cancelación, oposición y portabilidad."
+    descripcion: >
+      Los titulares pueden ejercer sus derechos y exigir respuesta dentro del
+      plazo legal, con evidencia de cada interacción.
+
+  - etiqueta: "Notificación de brechas"
+    numero: "iii."
+    titulo: "72 horas para responder ante un incidente."
+    descripcion: >
+      Sin protocolo ni plantillas operacionales, cumplir el plazo es
+      prácticamente imposible. La improvisación cuesta caro.
+
+  - etiqueta: "Carga de la prueba"
+    numero: "iv."
+    titulo: "No basta con cumplir, hay que <em>demostrarlo</em>."
+    descripcion: >
+      RAT actualizado, evaluaciones de impacto, contratos con terceros (DPA).
+      La carga de la prueba recae sobre la empresa.
+
+aside:
+  mono: "El enfoque DataShield"
+  titulo: "El cumplimiento es una <em>capacidad</em>, no un proyecto."
+  descripcion: >
+    No entregamos carpetas con documentos que nadie relee. Construimos junto a
+    tus equipos la operación que sostiene el cumplimiento en el tiempo.
+  items:
+    - "Consultor senior dedicado por módulo"
+    - "Documentación viva, no entregable estático"
+    - "Capacitación interna para autonomía operativa"
+    - "Plataforma integrada que reduce el esfuerzo manual"

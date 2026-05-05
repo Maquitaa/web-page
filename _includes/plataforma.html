@@ -1,0 +1,148 @@
+<!-- ─── SECCIÓN PLATAFORMA / DASHBOARD ──────────────────────
+     Edita features en _data/plataforma.yml
+     ──────────────────────────────────────────────────────── -->
+{% assign pl = site.data.plataforma %}
+
+<section class="product-section" id="plataforma">
+  <div class="product-inner">
+
+    <div class="section-header">
+      <div class="section-number">§03</div>
+      <h2>Una plataforma para <em>operar</em> el cumplimiento, no solo documentarlo.</h2>
+      <div class="mono">Plataforma integrada</div>
+    </div>
+
+    <div class="product-lead">
+      <p>{{ pl.descripcion }}</p>
+      <div class="product-feats">
+        {% for feat in pl.features %}
+        <div class="feat">
+          <span class="mono">{{ feat.mono }}</span>
+          <strong>{{ feat.titulo }}</strong>
+          <span>{{ feat.descripcion }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Mock app UI -->
+  <div class="app-wrap">
+    <div class="app-window" role="img" aria-label="Captura de pantalla de la plataforma DataShield">
+      <div class="app-bar">
+        <div class="app-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="app-url">app.datashield.cl / dashboard</div>
+        <div class="app-status"><span>● Conectado</span></div>
+      </div>
+      <div class="app-body">
+        <aside class="app-sidebar">
+          <div class="sidebar-logo">
+            <div class="sidebar-logo-mark">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <strong>DataShield</strong>
+          </div>
+          <div class="sidebar-section-title">Compliance</div>
+          <div class="sidebar-item active"><span class="sidebar-dot"></span>Panel general</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Inventario de datos</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Consentimientos</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Solicitudes DSAR<span class="sidebar-badge">4</span></div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Incidentes<span class="sidebar-badge alert">1</span></div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Registro RAT</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Proveedores (DPA)</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Capacitaciones</div>
+          <div class="sidebar-section-title">Sistema</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Conectores</div>
+          <div class="sidebar-item"><span class="sidebar-dot"></span>Equipo &amp; permisos</div>
+          <div class="sidebar-footer">
+            <div class="sidebar-user">
+              <div class="sidebar-avatar">MR</div>
+              <div class="sidebar-user-info">María Rojas<small>Consultora senior</small></div>
+            </div>
+          </div>
+        </aside>
+        <main class="app-main">
+          <div class="main-header">
+            <div>
+              <h4>Panel de cumplimiento</h4>
+              <div class="subtitle">Actualizado hoy 14:32 · Ley 21.719 · Q2 2026</div>
+            </div>
+            <div class="main-actions">
+              <span class="chip">Últimos 30 días ▾</span>
+              <span class="chip">Filtrar ▾</span>
+              <span class="chip active">Exportar evidencias</span>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi">
+              <div class="kpi-label">Cumplimiento global</div>
+              <div class="kpi-value">78<small>%</small></div>
+              <div class="kpi-bar"><span class="kpi-bar-fill" style="width:78%"></span></div>
+              <div class="kpi-delta">▲ +12% vs. mes anterior</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-label">Datos mapeados</div>
+              <div class="kpi-value">12.847</div>
+              <div class="kpi-bar"><span class="kpi-bar-fill" style="width:62%;background:#D4B87F"></span></div>
+              <div class="kpi-delta">▲ +1.204 nuevos</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-label">DSARs en plazo</div>
+              <div class="kpi-value">3<small>/4 · 1 urgente</small></div>
+              <div class="kpi-bar"><span class="kpi-bar-fill" style="width:75%;background:var(--red)"></span></div>
+              <div class="kpi-delta alert">● 1 vence en 6h</div>
+            </div>
+            <div class="kpi">
+              <div class="kpi-label">Incidentes abiertos</div>
+              <div class="kpi-value">1</div>
+              <div class="kpi-bar"><span class="kpi-bar-fill" style="width:100%;background:var(--gold)"></span></div>
+              <div class="kpi-delta">● Notificación lista</div>
+            </div>
+          </div>
+          <div class="dashboard-panels">
+            <div class="panel">
+              <div class="panel-title">
+                Evolución del cumplimiento global
+                <span class="small">12 últimos meses</span>
+              </div>
+              <div class="chart">
+                <div class="chart-bar" style="height:25%"></div>
+                <div class="chart-bar" style="height:32%"></div>
+                <div class="chart-bar" style="height:38%"></div>
+                <div class="chart-bar gold-soft" style="height:42%"></div>
+                <div class="chart-bar gold-soft" style="height:48%"></div>
+                <div class="chart-bar gold-soft" style="height:55%"></div>
+                <div class="chart-bar gold-soft" style="height:60%"></div>
+                <div class="chart-bar gold-soft" style="height:64%"></div>
+                <div class="chart-bar gold-soft" style="height:68%"></div>
+                <div class="chart-bar gold" style="height:72%"></div>
+                <div class="chart-bar gold" style="height:75%"></div>
+                <div class="chart-bar gold" style="height:78%"></div>
+              </div>
+              <div class="chart-axis">
+                <span>MAY '25</span><span>AGO</span><span>NOV</span><span>FEB '26</span><span>MAY</span>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel-title">
+                Solicitudes DSAR recientes
+                <span class="small">5 últimas</span>
+              </div>
+              <div class="requests">
+                <div class="req-item"><span class="req-dot red"></span><span class="req-name">Acceso · María P.<small>Vence en 6 horas</small></span><span class="req-time">3d</span></div>
+                <div class="req-item"><span class="req-dot gold"></span><span class="req-name">Rectificación · Carlos V.<small>En revisión legal</small></span><span class="req-time">1d</span></div>
+                <div class="req-item"><span class="req-dot gold"></span><span class="req-name">Cancelación · Ana T.<small>Esperando confirmación</small></span><span class="req-time">6h</span></div>
+                <div class="req-item"><span class="req-dot green"></span><span class="req-name">Oposición · Ricardo S.<small>Resuelta</small></span><span class="req-time">2h</span></div>
+                <div class="req-item"><span class="req-dot green"></span><span class="req-name">Portabilidad · Camila R.<small>Resuelta</small></span><span class="req-time">32m</span></div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+</section>

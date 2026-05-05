@@ -1,0 +1,25 @@
+## ─────────────────────────────────────────────
+##  Sección de la plataforma / dashboard
+## ─────────────────────────────────────────────
+
+descripcion: >
+  Cada módulo de DataShield se opera en una plataforma común. Tu equipo, tus
+  consultores y la evidencia que la autoridad puede pedir mañana, en un solo
+  lugar — con permisos, trazabilidad y exportación lista para auditoría.
+
+features:
+  - mono: "Conexión"
+    titulo: "Conectores nativos"
+    descripcion: "Salesforce, HubSpot, ERPs, bases de datos propias y archivos."
+
+  - mono: "Trazabilidad"
+    titulo: "Cada acción, registrada"
+    descripcion: "Quién accedió, qué consintió, cuándo se respondió. Audit log completo."
+
+  - mono: "Equipos"
+    titulo: "Roles y permisos"
+    descripcion: "Legal, TI, operaciones y consultores en un mismo espacio."
+
+  - mono: "Exportación"
+    titulo: "Listo para fiscalización"
+    descripcion: "RAT, evidencias y reportes exportables al formato que pida la Agencia."

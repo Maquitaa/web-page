@@ -1,0 +1,69 @@
+<!-- ─── FOOTER ────────────────────────────────────────────────
+     Edita columnas y links en _data/site.yml → footer
+     ──────────────────────────────────────────────────────── -->
+{% assign s = site.data.site %}
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="logo-text">{{ s.nombre }} <em>{{ s.apellido }}</em></div>
+        </div>
+        <p>{{ s.footer.descripcion }}</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Módulos</div>
+        <ul>
+          <li><a href="#modulos">M.01 Inventario</a></li>
+          <li><a href="#modulos">M.02 Consentimientos</a></li>
+          <li><a href="#modulos">M.03 Riesgos</a></li>
+          <li><a href="#modulos">M.04 Auditoría</a></li>
+          <li><a href="#modulos">M.05 Capacitación</a></li>
+          <li><a href="#modulos">DPO externo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Empresa</div>
+        <ul>
+          <li><a href="#metodologia">Metodología</a></li>
+          <li><a href="#">Equipo</a></li>
+          <li><a href="#">Casos</a></li>
+          <li><a href="#">Manifiesto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Recursos</div>
+        <ul>
+          <li><a href="#ley">Ley 21.719</a></li>
+          <li><a href="#">Guía práctica</a></li>
+          <li><a href="#">Plantillas</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-col-title">Contacto</div>
+        <ul>
+          <li><a href="mailto:{{ s.email }}">{{ s.email }}</a></li>
+          <li><a href="tel:{{ s.telefono | remove: ' ' }}">{{ s.telefono }}</a></li>
+          <li><a href="#cta">Agendar</a></li>
+          <li><a href="{{ s.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>© {{ s.ano }} · {{ s.nombre }} {{ s.apellido }} · {{ s.ciudad }}, {{ s.pais }}</div>
+      <div>{{ s.footer.legal }}</div>
+    </div>
+  </div>
+</footer>

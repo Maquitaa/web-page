@@ -1,0 +1,40 @@
+<!-- ─── SECCIÓN LEY 21.719 ───────────────────────────────────
+     Edita tarjetas en _data/ley.yml
+     ──────────────────────────────────────────────────────── -->
+{% assign l = site.data.ley %}
+
+<section class="section" id="ley">
+  <div class="section-header">
+    <div class="section-number">§01</div>
+    <h2>La nueva ley redefine cómo las empresas <em>tratan los datos</em>.</h2>
+    <div class="mono">Ley 21.719 · GDPR chileno</div>
+  </div>
+
+  <div class="ley-grid">
+
+    <div class="ley-cards">
+      {% for card in l.cards %}
+      <div class="ley-card">
+        <div class="ley-card-header">
+          <span class="ley-card-label">{{ card.etiqueta }}</span>
+          <span class="ley-card-num">{{ card.numero }}</span>
+        </div>
+        <h3>{{ card.titulo }}</h3>
+        <p>{{ card.descripcion }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <aside class="ley-aside">
+      <div class="mono">{{ l.aside.mono }}</div>
+      <h3>{{ l.aside.titulo }}</h3>
+      <p>{{ l.aside.descripcion }}</p>
+      <ul>
+        {% for item in l.aside.items %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </aside>
+
+  </div>
+</section>

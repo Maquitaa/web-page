@@ -1,0 +1,48 @@
+## ─────────────────────────────────────────────
+##  DataShield Consulting · Jekyll Config
+##  Edita este archivo para cambiar info global.
+## ─────────────────────────────────────────────
+
+title: "DataShield Consulting"
+tagline: "Cumplimiento modular para la nueva ley de datos."
+description: "Consultoría modular y plataforma de cumplimiento para empresas chilenas sujetas a la Ley 21.719 de Protección de Datos Personales."
+url: "" # pon tu dominio cuando lo conectes, ej: https://datashield.cl
+baseurl: ""
+
+# Autor / empresa
+author:
+  name: "DataShield Consulting"
+  email: "hola@datashield.cl"
+  location: "Santiago, Chile"
+
+# Redes sociales
+social:
+  linkedin: "#"
+  twitter: "#"
+
+# Colores y marca (para referencia, el CSS los define)
+brand:
+  year: "MMXXVI"
+  tagline_mono: "Ley 21.719 · GDPR chileno"
+
+# Jekyll
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Plugins compatibles con GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Excluir del build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - .git/
+
+# Sass
+sass:
+  style: compressed

@@ -1,0 +1,22 @@
+<!-- ─── BARRA DE ESTADÍSTICAS ────────────────────────────────
+     Edita números en _data/stats.yml
+     ──────────────────────────────────────────────────────── -->
+<div class="stats" aria-label="Métricas clave">
+  <div class="stats-grid">
+    {% for stat in site.data.stats %}
+    <div class="stat">
+      <div class="stat-label">{{ stat.label }}</div>
+      <div class="stat-value">
+        {{ stat.valor }}
+        {% if stat.extra %}
+          <em>{{ stat.extra }}</em>
+        {% endif %}
+        {% if stat.unidad and stat.unidad != "" %}
+          <span class="unit">{{ stat.unidad }}</span>
+        {% endif %}
+      </div>
+      <div class="stat-desc">{{ stat.descripcion }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<!-- ─── SECCIÓN METODOLOGÍA ──────────────────────────────────
+     Edita etapas en _data/metodologia.yml
+     ──────────────────────────────────────────────────────── -->
+<section class="method-section" id="metodologia">
+
+  <div class="section-header">
+    <div class="section-number">§04</div>
+    <h2>Una metodología <em>consultiva</em>, no un proveedor más.</h2>
+    <div class="mono">Cuatro etapas</div>
+  </div>
+
+  <div class="method-grid">
+    {% for step in site.data.metodologia %}
+    <div class="method-card">
+      <div class="method-step">{{ step.numero }} · {{ step.etapa }}</div>
+      <h3>{{ step.titulo }}</h3>
+      <p>{{ step.descripcion }}</p>
+      <div class="method-meta">
+        <span>{{ step.meta_izq }}</span>
+        <span>{{ step.meta_der }}</span>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</section>

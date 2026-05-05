@@ -1,0 +1,29 @@
+## ─────────────────────────────────────────────
+##  Estadísticas de la barra de credibilidad
+##  Cambia números y descripciones aquí.
+## ─────────────────────────────────────────────
+
+- label: "Vigencia"
+  valor: "2026"
+  unidad: ""
+  italica: false
+  descripcion: "Ley 21.719 vigente. Fiscalización activa por la Agencia."
+
+- label: "Multa máxima"
+  valor: "20K"
+  unidad: "UTM"
+  italica: false
+  descripcion: "Aprox. USD 1.4M para infracciones gravísimas."
+
+- label: "Plazo brechas"
+  valor: "72"
+  unidad: "h"
+  italica: false
+  descripcion: "Para notificar incidentes a la Agencia y a los afectados."
+
+- label: "Cobertura DataShield"
+  valor: "5"
+  unidad: ""
+  extra: "+1"
+  italica: true
+  descripcion: "Cinco módulos independientes + DPO externo opcional."
