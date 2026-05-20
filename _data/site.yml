@@ -27,41 +27,42 @@ nav_links:
     href: "#ley"
     dropdown: false
   - label: "Nosotros"
-    href: "#"
+    href: "#nosotros"
     dropdown: false
 
 cta_nav:
-  label: "Assessment gratis →"
+  label: "Conversemos →"
   href: "#cta"
 
 hero:
-  pill: "● Desde la Araucanía · para Chile"
-  badge_label: "NUEVO"
-  badge_text: "Empieza por donde más duele hoy →"
+  pill: "● Temuco · La Araucanía · Chile"
+  badge_label: "2026"
+  badge_text: "Ley 21.719 ya está vigente →"
   titulo_lineas:
-    - "Tecnología real"
-    - "para empresas"
-    - "<em>que quieren</em>"
-    - "avanzar."
+    - "Tecnología que"
+    - "transforma cómo"
+    - "<em>operan</em> las"
+    - "empresas."
   descripcion: >
-    DataShield acompaña a empresas de la Araucanía y Chile en su camino hacia
-    la modernización: datos limpios, procesos sin redundancias, inteligencia
-    artificial aplicada y cumplimiento legal. Sin humo, sin soluciones
-    genéricas — empezamos con un <strong>assessment honesto</strong> de tu
-    realidad y construimos desde ahí.
+    Somos ingenieros y abogados con experiencia internacional en datos,
+    gobierno corporativo y ciberseguridad. Acompañamos a empresas chilenas
+    en modernización de procesos, inteligencia artificial aplicada,
+    cumplimiento de la Ley 21.719 y gobierno del dato — con metodología
+    rigurosa y resultados medibles desde la primera etapa.
   cta_primario:
-    label: "Agendar assessment gratis →"
+    label: "Conversemos →"
     href: "#cta"
   cta_secundario:
     label: "Ver servicios"
     href: "#modulos"
   trust_items:
-    - "Assessment gratuito de 60 min con consultor senior"
-    - "Sin humo — te decimos lo que realmente necesitas"
-    - "Desde la Araucanía, con visión global"
+    - "Ingenieros y abogados con experiencia en datos y GDPR"
+    - "Metodología probada — resultados medibles desde la primera etapa"
+    - "Desde la Araucanía, con estándares internacionales"
 
 footer:
   descripcion: >
-    Consultoría tecnológica desde Temuco, La Araucanía. Modernización de procesos,
-    datos limpios, IA aplicada y cumplimiento de la Ley 21.719.
+    Consultoría tecnológica especializada en modernización de procesos,
+    gobierno del dato, inteligencia artificial y cumplimiento de la
+    Ley 21.719. Temuco, La Araucanía — Chile.
   legal: "Privacidad · Términos · Ética profesional"

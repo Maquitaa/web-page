@@ -1,21 +1,21 @@
 ## ─────────────────────────────────────────────
-##  CTA final
-##  Cambia cta_href por tu link de Calendly cuando lo tengas
+##  CTA final — sin "gratuito", que devalúa
 ## ─────────────────────────────────────────────
 
-mono: "Empecemos con honestidad"
-titulo: "Un assessment <em>gratuito</em> de 60 minutos. Sin compromiso, sin discurso de ventas."
+mono: "El primer paso es una conversación"
+titulo: "60 minutos para entender tu empresa y decirte qué <em>tiene sentido hacer</em>."
 descripcion: >
-  Una conversación real con un consultor senior sobre tu empresa: dónde están
-  los problemas, qué se puede mejorar, qué tecnología tiene sentido y qué no.
-  Si no somos la opción correcta para ti, también te lo decimos.
+  Una sesión de diagnóstico con un consultor senior. Sin presentaciones
+  genéricas — revisamos tu realidad concreta: tus procesos, tus datos,
+  tus sistemas y tus objetivos. Al terminar, sabes exactamente en qué
+  estado estás y qué opciones tienes.
 
-caja_titulo: "Qué te llevas del assessment"
+caja_titulo: "Qué incluye la sesión de diagnóstico"
 caja_items:
-  - "Diagnóstico honesto de tu madurez tecnológica"
-  - "Los 3 problemas prioritarios que más impactan tu negocio"
-  - "Qué solución recomendamos y por qué"
-  - "Estimación de tiempos, costos y retorno esperado"
+  - "Evaluación de madurez tecnológica y de datos"
+  - "Identificación de los cuellos de botella con mayor impacto"
+  - "Revisión de exposición legal (Ley 21.719)"
+  - "Recomendación de servicios prioritarios con estimación de alcance"
 
-cta_label: "Agendar assessment gratis →"
+cta_label: "Agendar sesión de diagnóstico →"
 cta_href: "#"

@@ -1,0 +1,32 @@
+<!-- ─── SECCIÓN NOSOTROS ─────────────────────────────────────
+     Edita en _data/nosotros.yml
+     ──────────────────────────────────────────────────────── -->
+{% assign n = site.data.nosotros %}
+
+<section class="section" id="nosotros">
+
+  <div class="section-header">
+    <div class="section-number">§06</div>
+    <h2>{{ n.titulo }}</h2>
+    <div class="mono">{{ n.mono }}</div>
+  </div>
+
+  <div class="nosotros-grid">
+    <div class="nosotros-texto">
+      <p class="nosotros-lead">{{ n.descripcion }}</p>
+      <p class="nosotros-body">{{ n.descripcion_2 }}</p>
+    </div>
+    <div class="nosotros-areas">
+      {% for area in n.areas %}
+      <div class="nosotros-area">
+        <div class="nosotros-area-icon" aria-hidden="true">{{ area.icono }}</div>
+        <div>
+          <strong>{{ area.titulo }}</strong>
+          <p>{{ area.descripcion }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</section>

@@ -3,21 +3,24 @@
 ## ─────────────────────────────────────────────
 
 - numero: "i."
-  titulo: "Empezamos con la <em>verdad</em>, no con una propuesta."
+  titulo: "Diagnóstico antes que <em>solución</em>."
   descripcion: >
-    El assessment siempre es primero. No vendemos soluciones antes de entender
-    el problema. Si lo que necesitas no somos nosotros, te lo decimos igual.
+    No proponemos tecnología antes de entender el problema. El assessment
+    es siempre el primer paso — y el resultado es un mapa claro de qué
+    hacer, en qué orden y con qué impacto esperado. Sin suposiciones.
 
 - numero: "ii."
-  titulo: "Desde la Araucanía, <em>con visión global</em>."
+  titulo: "Raíces en el sur, <em>estándares globales</em>."
   descripcion: >
-    Entendemos la realidad de las empresas del sur de Chile — sus recursos,
-    sus tiempos, sus contextos. Y traemos metodologías y tecnologías del nivel
-    de cualquier consultora de Santiago o internacional.
+    Conocemos la escala, los tiempos y los contextos reales de las
+    empresas chilenas. Eso nos permite aplicar metodologías y tecnologías
+    de clase internacional de una manera que efectivamente se implementa
+    — no queda en una presentación.
 
 - numero: "iii."
-  titulo: "Te dejamos <em>capacidad instalada</em>, no dependencia."
+  titulo: "Capacidad instalada, <em>no dependencia permanente</em>."
   descripcion: >
-    Cuando terminamos un proyecto, tu equipo sabe operar lo que construimos.
-    Seguimos acompañando porque la tecnología evoluciona — no porque no puedas
-    sin nosotros.
+    Cada proyecto termina con tu equipo operando lo que construimos.
+    Documentamos, capacitamos y transferimos el conocimiento. Seguimos
+    disponibles porque la tecnología evoluciona — no porque no puedas
+    funcionar sin nosotros.

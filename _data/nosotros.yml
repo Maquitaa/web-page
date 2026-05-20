@@ -1,0 +1,33 @@
+## ─────────────────────────────────────────────
+##  Sección Nosotros
+## ─────────────────────────────────────────────
+
+mono: "Quiénes somos"
+titulo: "Ingenieros y abogados con años de experiencia en el <em>mundo del dato</em>."
+descripcion: >
+  DataShield nació desde la Araucanía con una convicción: que las empresas
+  chilenas merecen acceso a metodologías y tecnologías de clase mundial,
+  con profesionales que entienden su realidad concreta.
+
+descripcion_2: >
+  Nuestro equipo combina experiencia en arquitectura de datos, gobierno
+  corporativo, ciberseguridad y derecho — con trayectoria en proyectos de
+  transformación digital en Chile y el extranjero, incluyendo cumplimiento
+  de GDPR europeo y marcos regulatorios internacionales.
+
+areas:
+  - icono: "◈"
+    titulo: "Arquitectura de datos"
+    descripcion: "Diseño e implementación de infraestructuras de datos escalables y gobernadas."
+
+  - icono: "§"
+    titulo: "Derecho y cumplimiento"
+    descripcion: "Experiencia en GDPR, Ley 21.719 y marcos regulatorios de protección de datos."
+
+  - icono: "▦"
+    titulo: "Inteligencia artificial"
+    descripcion: "Implementación de modelos y sistemas de IA aplicados a problemas reales de negocio."
+
+  - icono: "⚿"
+    titulo: "Ciberseguridad"
+    descripcion: "Evaluación de riesgos, políticas de acceso y respuesta ante incidentes."

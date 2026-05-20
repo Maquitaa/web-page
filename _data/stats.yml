@@ -1,27 +1,27 @@
 ## ─────────────────────────────────────────────
-##  Estadísticas de credibilidad
+##  Solo números que podemos defender
 ## ─────────────────────────────────────────────
 
-- label: "Realidad en Chile"
-  valor: "70"
-  unidad: "%"
+- label: "Vigencia"
+  valor: "2026"
+  unidad: ""
   italica: false
-  descripcion: "De las PyMEs chilenas aún opera con procesos manuales o datos sin estructurar."
+  descripcion: "Ley 21.719 vigente con fiscalización activa. No es opcional ni postergable."
 
-- label: "Multa máxima Ley 21.719"
+- label: "Multa máxima"
   valor: "20K"
   unidad: "UTM"
   italica: false
-  descripcion: "Aprox. USD 1.4M para infracciones gravísimas. Vigente desde 2026."
+  descripcion: "Aprox. USD 1.4M para infracciones gravísimas. Las sanciones menores parten en 100 UTM."
 
-- label: "Retorno típico"
-  valor: "3x"
-  unidad: ""
-  italica: true
-  descripcion: "Lo que recuperan las empresas en eficiencia al eliminar procesos redundantes."
+- label: "Plazo de notificación"
+  valor: "72"
+  unidad: "h"
+  italica: false
+  descripcion: "Para reportar brechas de datos a la Agencia y los afectados. Sin protocolo, es imposible cumplir."
 
-- label: "Tiempo al primer resultado"
+- label: "Primeros resultados"
   valor: "4"
   unidad: "sem"
   italica: false
-  descripcion: "Desde el assessment hasta las primeras mejoras implementadas y medibles."
+  descripcion: "Desde el inicio del proyecto hasta las primeras mejoras implementadas y medibles."

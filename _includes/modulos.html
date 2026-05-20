@@ -1,29 +1,27 @@
 <!-- ─── SECCIÓN MÓDULOS ──────────────────────────────────────
      Edita módulos en _data/modulos.yml
-     Para agregar un nuevo módulo, añade un bloque con los
-     campos: codigo, etiqueta, icono, tipo, titulo, descripcion, cta
+     tipos: destacado (3col) | medio (3col) | angosto (2col) | oscuro (6col)
      ──────────────────────────────────────────────────────── -->
 <section class="mods-section" id="modulos">
   <div class="mods-inner">
 
     <div class="section-header">
       <div class="section-number">§02</div>
-      <h2>Cinco <em>módulos</em> independientes. Un solo sistema.</h2>
-      <div class="mono">Composición libre</div>
+      <h2>Servicios que se <em>combinan</em> según lo que necesitas.</h2>
+      <div class="mono">Modular por diseño</div>
     </div>
 
     <div class="modules-grid">
       {% for mod in site.data.modulos %}
 
-        {% comment %}Determinar clase CSS según tipo{% endcomment %}
-        {% if mod.tipo == "featured" %}
-          {% assign mod_class = "mod featured" %}
+        {% if mod.tipo == "destacado" %}
+          {% assign mod_class = "mod destacado" %}
         {% elsif mod.tipo == "medio" %}
-          {% assign mod_class = "mod half" %}
+          {% assign mod_class = "mod medio" %}
         {% elsif mod.tipo == "angosto" %}
-          {% assign mod_class = "mod third" %}
+          {% assign mod_class = "mod angosto" %}
         {% elsif mod.tipo == "oscuro" %}
-          {% assign mod_class = "mod dark" %}
+          {% assign mod_class = "mod oscuro" %}
         {% else %}
           {% assign mod_class = "mod" %}
         {% endif %}

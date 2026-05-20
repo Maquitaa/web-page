@@ -1,27 +1,29 @@
 ## ─────────────────────────────────────────────
-##  Servicios / Módulos
-##  tipo: "featured" | "medio" | "angosto" | "oscuro"
-##  Para agregar uno nuevo, copia un bloque y pégalo al final.
+##  Servicios
+##  tipo: "destacado" | "medio" | "angosto" | "oscuro"
+##  Grid de 6 columnas:
+##    destacado = 3 cols  |  medio = 3 cols
+##    angosto   = 2 cols  |  oscuro = 6 cols (full)
 ## ─────────────────────────────────────────────
 
 - codigo: "S.01"
   etiqueta: "S.01 · PUNTO DE PARTIDA"
   icono: "◎"
-  tipo: "featured"
+  tipo: "destacado"
   tag: "SIEMPRE PRIMERO"
-  titulo: "Assessment &amp;<br><em>Diagnóstico</em>"
+  titulo: "Diagnóstico &amp;<br><em>Assessment</em>"
   descripcion: >
-    Antes de proponer cualquier tecnología, entendemos dónde estás parado.
-    Revisamos tus procesos, datos, sistemas y brechas — y te entregamos un
-    mapa claro de qué hacer, en qué orden y por qué. Sin humo, sin soluciones
-    soluciones que no necesitas.
+    Antes de proponer cualquier tecnología, entendemos dónde está parada
+    la empresa. Revisamos procesos, calidad de datos, sistemas actuales
+    y brechas de cumplimiento — y entregamos un mapa claro de qué hacer,
+    en qué orden y con qué impacto esperado.
   features:
-    - "Mapeo de procesos actuales y cuellos de botella"
-    - "Diagnóstico de calidad de datos"
+    - "Mapeo de procesos y cuellos de botella"
+    - "Diagnóstico de calidad y gobierno del dato"
     - "Evaluación de madurez tecnológica"
-    - "Identificación de quick wins vs. proyectos de fondo"
+    - "Análisis de exposición legal Ley 21.719"
     - "Hoja de ruta priorizada con estimación de impacto"
-  cta: "Agendar assessment gratis →"
+  cta: "Agendar diagnóstico →"
 
 - codigo: "S.02"
   etiqueta: "S.02"
@@ -29,23 +31,25 @@
   tipo: "medio"
   titulo: "Modernización<br><em>de Procesos</em>"
   descripcion: >
-    Eliminamos las redundancias, los pasos manuales innecesarios y los tiempos
-    muertos. Automatizamos lo que tiene sentido automatizar y simplificamos lo
-    que no. Tu equipo trabaja menos en tareas sin valor y más en lo que importa.
+    Eliminamos redundancias, pasos manuales sin valor y tiempos muertos.
+    Automatizamos lo que tiene sentido, rediseñamos flujos y conectamos
+    sistemas que hoy no se hablan. El resultado: menos esfuerzo operativo
+    y más capacidad para lo que importa.
   features:
-    - "Mapeo y rediseño de flujos de trabajo"
+    - "Rediseño de flujos de trabajo críticos"
     - "Automatización de procesos repetitivos (RPA)"
-    - "Eliminación de silos entre áreas"
-  cta: "Ver servicio S.02 →"
+    - "Integración entre sistemas y eliminación de silos"
+  cta: "Ver servicio →"
 
 - codigo: "S.03"
   etiqueta: "S.03"
   icono: "◈"
   tipo: "angosto"
-  titulo: "Datos limpios<br><em>&amp; Gobierno</em>"
+  titulo: "Gobierno<br><em>del Dato</em>"
   descripcion: >
-    Sin datos confiables no hay decisiones buenas ni IA que funcione. Ordenamos,
-    limpiamos y estructuramos tu información para que puedas usarla de verdad.
+    Sin datos confiables no hay buenas decisiones ni IA que funcione.
+    Estructuramos, limpiamos y gobernamos la información para que
+    sea un activo real, no una fuente de errores.
   cta: "Ver servicio →"
 
 - codigo: "S.04"
@@ -54,28 +58,30 @@
   tipo: "angosto"
   titulo: "IA aplicada<br><em>al negocio</em>"
   descripcion: >
-    Implementamos inteligencia artificial donde realmente agrega valor: análisis
-    predictivo, automatización inteligente, asistentes internos. Sin hype, con
-    resultados medibles.
+    Implementamos inteligencia artificial donde genera valor medible:
+    análisis predictivo, automatización inteligente y asistentes internos.
+    Con datos limpios, arquitectura correcta y casos de uso validados.
   cta: "Ver servicio →"
 
 - codigo: "S.05"
   etiqueta: "S.05"
   icono: "⚿"
   tipo: "angosto"
-  titulo: "Ciberseguridad<br><em>&amp; Riesgos</em>"
+  titulo: "Ciberseguridad<br><em>&amp; Riesgo</em>"
   descripcion: >
-    Protegemos lo que construiste. Evaluamos vulnerabilidades, definimos políticas
-    de acceso y preparamos a tu equipo para responder ante incidentes.
+    Evaluamos vulnerabilidades, definimos políticas de acceso y preparamos
+    a los equipos para responder ante incidentes. Cumplimiento de la
+    Ley 21.719 incluido.
   cta: "Ver servicio →"
 
 - codigo: "S.06"
-  etiqueta: "S.06 · LEGAL"
+  etiqueta: "S.06 · CUMPLIMIENTO LEGAL"
   icono: "§"
   tipo: "oscuro"
-  titulo: "Cumplimiento<br><em>Ley 21.719</em>"
+  titulo: "Ley 21.719 &amp; <em>Cumplimiento</em>"
   descripcion: >
-    La ley de datos personales ya está vigente. Te acompañamos en el cumplimiento
-    modular: inventario de datos, consentimientos, notificación de brechas,
-    auditoría y DPO externo opcional.
+    La ley de protección de datos personales ya está vigente en Chile.
+    Acompañamos a las empresas en el cumplimiento modular: desde el inventario
+    de datos y la gestión de consentimientos hasta la notificación de brechas,
+    auditoría y DPO externo.
   cta: "Ver servicio →"
