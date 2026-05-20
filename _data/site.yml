@@ -1,69 +1,67 @@
 ## ─────────────────────────────────────────────
 ##  Información global de la marca
-##  Edita aquí: nombre, contacto, nav links.
 ## ─────────────────────────────────────────────
 
 nombre: "DataShield"
 apellido: "Consulting"
-ciudad: "Santiago"
+ciudad: "Temuco"
+region: "La Araucanía"
 pais: "Chile"
 ano: "MMXXVI"
 email: "hola@datashield.cl"
-telefono: "+56 2 0000 0000"
+telefono: "+56 9 0000 0000"
 linkedin: "#"
 dominio: "datashield.cl"
 
 nav_links:
-  - label: "Módulos"
+  - label: "Servicios"
     href: "#modulos"
     dropdown: true
+  - label: "Cómo trabajamos"
+    href: "#metodologia"
+    dropdown: false
   - label: "Plataforma"
     href: "#plataforma"
-    dropdown: false
-  - label: "Metodología"
-    href: "#metodologia"
     dropdown: false
   - label: "Ley 21.719"
     href: "#ley"
     dropdown: false
-  - label: "Recursos"
-    href: "#"
-    dropdown: true
   - label: "Nosotros"
     href: "#"
     dropdown: false
 
 cta_nav:
-  label: "Diagnóstico gratis →"
+  label: "Assessment gratis →"
   href: "#cta"
 
 hero:
-  pill: "● Ley 21.719 vigente desde 2026"
+  pill: "● Desde la Araucanía · para Chile"
   badge_label: "NUEVO"
-  badge_text: "Empieza por el módulo que necesitas hoy →"
+  badge_text: "Empieza por donde más duele hoy →"
   titulo_lineas:
-    - "Cumplimiento"
-    - "<em>modular</em> para"
-    - "la nueva ley"
-    - "de datos."
+    - "Tecnología real"
+    - "para empresas"
+    - "<em>que quieren</em>"
+    - "avanzar."
   descripcion: >
-    DataShield acompaña a empresas chilenas en el cumplimiento de la
-    <strong>Ley 21.719</strong>. Cinco módulos independientes, una plataforma
-    integrada y consultores senior para implementar solo lo que tu empresa
-    necesita, cuando lo necesita.
+    DataShield acompaña a empresas de la Araucanía y Chile en su camino hacia
+    la modernización: datos limpios, procesos sin redundancias, inteligencia
+    artificial aplicada y cumplimiento legal. Sin humo, sin soluciones
+    genéricas — empezamos con un <strong>assessment honesto</strong> de tu
+    realidad y construimos desde ahí.
   cta_primario:
-    label: "Agendar diagnóstico →"
+    label: "Agendar assessment gratis →"
     href: "#cta"
   cta_secundario:
-    label: "Ver módulos"
+    label: "Ver servicios"
     href: "#modulos"
   trust_items:
-    - "Diagnóstico gratuito de 60 min con consultor senior"
-    - "Empieza por un módulo · suma el resto en etapas"
-    - "Documentación lista para fiscalización"
+    - "Assessment gratuito de 60 min con consultor senior"
+    - "Sin humo — te decimos lo que realmente necesitas"
+    - "Desde la Araucanía, con visión global"
 
 footer:
   descripcion: >
-    Consultoría modular y plataforma de cumplimiento para empresas
-    chilenas sujetas a la Ley 21.719 de Protección de Datos Personales.
+    Consultoría tecnológica desde Temuco, La Araucanía. Modernización de procesos,
+    datos limpios, IA aplicada y cumplimiento de la Ley 21.719.
   legal: "Privacidad · Términos · Ética profesional"

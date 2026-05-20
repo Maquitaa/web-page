@@ -1,23 +1,21 @@
 ## ─────────────────────────────────────────────
-##  Sección de llamada a la acción (CTA final)
+##  CTA final
+##  Cambia cta_href por tu link de Calendly cuando lo tengas
 ## ─────────────────────────────────────────────
 
-mono: "Comencemos por el principio"
-titulo: "Un diagnóstico <em>gratuito</em> de 60 minutos basta para saber por dónde empezar."
+mono: "Empecemos con honestidad"
+titulo: "Un assessment <em>gratuito</em> de 60 minutos. Sin compromiso, sin discurso de ventas."
 descripcion: >
-  Sin compromiso, sin discurso comercial. Una conversación honesta con un consultor
-  senior sobre la realidad de tu empresa frente a la Ley 21.719, los riesgos
-  prioritarios y qué módulo recomendamos para empezar.
+  Una conversación real con un consultor senior sobre tu empresa: dónde están
+  los problemas, qué se puede mejorar, qué tecnología tiene sentido y qué no.
+  Si no somos la opción correcta para ti, también te lo decimos.
 
-caja_titulo: "Qué te llevas del diagnóstico"
+caja_titulo: "Qué te llevas del assessment"
 caja_items:
-  - "Mapa de obligaciones aplicables a tu empresa"
-  - "Identificación de los 3 riesgos prioritarios"
-  - "Recomendación del módulo de partida"
-  - "Estimación de plazos y esfuerzo"
+  - "Diagnóstico honesto de tu madurez tecnológica"
+  - "Los 3 problemas prioritarios que más impactan tu negocio"
+  - "Qué solución recomendamos y por qué"
+  - "Estimación de tiempos, costos y retorno esperado"
 
-cta_label: "Agendar diagnóstico →"
-# Para conectar el formulario, agrega tu enlace de Calendly o Formspree aquí:
+cta_label: "Agendar assessment gratis →"
 cta_href: "#"
-# Ejemplo con Calendly: cta_href: "https://calendly.com/tu-usuario/diagnostico"
-# Ejemplo con Formspree: usa el include _includes/form-contacto.html

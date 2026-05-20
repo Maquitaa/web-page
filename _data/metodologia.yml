@@ -1,39 +1,43 @@
 ## ─────────────────────────────────────────────
-##  Etapas de la metodología
+##  Cómo trabajamos — etapas
 ## ─────────────────────────────────────────────
 
 - numero: "01"
-  etapa: "Diagnóstico"
-  titulo: "Evaluamos tu <em>punto de partida</em>"
+  etapa: "Assessment"
+  titulo: "Entendemos tu <em>realidad actual</em>"
   descripcion: >
-    Sesión gratuita de 60 minutos con un consultor senior. Revisamos el estado
-    actual, los riesgos prioritarios y qué módulos tienen mayor impacto.
-  meta_izq: "Sin compromiso"
+    60 minutos con un consultor senior. Sin PowerPoint de ventas — solo
+    preguntas honestas sobre tus procesos, datos y tecnología. Al terminar
+    sabes exactamente dónde estás parado y qué opciones tienes.
+  meta_izq: "Gratis · sin compromiso"
   meta_der: "60 min"
 
 - numero: "02"
-  etapa: "Diseño"
-  titulo: "Hoja de ruta <em>modular</em>"
+  etapa: "Diagnóstico"
+  titulo: "Mapa claro de <em>qué hacer</em>"
   descripcion: >
-    Plan de implementación con fases, entregables y métricas. Tú decides el
-    ritmo y el alcance — sin paquetes forzados.
-  meta_izq: "Plan escrito"
+    Entregamos un documento con hallazgos, oportunidades priorizadas y una
+    hoja de ruta concreta. Tú decides qué abordar primero según tu presupuesto
+    y urgencia — sin paquetes forzados.
+  meta_izq: "Entregable escrito"
   meta_der: "1–2 semanas"
 
 - numero: "03"
   etapa: "Implementación"
-  titulo: "Trabajamos <em>codo a codo</em>"
+  titulo: "Construimos <em>codo a codo</em>"
   descripcion: >
-    Implementación acompañada con tus equipos legal, TI y operaciones.
-    Plataforma activa desde la primera semana del módulo.
-  meta_izq: "Acompañado"
+    Trabajamos con tus equipos, no sobre ellos. Cada decisión técnica se
+    explica y se valida contigo. La plataforma o el proceso nuevo funciona
+    desde la primera semana del proyecto.
+  meta_izq: "Con tu equipo"
   meta_der: "4–12 semanas"
 
 - numero: "04"
   etapa: "Traspaso"
-  titulo: "Capacidades <em>instaladas</em>"
+  titulo: "Tu equipo <em>lo opera solo</em>"
   descripcion: >
-    Capacitación a tu equipo interno, documentación viva y revisiones
-    periódicas. Tu autonomía es nuestra métrica de éxito.
-  meta_izq: "Continuo"
-  meta_der: "Recurrente"
+    Capacitamos internamente, documentamos todo y hacemos revisiones periódicas.
+    El éxito lo medimos en que no nos necesites para el día a día — aunque
+    seguimos disponibles cuando la tecnología o el negocio evoluciona.
+  meta_izq: "Autonomía real"
+  meta_der: "Continuo"

@@ -1,15 +1,15 @@
 <!-- ─── NAVEGACIÓN ─────────────────────────────────────────
-     Edita los links en _data/site.yml → nav_links
+     Edita links en _data/site.yml → nav_links
      ──────────────────────────────────────────────────────── -->
 <nav class="nav" role="navigation" aria-label="Navegación principal">
 
-  <a href="/" class="logo" aria-label="{{ site.data.site.nombre }} {{ site.data.site.apellido }}">
-    <div class="logo-mark" aria-hidden="true">
-      <span></span><span></span><span></span><span></span>
-    </div>
-    <div class="logo-text">
-      {{ site.data.site.nombre }} <em>{{ site.data.site.apellido }}</em>
-    </div>
+  <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.data.site.nombre }} {{ site.data.site.apellido }}">
+    <img
+      src="{{ '/assets/img/logo.png' | relative_url }}"
+      alt="{{ site.data.site.nombre }} {{ site.data.site.apellido }}"
+      class="logo-img"
+      height="40"
+    >
   </a>
 
   <div class="nav-links">

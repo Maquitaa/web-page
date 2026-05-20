@@ -1,32 +1,47 @@
 /* ═══════════════════════════════════════════════════════
    DataShield Consulting · main.css
-   Paleta: papel/tinta/dorado · Fraunces + Inter + JetBrains Mono
+   Paleta: bosque araucanía · verde + ocre · Fraunces + Inter + JetBrains Mono
    ═══════════════════════════════════════════════════════ */
 
 /* ── 1. VARIABLES ─────────────────────────────────────── */
 :root {
-  --paper:     #FAFAF7;
-  --paper-2:   #F2F0E8;
-  --paper-3:   #EBE6D6;
-  --ink:       #141413;
-  --ink-2:     #2A2824;
-  --gold:      #B8945A;
-  --gold-deep: #8B6F3E;
-  --gold-soft: #E8D8B4;
-  --gray:      #6B6760;
-  --gray-2:    #A8A29A;
-  --line:      #D8D2C2;
-  --line-2:    #E4DECF;
+  /* Fondos — crema cálida */
+  --paper:     #F5F1E8;
+  --paper-2:   #EDE8D8;
+  --paper-3:   #E4DCC8;
+
+  /* Tinta — verde bosque profundo (del logo) */
+  --ink:       #1A2E22;
+  --ink-2:     #2D4A38;
+
+  /* Verde primario del logo */
+  --forest:    #1F3D2A;
+  --teal:      #2E7D52;
+
+  /* Dorado / ocre (del logo) */
+  --gold:      #C49A3C;
+  --gold-deep: #9B7A2A;
+  --gold-soft: #ECD99A;
+
+  /* Grises con matiz verde */
+  --gray:      #6B7A6F;
+  --gray-2:    #9AABA0;
+
+  /* Líneas */
+  --line:      #D4CEBC;
+  --line-2:    #DDD7C5;
+
+  /* Semáforo */
   --red:       #A33E2C;
-  --green:     #4A7A4A;
+  --green:     #2E7D52;
 
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
   --radius-xl: 18px;
 
-  --shadow-card: 0 1px 0 rgba(20,20,19,.04), 0 30px 60px -30px rgba(20,20,19,.12);
-  --shadow-hover: 0 24px 48px -20px rgba(20,20,19,.18);
+  --shadow-card: 0 1px 0 rgba(26,46,34,.04), 0 30px 60px -30px rgba(26,46,34,.14);
+  --shadow-hover: 0 24px 48px -20px rgba(26,46,34,.20);
   --transition: .2s ease;
 }
 
@@ -91,11 +106,18 @@ img { max-width: 100%; display: block; }
 .btn-gold:hover { background: var(--gold-soft); }
 
 /* ── 5. NAVEGACIÓN ────────────────────────────────────── */
+.logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
 .nav {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 250, 247, .86);
+  background: rgba(245, 241, 232, .92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
