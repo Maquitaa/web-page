@@ -1,42 +1,41 @@
 ## ─────────────────────────────────────────────
-##  Sección Nosotros
+##  Sección Nosotros — credenciales reales
 ## ─────────────────────────────────────────────
 
 mono: "Quiénes somos"
-titulo: "Ingenieros y abogados con 13 años de experiencia en el <em>mundo del dato</em>."
+titulo: "Ingenieros y abogados. <em>De Temuco.</em> Con 14 años haciendo esto en Chile y el mundo."
 descripcion: >
-  DataShield nació desde la Araucanía con una convicción: que las empresas
-  chilenas merecen acceso a metodologías y tecnologías de clase mundial,
-  con profesionales que entienden su realidad concreta.
+  Somos una familia de La Araucanía. Entendemos cómo operan las empresas chilenas
+  porque somos parte de ellas — con la misma realidad, los mismos sistemas y los
+  mismos desafíos que enfrenta tu equipo hoy.
 
 descripcion_2: >
-  Combinamos arquitectura de datos de clase enterprise con conocimiento legal
-  en protección de datos — dos disciplinas que raramente van juntas, y que son
-  exactamente lo que necesita una empresa que quiere transformarse sin exponerse.
-  Trayectoria real en proyectos de transformación digital en Chile y el extranjero,
-  incluyendo cumplimiento de GDPR europeo y marcos regulatorios internacionales.
+  Lo que nos diferencia no es solo la experiencia técnica: es que combinamos
+  ingeniería de datos de clase enterprise con conocimiento legal real, y lo
+  aplicamos al contexto concreto de las empresas del sur de Chile. No traemos
+  metodologías genéricas — traemos soluciones que se implementan de verdad.
 
 credenciales:
-  - valor: "13+"
-    label: "años de experiencia en datos y tecnología"
-  - valor: "1.150"
-    label: "Calculation Views SAP construidas en producción"
-  - valor: "3"
-    label: "agentes IA implementados en producción"
+  - valor: "14+"
+    label: "años de experiencia en Chile y EE.UU."
+  - valor: "100TB+"
+    label: "infraestructura gestionada con 20+ conectores"
+  - valor: "S/4"
+    label: "migraciones SAP exitosas on-premise y cloud"
 
 areas:
   - icono: "◈"
-    titulo: "Arquitectura de datos"
-    descripcion: "SAP HANA · Microsoft Fabric · AWS · Azure. Diseño e implementación de infraestructuras escalables y gobernadas."
-
-  - icono: "§"
-    titulo: "Derecho y cumplimiento"
-    descripcion: "Ley 21.719 · GDPR · marcos LATAM. Desde la redacción de políticas hasta la carga de la prueba."
+    titulo: "Arquitectura & migraciones de datos"
+    descripcion: "SAP S/4 · AWS · Azure · on-premise → cloud. Migraciones reales con continuidad operativa y cero pérdida de datos."
 
   - icono: "▦"
-    titulo: "Inteligencia artificial"
-    descripcion: "Agentes IA · automatización · LLM. Implementaciones reales en producción, no pilotos que no escalan."
+    titulo: "Inteligencia artificial aplicada"
+    descripcion: "Agentes IA en producción, automatización de procesos, LLMs integrados con los sistemas que ya usas."
+
+  - icono: "§"
+    titulo: "Derecho & cumplimiento"
+    descripcion: "Ley 21.719 · GDPR · marcos LATAM. Desde la política de privacidad hasta la carga de la prueba ante la Agencia."
 
   - icono: "⚿"
-    titulo: "Ciberseguridad"
-    descripcion: "Evaluación de riesgos, políticas de acceso y respuesta ante incidentes con protocolo documentado."
+    titulo: "Infraestructura & ciberseguridad"
+    descripcion: "Evaluación de riesgos, gestión de 100TB+ con múltiples conectores, respuesta ante incidentes con protocolo documentado."

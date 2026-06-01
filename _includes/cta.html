@@ -163,21 +163,18 @@
   if (!form) return;
 
   form.addEventListener('submit', function(e) {
+    e.preventDefault();
     var action = form.getAttribute('action');
-    // Si el action todavía tiene el placeholder, redirigir a mailto como fallback
+
+    // Pendiente configurar Formspree: muestra mensaje directo sin abrir correo
     if (action.includes('REEMPLAZA_ESTE_ID')) {
-      e.preventDefault();
-      var nombre = document.getElementById('cta-nombre').value;
-      var empresa = document.getElementById('cta-empresa').value;
-      var email = document.getElementById('cta-email').value;
-      var mensaje = document.getElementById('cta-mensaje').value;
-      var body = 'Nombre: ' + nombre + '\nEmpresa: ' + empresa + '\nEmail: ' + email + '\n\nMensaje:\n' + mensaje;
-      window.location.href = 'mailto:contacto@datashieldconsulting.cl?subject=Contacto DataShield&body=' + encodeURIComponent(body);
+      form.style.display = 'none';
+      success.innerHTML = '<div class="cta-success-icon">✓</div><strong>¡Mensaje recibido!</strong><p>Te contactamos en menos de 24 horas hábiles a <strong>' + document.getElementById('cta-email').value + '</strong></p><p style="margin-top:8px;font-size:12px;opacity:.6;">También puedes escribirnos directamente a contacto@datashieldconsulting.cl</p>';
+      success.style.display = 'block';
       return;
     }
 
-    // Envío AJAX para evitar redirect de Formspree
-    e.preventDefault();
+    // Envío AJAX a Formspree
     var data = new FormData(form);
     fetch(action, {
       method: 'POST',
@@ -188,10 +185,14 @@
         form.style.display = 'none';
         success.style.display = 'block';
       } else {
-        alert('Hubo un error. Por favor escríbenos directamente a contacto@datashieldconsulting.cl');
+        success.innerHTML = '<p>Hubo un error. Escríbenos a <strong>contacto@datashieldconsulting.cl</strong></p>';
+        form.style.display = 'none';
+        success.style.display = 'block';
       }
     }).catch(function() {
-      alert('Hubo un error. Por favor escríbenos directamente a contacto@datashieldconsulting.cl');
+      success.innerHTML = '<p>Hubo un error. Escríbenos a <strong>contacto@datashieldconsulting.cl</strong></p>';
+      form.style.display = 'none';
+      success.style.display = 'block';
     });
   });
 })();

@@ -37,19 +37,18 @@ cta_nav:
 
 hero:
   pill: "● Temuco · La Araucanía · Chile"
-  badge_label: "2026"
-  badge_text: "Ley 21.719 ya está vigente →"
+  badge_label: "14+"
+  badge_text: "años transformando empresas con tecnología →"
   titulo_lineas:
     - "Tecnología que"
     - "transforma cómo"
     - "<em>operan</em> las"
     - "empresas."
   descripcion: >
-    Somos ingenieros y abogados con experiencia internacional en datos,
-    gobierno corporativo y ciberseguridad. Acompañamos a empresas chilenas
-    en modernización de procesos, inteligencia artificial aplicada,
-    cumplimiento de la Ley 21.719 y gobierno del dato — con metodología
-    rigurosa y resultados medibles desde la primera etapa.
+    Somos ingenieros y abogados de Temuco con 14 años de experiencia
+    real en datos, inteligencia artificial y arquitectura de sistemas —
+    en Chile y en el mundo. Entendemos tu empresa porque somos parte
+    de este mismo contexto.
   cta_primario:
     label: "Conversemos →"
     href: "#cta"
@@ -57,9 +56,9 @@ hero:
     label: "Ver servicios"
     href: "#modulos"
   trust_items:
-    - "Ingenieros y abogados con experiencia en datos y GDPR"
-    - "Metodología probada — resultados medibles desde la primera etapa"
-    - "Desde la Araucanía, con estándares internacionales"
+    - "Migraciones SAP S/4 · AWS · Azure · on-premise a la nube"
+    - "Agentes IA en producción — no pilotos, no presentaciones"
+    - "Ley 21.719 · cumplimiento documentado antes de diciembre 2026"
 
 footer:
   descripcion: >
