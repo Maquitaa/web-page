@@ -56,9 +56,11 @@ hero:
     label: "Ver servicios"
     href: "#modulos"
   trust_items:
+    - "14 años de experiencia real en Chile y el mundo — no teoría"
     - "Migraciones SAP S/4 · AWS · Azure · on-premise a la nube"
     - "Agentes IA en producción — no pilotos, no presentaciones"
-    - "Ley 21.719 · cumplimiento documentado antes de diciembre 2026"
+    - "Ley 21.719 · cumplimiento modular antes de diciembre 2026"
+    - "Somos de La Araucanía · conocemos tu realidad"
 
 footer:
   descripcion: >

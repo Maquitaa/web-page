@@ -25,7 +25,7 @@
           {% assign mod_class = "mod" %}
         {% endif %}
 
-      <article class="{{ mod_class }}">
+      <article class="{{ mod_class }}" id="mod-{{ mod.codigo | downcase | replace: '.', '' }}">
         <div class="mod-top">
           <span class="mod-code">{{ mod.etiqueta }}</span>
           <div class="mod-icon" aria-hidden="true">{{ mod.icono }}</div>
@@ -46,7 +46,26 @@
           </ul>
         {% endif %}
 
-        <a href="#cta" class="mod-link">{{ mod.cta }}</a>
+        {% if mod.detalle_titulo %}
+          <button class="mod-link mod-detail-toggle" data-target="det-{{ mod.codigo | downcase | replace: '.', '' }}" type="button">
+            {{ mod.cta }} <span class="mod-detail-arrow">↓</span>
+          </button>
+
+          <div class="mod-detail" id="det-{{ mod.codigo | downcase | replace: '.', '' }}" hidden>
+            <h4>{{ mod.detalle_titulo }}</h4>
+            <p>{{ mod.detalle_descripcion }}</p>
+            {% if mod.detalle_bullets %}
+            <ul class="mod-detail-list">
+              {% for b in mod.detalle_bullets %}
+                <li>{{ b }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+            <a href="#cta" class="mod-detail-cta btn btn-primary">Conversemos sobre esto →</a>
+          </div>
+        {% else %}
+          <a href="#cta" class="mod-link">{{ mod.cta }}</a>
+        {% endif %}
       </article>
 
       {% endfor %}
@@ -60,13 +79,17 @@
   <div class="bp-head">
     <div class="bp-head-left">
       <span class="bp-badge">Mapa del sistema</span>
-      <h3>Todos los servicios se <em>combinan</em> según lo que necesitas</h3>
+      <h3>Servicios <em>modulares</em> — solo lo que necesitas, cuando lo necesitas</h3>
     </div>
-    <div class="bp-legend">
-      <span class="fill">Fundacional</span>
-      <span class="gold">Operacional</span>
-      <span class="dash">Opcional</span>
+    <div class="bp-head-note" style="font-size:13px;color:var(--gray);max-width:380px;line-height:1.5;text-align:right;">
+      No es un SaaS. No hay paquete fijo. Cada empresa parte desde donde está y suma módulos según sus objetivos.
     </div>
+  </div>
+  <div class="bp-legend" style="padding-bottom:20px;border-bottom:1px dashed var(--line);margin-bottom:20px;">
+    <span class="fill">Fundacional</span>
+    <span class="gold">Operacional</span>
+    <span class="dash">Opcional</span>
+    <span style="margin-left:auto;font-style:italic;opacity:.7;">Todo puede ir solo o en conjunto →</span>
   </div>
   <div class="bp-grid">
     <div class="bp-cell fill span-4"><div class="bp-cell-label"><span>S.01</span></div><div class="bp-cell-value">Assessment & Diagnóstico</div></div>
@@ -74,7 +97,111 @@
     <div class="bp-cell span-3"><div class="bp-cell-label"><span>S.03</span></div><div class="bp-cell-value">Ciberseguridad & Riesgo</div></div>
     <div class="bp-cell dash span-2"><div class="bp-cell-label"><span>OPC.</span></div><div class="bp-cell-value" style="font-size:14px">DPO externo</div></div>
     <div class="bp-cell span-6"><div class="bp-cell-label"><span>S.04</span></div><div class="bp-cell-value">Cumplimiento Ley 21.719 — modular, documentado, antes de diciembre 2026</div></div>
-    <div class="bp-cell dash span-4"><div class="bp-cell-label"><span>CONTINUO</span></div><div class="bp-cell-value" style="font-size:14px">Soporte y revisiones — tu equipo opera solo</div></div>
+    <div class="bp-cell dash span-4"><div class="bp-cell-label"><span>CONTINUO</span></div><div class="bp-cell-value" style="font-size:14px">Soporte, workshops y acompañamiento — tu equipo opera solo</div></div>
     <div class="bp-cell gold span-2"><div class="bp-cell-label"><span>INICIO</span></div><div class="bp-cell-value" style="font-size:14px">60 min · diagnóstico gratis</div></div>
   </div>
 </div>
+
+<style>
+/* ── Paneles de detalle expandibles ── */
+.mod-detail-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  align-self: flex-start;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  transition: opacity .2s;
+}
+.mod-detail-toggle:hover { opacity: .7; }
+.mod-detail-toggle.open .mod-detail-arrow { transform: rotate(180deg); }
+.mod-detail-arrow { transition: transform .3s; display: inline-block; }
+
+.mod-detail {
+  margin-top: 20px;
+  padding: 24px;
+  background: rgba(46,125,82,.06);
+  border: 1px solid rgba(46,125,82,.2);
+  border-radius: var(--radius-md);
+  animation: detailOpen .25s ease;
+}
+.mod.oscuro .mod-detail {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.15);
+}
+@keyframes detailOpen {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.mod-detail h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.mod.oscuro .mod-detail h4 { color: var(--paper); }
+.mod-detail > p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+.mod.oscuro .mod-detail > p { color: rgba(245,241,232,.7); }
+.mod-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.mod-detail-list li {
+  font-size: 13px;
+  color: var(--ink-2);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.45;
+}
+.mod.oscuro .mod-detail-list li { color: rgba(245,241,232,.8); }
+.mod-detail-list li::before {
+  content: '→';
+  color: var(--teal);
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 12px;
+}
+.mod.oscuro .mod-detail-list li::before { color: var(--gold); }
+.mod-detail-cta {
+  font-size: 13px;
+  padding: 9px 16px;
+}
+</style>
+
+<script>
+(function() {
+  document.querySelectorAll('.mod-detail-toggle').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = btn.getAttribute('data-target');
+      var panel = document.getElementById(targetId);
+      if (!panel) return;
+      var isOpen = !panel.hidden;
+      panel.hidden = isOpen;
+      btn.classList.toggle('open', !isOpen);
+      if (!isOpen) {
+        // scroll into view gently
+        setTimeout(function() {
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 50);
+      }
+    });
+  });
+})();
+</script>

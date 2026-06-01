@@ -24,6 +24,19 @@
     - "Análisis de exposición legal Ley 21.719"
     - "Hoja de ruta priorizada con estimación de impacto"
   cta: "Agendar diagnóstico →"
+  detalle_titulo: "¿Para qué sirve el diagnóstico?"
+  detalle_descripcion: >
+    Muchas empresas llegan a nosotros con soluciones en mente — un sistema nuevo, una herramienta de IA,
+    un proceso automatizado. Lo primero que hacemos es detenernos y mirar la realidad completa:
+    cómo fluye la información, dónde se pierde tiempo, qué sistemas existen y qué tanto se usan,
+    y cuál es la exposición real frente a la Ley 21.719. Con esa foto, entregamos un mapa claro
+    de prioridades — qué hacer primero, por qué, y qué impacto puedes esperar.
+  detalle_bullets:
+    - "Sesiones de trabajo con tu equipo para entender los flujos reales"
+    - "Inventario de sistemas, datos y procesos críticos"
+    - "Diagnóstico de brechas de cumplimiento legal"
+    - "Hoja de ruta con estimación de costos y beneficios"
+    - "Sin compromiso de compra: el diagnóstico es tuyo"
 
 - codigo: "S.02"
   etiqueta: "S.02"
@@ -31,15 +44,29 @@
   tipo: "medio"
   titulo: "Modernización<br><em>de Procesos</em>"
   descripcion: >
-    Eliminamos redundancias, pasos manuales sin valor y tiempos muertos.
-    Automatizamos lo que tiene sentido, rediseñamos flujos y conectamos
-    sistemas que hoy no se hablan. El resultado: menos esfuerzo operativo
-    y más capacidad para lo que importa.
+    Eliminamos los pasos manuales que consumen tiempo sin agregar valor.
+    Conectamos sistemas que hoy no se hablan, automatizamos tareas repetitivas
+    y rediseñamos flujos para que tu equipo se enfoque en lo que importa.
   features:
     - "Rediseño de flujos de trabajo críticos"
-    - "Automatización de procesos repetitivos (RPA)"
-    - "Integración entre sistemas y eliminación de silos"
+    - "Automatización de tareas repetitivas — sin programar nada tú"
+    - "Integración entre sistemas y eliminación de silos de información"
   cta: "Ver servicio →"
+  detalle_titulo: "¿Qué significa 'modernizar procesos'?"
+  detalle_descripcion: >
+    Imagina que hoy tienes a alguien copiando datos de un sistema a otro, o generando
+    el mismo reporte manualmente cada lunes, o enviando correos de confirmación uno por uno.
+    Eso es tiempo y plata que se puede recuperar. Lo que hacemos es mapear esos flujos,
+    identificar dónde está el cuello de botella, y construir soluciones a medida:
+    puede ser una integración entre sistemas, un proceso que corre solo, o un rediseño
+    completo de cómo funciona ese departamento. No imponemos tecnología — encontramos
+    la solución correcta para tu realidad.
+  detalle_bullets:
+    - "Automatización de reportes, correos y aprobaciones repetitivas"
+    - "Integración entre ERPs, CRMs, planillas y sistemas internos"
+    - "Eliminación de doble ingreso de datos y errores manuales"
+    - "Flujos de trabajo digitales que tu equipo puede operar solo"
+    - "Acompañamiento en la adopción — no solo entregamos, enseñamos"
 
 - codigo: "S.03"
   etiqueta: "S.03"
@@ -51,6 +78,22 @@
     Estructuramos, limpiamos y gobernamos la información para que
     sea un activo real, no una fuente de errores.
   cta: "Ver servicio →"
+  detalle_titulo: "¿Qué es el gobierno del dato y por qué importa?"
+  detalle_descripcion: >
+    El gobierno del dato es la práctica de definir quién es responsable de qué información,
+    cómo se organiza, qué significa cada campo, y cómo aseguramos que sea confiable.
+    Sin eso, la IA falla, los reportes se contradicen y las decisiones se toman sobre supuestos.
+    Trabajamos con el marco DAMA — el estándar internacional de gestión de datos — para construir
+    contigo un gobierno real, adaptado a tu tamaño y tus recursos. Y acá hay algo importante:
+    ninguna herramienta soluciona el gobierno del dato. Lo que lo soluciona es la cultura,
+    los procesos y las personas. Nosotros te acompañamos en ese camino.
+  detalle_bullets:
+    - "Catálogo de datos: qué existe, qué significa, quién lo dueña"
+    - "Linaje de datos: de dónde viene cada cifra y cómo se transforma"
+    - "Calidad del dato: reglas, validaciones y monitoreo continuo"
+    - "Marco DAMA adaptado a tu organización (rueda DAMA)"
+    - "Gobierno como base para cumplir la Ley 21.719"
+    - "Cultura del dato: talleres y formación para tu equipo"
 
 - codigo: "S.04"
   etiqueta: "S.04"
@@ -62,6 +105,20 @@
     análisis predictivo, automatización inteligente y asistentes internos.
     Con datos limpios, arquitectura correcta y casos de uso validados.
   cta: "Ver servicio →"
+  detalle_titulo: "IA que hace algo real — no pilotos, no demos"
+  detalle_descripcion: >
+    La IA no es magia y no reemplaza a las personas — es una herramienta que,
+    bien implementada, puede ahorrarte horas de trabajo, mejorar tus reportes
+    y ayudarte a tomar mejores decisiones. Lo que hacemos es distinto a vender
+    un software: entendemos tu problema, validamos que la IA sea la solución correcta,
+    y la implementamos integrada a los sistemas que ya usas. Sin datos limpios no hay IA
+    que funcione — por eso siempre partimos por el gobierno del dato.
+  detalle_bullets:
+    - "Asistentes internos que responden preguntas sobre tu propio negocio"
+    - "Análisis predictivo: anticipar demanda, riesgo o comportamiento"
+    - "Automatización inteligente de clasificación, revisión y resumen de documentos"
+    - "Integración con ERPs, CRMs y bases de datos propias"
+    - "Capacitación a tu equipo para entender y operar la solución"
 
 - codigo: "S.05"
   etiqueta: "S.05"
@@ -73,6 +130,19 @@
     a los equipos para responder ante incidentes. Cumplimiento de la
     Ley 21.719 incluido.
   cta: "Ver servicio →"
+  detalle_titulo: "Seguridad que no paraliza tu operación"
+  detalle_descripcion: >
+    Ciberseguridad no significa prohibir todo. Significa saber qué exponer,
+    a quién, y cómo responder si algo sale mal. Evaluamos la postura real
+    de tu empresa — no contra un checklist genérico — y construimos controles
+    que se adaptan a tu operación. La Ley 21.719 exige notificar brechas de datos
+    en 72 horas: prepararte para eso no es opcional.
+  detalle_bullets:
+    - "Evaluación de vulnerabilidades y análisis de riesgo"
+    - "Política de accesos y gestión de identidades"
+    - "Plan de respuesta ante incidentes de seguridad"
+    - "Cumplimiento de requisitos de seguridad de la Ley 21.719"
+    - "Simulacros y capacitación al equipo"
 
 - codigo: "S.06"
   etiqueta: "S.06 · CUMPLIMIENTO LEGAL"
@@ -80,8 +150,59 @@
   tipo: "oscuro"
   titulo: "Ley 21.719 &amp; <em>Cumplimiento</em>"
   descripcion: >
-    La ley de protección de datos personales ya está vigente en Chile.
-    Acompañamos a las empresas en el cumplimiento modular: desde el inventario
-    de datos y la gestión de consentimientos hasta la notificación de brechas,
-    auditoría y DPO externo.
-  cta: "Ver servicio →"
+    La ley de protección de datos personales ya está vigente en Chile y el plazo
+    para cumplir es diciembre 2026. Te acompañamos en el camino completo:
+    desde entender qué datos tienes hasta estar listos para cualquier fiscalización.
+    Modular, documentado, sin impactar tu operación.
+  features:
+    - "Inventario y clasificación de datos personales"
+    - "Gestión de consentimientos y derechos ARCO"
+    - "Registro de Actividades de Tratamiento (RAT)"
+    - "Protocolo de notificación de brechas en 72 horas"
+    - "DPO externo disponible"
+    - "Capacitación a toda la organización"
+  cta: "Evaluar mi cumplimiento →"
+  detalle_titulo: "¿Qué pasa si no cumples antes de diciembre 2026?"
+  detalle_descripcion: >
+    La Ley 21.719 ya está vigente. Las multas pueden llegar a 5.000 UTM (~$350M CLP)
+    y la Agencia de Protección de Datos puede fiscalizar sin aviso previo.
+    Pero más allá de las multas, el incumplimiento daña la confianza de tus clientes
+    y puede paralizar operaciones. Te acompañamos de forma modular: partimos por lo
+    más crítico y avanzamos a tu ritmo, con evidencia documentada en cada paso.
+  detalle_bullets:
+    - "Diagnóstico inicial de exposición legal gratuito"
+    - "Inventario completo de datos personales que tratas"
+    - "Políticas de privacidad y consentimiento actualizadas"
+    - "Registro RAT listo para presentar a la Agencia"
+    - "Protocolo de respuesta ante solicitudes de titulares (ARCO)"
+    - "DPO externo: cumples sin contratar un cargo full-time"
+
+- codigo: "S.07"
+  etiqueta: "S.07 · FORMACIÓN"
+  icono: "◉"
+  tipo: "oscuro"
+  titulo: "Workshops &amp; <em>Acompañamiento</em>"
+  descripcion: >
+    La tecnología sola no transforma nada. Lo que transforma son las personas
+    que la entienden y la usan bien. Hacemos talleres prácticos de IA, gobierno
+    del dato, GDPR y ciberseguridad — para equipos que quieren crecer, no depender.
+  features:
+    - "Workshop de Inteligencia Artificial para equipos no técnicos"
+    - "Taller de Gobierno del Dato y marco DAMA"
+    - "Formación en Ley 21.719 y protección de datos personales"
+    - "Soporte tecnológico continuo post-implementación"
+    - "Acompañamiento en adopción de nuevas herramientas"
+  cta: "Ver workshops →"
+  detalle_titulo: "Aprender haciendo — no solo en PowerPoint"
+  detalle_descripcion: >
+    Nuestros workshops son prácticos, en español, y adaptados a la realidad
+    de tu empresa. No enseñamos teoría desconectada — enseñamos con los datos
+    y sistemas que ya usa tu equipo. El objetivo es que después del taller,
+    tu gente pueda tomar mejores decisiones, entender qué hace la tecnología,
+    y no depender de un externo para operar lo que construimos juntos.
+  detalle_bullets:
+    - "Taller de IA: qué puede hacer, qué no puede hacer y cómo usarla bien"
+    - "Gobierno del dato: cómo organizar la información de tu empresa"
+    - "Ley 21.719 para no abogados: qué significa y qué debes hacer"
+    - "Soporte tecnológico mensual: alguien disponible cuando algo no funciona"
+    - "Talleres a medida para el equipo que lo necesita"
