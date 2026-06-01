@@ -1,7 +1,6 @@
 <!-- ─── HERO: VIDEO FULLSCREEN + CONTENIDO DEBAJO ─────────────
      Sección 1: video 100vh con solo el titular
      Sección 2: descripción, CTAs, trust items
-     Sección 3: blueprint modular
      Edita textos en _data/site.yml → hero
      ──────────────────────────────────────────────────────── -->
 {% assign h = site.data.site.hero %}
@@ -22,40 +21,30 @@
     <source src="{{ '/assets/video/hero.mp4' | relative_url }}" type="video/mp4">
   </video>
 
-  <!-- Overlay oscuro para legibilidad -->
   <div class="hero-fs-overlay" aria-hidden="true"></div>
 
-  <!-- Contenido sobre el video -->
   <div class="hero-fs-content">
-
     <div class="hero-fs-meta" aria-hidden="true">
       {{ s.nombre }} {{ s.apellido }} · {{ s.ciudad }} · {{ s.ano }}
     </div>
-
     <h1 class="hero-fs-title">
       {% for line in h.titulo_lineas %}
         <span>{{ line }}</span>
       {% endfor %}
     </h1>
-
     <a href="#hero-content" class="hero-fs-scroll" aria-label="Ver más">
       <span class="hero-fs-scroll-label">Descubre cómo</span>
       <span class="hero-fs-scroll-arrow" aria-hidden="true">↓</span>
     </a>
-
   </div>
 
 </section>
 
-<!-- ══ SECCIÓN 2: CONTENIDO PRINCIPAL ═══════════════════════ -->
+<!-- ══ SECCIÓN 2: DESCRIPCIÓN + CTAs ════════════════════════ -->
 <section class="hero-content" id="hero-content">
   <div class="hero-content-inner">
 
     <div class="hero-content-left">
-      <div class="badge-pill">
-        <span class="badge-label">{{ h.badge_label }}</span>
-        <span class="badge-text">{{ h.badge_text }}</span>
-      </div>
       <p class="hero-content-desc">{{ h.descripcion }}</p>
       <div class="hero-cta">
         <a href="{{ h.cta_primario.href }}" class="btn btn-primary">{{ h.cta_primario.label }}</a>
@@ -76,52 +65,3 @@
 
   </div>
 </section>
-
-<!-- ══ SECCIÓN 3: BLUEPRINT MODULAR ════════════════════════ -->
-<div class="blueprint" id="modulos-mini">
-  <div class="bp-head">
-    <div class="bp-head-left">
-      <span class="bp-badge">DS-2026 / v.04</span>
-      <h3>El sistema, <em>compuesto pieza por pieza</em></h3>
-    </div>
-    <div class="bp-legend">
-      <span class="fill">Fundacional</span>
-      <span class="gold">Operacional</span>
-      <span class="dash">Opcional</span>
-    </div>
-  </div>
-  <div class="bp-grid">
-    <div class="bp-cell fill span-4">
-      <div class="bp-cell-label"><span>M.01</span></div>
-      <div class="bp-cell-value">Inventario &amp; Mapeo de Datos</div>
-    </div>
-    <div class="bp-cell gold span-3">
-      <div class="bp-cell-label"><span>M.02</span></div>
-      <div class="bp-cell-value">Consentimientos &amp; Derechos</div>
-    </div>
-    <div class="bp-cell span-3">
-      <div class="bp-cell-label"><span>M.03</span></div>
-      <div class="bp-cell-value">Riesgos &amp; Seguridad</div>
-    </div>
-    <div class="bp-cell dash span-2">
-      <div class="bp-cell-label"><span>OPC.</span></div>
-      <div class="bp-cell-value" style="font-size:14px">DPO externo</div>
-    </div>
-    <div class="bp-cell span-3">
-      <div class="bp-cell-label"><span>M.04</span></div>
-      <div class="bp-cell-value">Cumplimiento &amp; Auditoría</div>
-    </div>
-    <div class="bp-cell span-3">
-      <div class="bp-cell-label"><span>M.05</span></div>
-      <div class="bp-cell-value">Capacitación &amp; Cultura</div>
-    </div>
-    <div class="bp-cell dash span-4">
-      <div class="bp-cell-label"><span>ACOMPAÑAMIENTO</span></div>
-      <div class="bp-cell-value" style="font-size:14px">Soporte continuo y revisiones periódicas</div>
-    </div>
-    <div class="bp-cell gold span-2">
-      <div class="bp-cell-label"><span>DIAG.</span></div>
-      <div class="bp-cell-value" style="font-size:14px">60 min · gratis</div>
-    </div>
-  </div>
-</div>

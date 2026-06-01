@@ -1,6 +1,9 @@
 <!-- ─── BARRA DE ESTADÍSTICAS ────────────────────────────────
      Edita números en _data/stats.yml
      ──────────────────────────────────────────────────────── -->
+<div class="stats-context">
+  <p class="stats-context-text">La tecnología transforma — y en Chile, diciembre 2026 convierte esa transformación en obligación.</p>
+</div>
 <div class="stats" aria-label="Métricas clave">
   <div class="stats-grid">
     {% for stat in site.data.stats %}
@@ -8,15 +11,29 @@
       <div class="stat-label">{{ stat.label }}</div>
       <div class="stat-value">
         {{ stat.valor }}
-        {% if stat.extra %}
-          <em>{{ stat.extra }}</em>
-        {% endif %}
-        {% if stat.unidad and stat.unidad != "" %}
-          <span class="unit">{{ stat.unidad }}</span>
-        {% endif %}
+        {% if stat.extra %}<em>{{ stat.extra }}</em>{% endif %}
+        {% if stat.unidad and stat.unidad != "" %}<span class="unit">{{ stat.unidad }}</span>{% endif %}
       </div>
       <div class="stat-desc">{{ stat.descripcion }}</div>
     </div>
     {% endfor %}
   </div>
 </div>
+
+<style>
+.stats-context {
+  background: var(--paper, #f5f1e8);
+  padding: 48px 40px 0;
+  text-align: center;
+}
+.stats-context-text {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink-2, #2D4A38);
+  max-width: 680px;
+  margin: 0 auto;
+  opacity: .7;
+}
+</style>
