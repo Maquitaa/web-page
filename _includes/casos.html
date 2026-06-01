@@ -1,0 +1,128 @@
+<!-- ─── CASOS REALES ──────────────────────────────────────────
+     Agentes IA en producción — Grupo Elecmetal
+     Edita en _data/casos.yml
+     ──────────────────────────────────────────────────────── -->
+{% assign casos = site.data.casos %}
+
+<section class="section casos-section" id="casos">
+
+  <div class="section-header">
+    <div class="section-number">§05b</div>
+    <h2>{{ casos.titulo }}</h2>
+    <div class="mono">{{ casos.mono }}</div>
+  </div>
+
+  <p class="casos-intro">{{ casos.intro }}</p>
+
+  <div class="casos-grid">
+    {% for caso in casos.items %}
+    <div class="caso-card">
+      <div class="caso-header">
+        <div class="caso-badge">{{ caso.empresa }}</div>
+        <div class="caso-nombre">{{ caso.nombre }}</div>
+        <div class="caso-tipo">{{ caso.tipo }}</div>
+      </div>
+      <div class="caso-body">
+        <div class="caso-estado">
+          <div class="caso-bloque">
+            <span class="caso-label caso-label--antes">Antes</span>
+            <p>{{ caso.antes }}</p>
+          </div>
+          <div class="caso-bloque">
+            <span class="caso-label caso-label--ahora">Ahora</span>
+            <p>{{ caso.ahora }}</p>
+          </div>
+        </div>
+        <div class="caso-stack">
+          {% for t in caso.stack %}
+          <span class="caso-tag">{{ t }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</section>
+
+<style>
+.casos-section { background: var(--paper-2, #eee9de); }
+.casos-intro {
+  max-width: 680px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--ink-2, #5a5248);
+  line-height: 1.65;
+}
+.casos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.caso-card {
+  background: var(--paper, #f5f1e8);
+  border: 1px solid var(--line, #ddd);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.caso-header {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--line, #ddd);
+}
+.caso-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep, #a07840);
+  background: rgba(160,120,64,.08);
+  border: 1px solid rgba(160,120,64,.2);
+  border-radius: 3px;
+  padding: 3px 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.caso-nombre {
+  font-family: 'Fraunces', serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+.caso-tipo {
+  font-size: 12px;
+  color: var(--ink-2, #5a5248);
+}
+.caso-body { padding: 20px 24px 24px; }
+.caso-estado { display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px; }
+.caso-bloque p { font-size: 13px; line-height: 1.55; margin: 4px 0 0; color: var(--ink-2, #5a5248); }
+.caso-label {
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.caso-label--antes {
+  background: rgba(180,80,60,.1);
+  color: rgba(180,80,60,.9);
+}
+.caso-label--ahora {
+  background: rgba(60,140,80,.1);
+  color: rgba(40,120,60,.9);
+}
+.caso-stack { display: flex; flex-wrap: wrap; gap: 6px; }
+.caso-tag {
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  background: var(--ink, #1a1610);
+  color: var(--paper, #f5f1e8);
+  padding: 3px 8px;
+  border-radius: 3px;
+  opacity: .75;
+}
+</style>

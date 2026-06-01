@@ -3,31 +3,40 @@
 ## ─────────────────────────────────────────────
 
 mono: "Quiénes somos"
-titulo: "Ingenieros y abogados con años de experiencia en el <em>mundo del dato</em>."
+titulo: "Ingenieros y abogados con 13 años de experiencia en el <em>mundo del dato</em>."
 descripcion: >
   DataShield nació desde la Araucanía con una convicción: que las empresas
   chilenas merecen acceso a metodologías y tecnologías de clase mundial,
   con profesionales que entienden su realidad concreta.
 
 descripcion_2: >
-  Nuestro equipo combina experiencia en arquitectura de datos, gobierno
-  corporativo, ciberseguridad y derecho — con trayectoria en proyectos de
-  transformación digital en Chile y el extranjero, incluyendo cumplimiento
-  de GDPR europeo y marcos regulatorios internacionales.
+  Combinamos arquitectura de datos de clase enterprise con conocimiento legal
+  en protección de datos — dos disciplinas que raramente van juntas, y que son
+  exactamente lo que necesita una empresa que quiere transformarse sin exponerse.
+  Trayectoria real en proyectos de transformación digital en Chile y el extranjero,
+  incluyendo cumplimiento de GDPR europeo y marcos regulatorios internacionales.
+
+credenciales:
+  - valor: "13+"
+    label: "años de experiencia en datos y tecnología"
+  - valor: "1.150"
+    label: "Calculation Views SAP construidas en producción"
+  - valor: "3"
+    label: "agentes IA implementados en producción"
 
 areas:
   - icono: "◈"
     titulo: "Arquitectura de datos"
-    descripcion: "Diseño e implementación de infraestructuras de datos escalables y gobernadas."
+    descripcion: "SAP HANA · Microsoft Fabric · AWS · Azure. Diseño e implementación de infraestructuras escalables y gobernadas."
 
   - icono: "§"
     titulo: "Derecho y cumplimiento"
-    descripcion: "Experiencia en GDPR, Ley 21.719 y marcos regulatorios de protección de datos."
+    descripcion: "Ley 21.719 · GDPR · marcos LATAM. Desde la redacción de políticas hasta la carga de la prueba."
 
   - icono: "▦"
     titulo: "Inteligencia artificial"
-    descripcion: "Implementación de modelos y sistemas de IA aplicados a problemas reales de negocio."
+    descripcion: "Agentes IA · automatización · LLM. Implementaciones reales en producción, no pilotos que no escalan."
 
   - icono: "⚿"
     titulo: "Ciberseguridad"
-    descripcion: "Evaluación de riesgos, políticas de acceso y respuesta ante incidentes."
+    descripcion: "Evaluación de riesgos, políticas de acceso y respuesta ante incidentes con protocolo documentado."

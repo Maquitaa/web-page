@@ -2,11 +2,11 @@
 ##  Solo números que podemos defender
 ## ─────────────────────────────────────────────
 
-- label: "Vigencia"
-  valor: "2026"
-  unidad: ""
+- label: "Diciembre 2026"
+  valor: "6"
+  unidad: "meses"
   italica: false
-  descripcion: "Ley 21.719 vigente con fiscalización activa. No es opcional ni postergable."
+  descripcion: "Faltan 6 meses para que la Ley 21.719 entre en vigor con fiscalización activa. El momento de prepararse es ahora."
 
 - label: "Multa máxima"
   valor: "20K"
@@ -20,8 +20,8 @@
   italica: false
   descripcion: "Para reportar brechas de datos a la Agencia y los afectados. Sin protocolo, es imposible cumplir."
 
-- label: "Primeros resultados"
-  valor: "4"
-  unidad: "sem"
+- label: "Experiencia"
+  valor: "13+"
+  unidad: "años"
   italica: false
-  descripcion: "Desde el inicio del proyecto hasta las primeras mejoras implementadas y medibles."
+  descripcion: "En arquitectura de datos, gobierno corporativo y tecnología empresarial en Chile y el extranjero."

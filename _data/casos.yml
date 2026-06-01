@@ -1,0 +1,56 @@
+## ─────────────────────────────────────────────
+##  Casos reales — Agentes IA en producción
+##  Implementados en Grupo Elecmetal
+## ─────────────────────────────────────────────
+
+mono: "Casos reales en producción"
+titulo: "No teoría. Agentes IA <em>implementados y operando</em>."
+intro: >
+  Los tres agentes que siguen están en producción hoy en Grupo Elecmetal —
+  empresa industrial con presencia en Chile, Argentina, Brasil, EE.UU. y China.
+  Misma metodología que aplicamos en cada proyecto DataShield.
+
+items:
+  - nombre: "ARIA"
+    tipo: "Agente Comercial"
+    empresa: "Grupo Elecmetal"
+    antes: >
+      El equipo comercial buscaba información de clientes y catálogo manualmente —
+      tardaba horas por propuesta generada.
+    ahora: >
+      ARIA consulta SAP HANA en tiempo real, sugiere productos y genera borradores
+      de propuesta automáticamente. Minutos por propuesta.
+    stack:
+      - "Claude API"
+      - "Azure AI Foundry"
+      - "SAP HANA"
+      - "RAG"
+
+  - nombre: "AutoTag"
+    tipo: "Etiquetado Inteligente"
+    empresa: "ME Elecmetal"
+    antes: >
+      8.000+ activos de marca en SharePoint sin metadata —
+      nadie encontraba nada en búsquedas internas.
+    ahora: >
+      GPT-4o Vision analiza cada imagen al subir y escribe los metadatos
+      automáticamente. 95% menos tiempo de catalogación.
+    stack:
+      - "GPT-4o Vision"
+      - "Azure Functions"
+      - "SharePoint REST API"
+
+  - nombre: "ETL IA"
+    tipo: "Pipelines Inteligentes"
+    empresa: "Grupo Elecmetal"
+    antes: >
+      Datos en silos: SAP, GeoVictoria, Cogrowers, Veritrade —
+      sin integración, sin visibilidad unificada entre sistemas.
+    ahora: >
+      Arquitectura medallion Bronze→Silver→Gold con agentes que detectan
+      anomalías y generan CVs SAP automáticamente.
+    stack:
+      - "PySpark"
+      - "Delta Lake"
+      - "Microsoft Fabric"
+      - "SAP HANA"

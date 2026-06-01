@@ -3,7 +3,25 @@
      ──────────────────────────────────────────────────────── -->
 {% assign h = site.data.site.hero %}
 
-<section class="hero">
+<section class="hero hero--video">
+
+  <!-- ── VIDEO DE FONDO ───────────────────────────────────────
+       Pon tu archivo en assets/video/hero.mp4
+       El video corre en loop, sin sonido, automáticamente.
+       En móvil se desactiva para ahorrar datos.
+       ──────────────────────────────────────────────────────── -->
+  <video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    aria-hidden="true"
+  >
+    <source src="{{ '/assets/video/hero.mp4' | relative_url }}" type="video/mp4">
+  </video>
+  <div class="hero-video-overlay" aria-hidden="true"></div>
 
   <div class="hero-meta">
     <div>{{ site.data.site.nombre }} {{ site.data.site.apellido }} · {{ site.data.site.ciudad }} · {{ site.data.site.ano }}</div>

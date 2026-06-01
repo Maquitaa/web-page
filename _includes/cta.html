@@ -1,7 +1,8 @@
 <!-- ─── CTA FINAL ─────────────────────────────────────────────
      Edita en _data/cta.yml
-     Para conectar un formulario real, cambia cta_href en cta.yml
-     a tu link de Calendly, Typeform, o deja "#" para el form interno.
+     FORMULARIO: Usa Formspree → ve a https://formspree.io, crea una
+     cuenta gratuita, conecta el form a contacto@datashieldconsulting.cl y reemplaza
+     el action de abajo con tu endpoint (ej: https://formspree.io/f/xbjnwpkz)
      ──────────────────────────────────────────────────────── -->
 {% assign c = site.data.cta %}
 
@@ -21,10 +22,177 @@
           <li>{{ item }}</li>
         {% endfor %}
       </ul>
-      <a href="{{ c.cta_href }}" class="btn btn-gold" style="width:100%;justify-content:center">
-        {{ c.cta_label }}
-      </a>
+
+      <!-- ── FORMULARIO DE CONTACTO ───────────────────────── -->
+      <!-- 1. Ve a https://formspree.io y crea tu form gratis  -->
+      <!-- 2. Reemplaza la URL del action con tu endpoint      -->
+      <form
+        action="https://formspree.io/f/REEMPLAZA_ESTE_ID"
+        method="POST"
+        class="cta-form"
+        id="cta-form"
+      >
+        <!-- Campos ocultos para Formspree -->
+        <input type="hidden" name="_subject" value="Nuevo contacto — DataShield Consulting">
+        <input type="hidden" name="_next" value="https://datashieldconsulting.cl#cta">
+        <!-- Anti-spam honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <div class="cta-form-row">
+          <div class="cta-form-field">
+            <label for="cta-nombre">Nombre</label>
+            <input
+              type="text"
+              id="cta-nombre"
+              name="nombre"
+              placeholder="María González"
+              required
+              autocomplete="name"
+            >
+          </div>
+          <div class="cta-form-field">
+            <label for="cta-empresa">Empresa</label>
+            <input
+              type="text"
+              id="cta-empresa"
+              name="empresa"
+              placeholder="Mi empresa S.A."
+              required
+            >
+          </div>
+        </div>
+
+        <div class="cta-form-field">
+          <label for="cta-email">Correo electrónico</label>
+          <input
+            type="email"
+            id="cta-email"
+            name="email"
+            placeholder="maria@empresa.cl"
+            required
+            autocomplete="email"
+          >
+        </div>
+
+        <div class="cta-form-field">
+          <label for="cta-mensaje">¿Cuál es tu principal desafío? <span class="form-optional">(opcional)</span></label>
+          <textarea
+            id="cta-mensaje"
+            name="mensaje"
+            rows="3"
+            placeholder="Ej: Necesitamos cumplir con la Ley 21.719 antes de diciembre..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold cta-form-submit">
+          {{ c.cta_label }}
+        </button>
+
+        <p class="cta-form-privacy">
+          Sin spam. Respondemos en menos de 24 horas hábiles.
+        </p>
+      </form>
+
+      <!-- Mensaje de éxito (se muestra tras envío) -->
+      <div class="cta-form-success" id="cta-success" style="display:none">
+        <div class="cta-success-icon">✓</div>
+        <strong>¡Mensaje enviado!</strong>
+        <p>Te contactaremos en menos de 24 horas hábiles.</p>
+      </div>
     </div>
 
   </div>
 </section>
+
+<style>
+.cta-form { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; }
+.cta-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.cta-form-field { display: flex; flex-direction: column; gap: 5px; }
+.cta-form-field label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-2, #5a5248);
+}
+.form-optional { font-weight: 400; text-transform: none; letter-spacing: 0; }
+.cta-form-field input,
+.cta-form-field textarea {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  transition: border-color .2s;
+  resize: vertical;
+}
+.cta-form-field input:focus,
+.cta-form-field textarea:focus {
+  outline: none;
+  border-color: var(--gold, #c9a96e);
+}
+.cta-form-field input::placeholder,
+.cta-form-field textarea::placeholder { opacity: .5; }
+.cta-form-submit { width: 100%; justify-content: center; margin-top: 4px; }
+.cta-form-privacy {
+  font-size: 11px;
+  text-align: center;
+  opacity: .6;
+  margin: 0;
+}
+.cta-form-success {
+  text-align: center;
+  padding: 32px 16px;
+}
+.cta-success-icon {
+  font-size: 36px;
+  color: var(--gold, #c9a96e);
+  margin-bottom: 12px;
+}
+@media (max-width: 600px) {
+  .cta-form-row { grid-template-columns: 1fr; }
+}
+</style>
+
+<script>
+(function() {
+  var form = document.getElementById('cta-form');
+  var success = document.getElementById('cta-success');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    var action = form.getAttribute('action');
+    // Si el action todavía tiene el placeholder, redirigir a mailto como fallback
+    if (action.includes('REEMPLAZA_ESTE_ID')) {
+      e.preventDefault();
+      var nombre = document.getElementById('cta-nombre').value;
+      var empresa = document.getElementById('cta-empresa').value;
+      var email = document.getElementById('cta-email').value;
+      var mensaje = document.getElementById('cta-mensaje').value;
+      var body = 'Nombre: ' + nombre + '\nEmpresa: ' + empresa + '\nEmail: ' + email + '\n\nMensaje:\n' + mensaje;
+      window.location.href = 'mailto:contacto@datashieldconsulting.cl?subject=Contacto DataShield&body=' + encodeURIComponent(body);
+      return;
+    }
+
+    // Envío AJAX para evitar redirect de Formspree
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch(action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(res) {
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      } else {
+        alert('Hubo un error. Por favor escríbenos directamente a contacto@datashieldconsulting.cl');
+      }
+    }).catch(function() {
+      alert('Hubo un error. Por favor escríbenos directamente a contacto@datashieldconsulting.cl');
+    });
+  });
+})();
+</script>

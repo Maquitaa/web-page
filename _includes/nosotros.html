@@ -15,6 +15,17 @@
     <div class="nosotros-texto">
       <p class="nosotros-lead">{{ n.descripcion }}</p>
       <p class="nosotros-body">{{ n.descripcion_2 }}</p>
+
+      {% if n.credenciales %}
+      <div class="nosotros-creds">
+        {% for c in n.credenciales %}
+        <div class="nosotros-cred">
+          <div class="nosotros-cred-valor">{{ c.valor }}</div>
+          <div class="nosotros-cred-label">{{ c.label }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
     <div class="nosotros-areas">
       {% for area in n.areas %}
@@ -30,3 +41,28 @@
   </div>
 
 </section>
+
+<style>
+.nosotros-creds {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line, #ddd);
+  flex-wrap: wrap;
+}
+.nosotros-cred-valor {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--gold-deep, #a07840);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.nosotros-cred-label {
+  font-size: 12px;
+  color: var(--ink-2, #5a5248);
+  line-height: 1.4;
+  max-width: 120px;
+}
+</style>

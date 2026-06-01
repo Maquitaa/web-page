@@ -125,6 +125,13 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav--hidden {
+  transform: translateY(-100%);
+}
+.nav--scrolled {
+  box-shadow: 0 2px 16px rgba(0,0,0,.08);
 }
 .logo {
   display: flex;
@@ -1204,4 +1211,49 @@ footer {
   .mod, .bp-cell, .ley-card, .method-card, .why-card {
     transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
   }
+}
+
+/* ── 19. HERO VIDEO DE FONDO ──────────────────────────── */
+.hero--video {
+  position: relative;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  /* Sutil: el video no compite con el texto */
+  opacity: .35;
+  filter: saturate(.8);
+}
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* Degradado: más oscuro arriba (nav) y abajo, más claro al centro */
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(245,241,232,.85) 0%,
+      rgba(245,241,232,.55) 35%,
+      rgba(245,241,232,.60) 65%,
+      rgba(245,241,232,.92) 100%
+    );
+}
+/* Todo el contenido del hero va sobre el video */
+.hero--video > *:not(.hero-video):not(.hero-video-overlay) {
+  position: relative;
+  z-index: 2;
+}
+/* En móvil o si el usuario prefiere movimiento reducido: pausar video */
+@media (prefers-reduced-motion: reduce) {
+  .hero-video { display: none; }
+  .hero-video-overlay { display: none; }
+}
+@media (max-width: 600px) {
+  .hero-video { opacity: .2; }
 }
