@@ -1213,12 +1213,18 @@ footer {
   }
 }
 
-/* ── 19. HERO VIDEO DE FONDO ──────────────────────────── */
-.hero--video {
+/* ── 20. HERO FULLSCREEN VIDEO ────────────────────────── */
+.hero-fs {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero-video {
+.hero-fs-video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1226,34 +1232,341 @@ footer {
   object-fit: cover;
   object-position: center;
   z-index: 0;
-  /* Sutil: el video no compite con el texto */
-  opacity: .35;
-  filter: saturate(.8);
 }
-.hero-video-overlay {
+.hero-fs-overlay {
   position: absolute;
   inset: 0;
   z-index: 1;
-  /* Degradado: más oscuro arriba (nav) y abajo, más claro al centro */
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(245,241,232,.85) 0%,
-      rgba(245,241,232,.55) 35%,
-      rgba(245,241,232,.60) 65%,
-      rgba(245,241,232,.92) 100%
-    );
+  background: rgba(12, 8, 4, .54);
 }
-/* Todo el contenido del hero va sobre el video */
-.hero--video > *:not(.hero-video):not(.hero-video-overlay) {
+.hero-fs-content {
   position: relative;
   z-index: 2;
+  text-align: center;
+  padding: 0 40px;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
 }
-/* En móvil o si el usuario prefiere movimiento reducido: pausar video */
+.hero-fs-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  color: rgba(201, 169, 110, .7);
+  text-transform: uppercase;
+}
+.hero-fs-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(3rem, 7.5vw, 6rem);
+  line-height: 1.06;
+  color: #f5f1e8;
+  letter-spacing: -.025em;
+  margin: 0;
+}
+.hero-fs-title span { display: block; }
+.hero-fs-title em {
+  font-style: italic;
+  color: var(--gold, #c9a96e);
+  font-weight: 300;
+}
+.hero-fs-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(245, 241, 232, .45);
+  transition: color .3s;
+}
+.hero-fs-scroll:hover { color: var(--gold, #c9a96e); }
+.hero-fs-scroll-label {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+.hero-fs-scroll-arrow {
+  font-size: 18px;
+  animation: hfsBounce 2.2s ease-in-out infinite;
+}
+@keyframes hfsBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
+
+/* — Sección 2: contenido debajo del fold — */
+.hero-content {
+  background: var(--paper, #f5f1e8);
+  padding: 88px 40px;
+  border-bottom: 1px solid var(--line, #e0dbd0);
+}
+.hero-content-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 72px;
+  align-items: start;
+}
+.hero-content-desc {
+  font-size: 17px;
+  line-height: 1.72;
+  color: var(--ink-2, #5a5248);
+  margin: 20px 0 32px;
+}
+
+/* Accesibilidad */
 @media (prefers-reduced-motion: reduce) {
-  .hero-video { display: none; }
-  .hero-video-overlay { display: none; }
+  .hero-fs-scroll-arrow { animation: none; }
+}
+
+@media (max-width: 900px) {
+  .hero-fs-title { font-size: clamp(2.4rem, 9vw, 3.8rem); }
+  .hero-content-inner { grid-template-columns: 1fr; gap: 36px; }
+  .hero-content { padding: 64px 24px; }
 }
 @media (max-width: 600px) {
-  .hero-video { opacity: .2; }
+  .hero-fs-title { font-size: clamp(2rem, 10vw, 3rem); }
+  .hero-fs-content { padding: 0 24px; }
+}
+
+/* ── 19. HERO FULLSCREEN VIDEO ────────────────────────── */
+
+/* — Sección 1: video pantalla completa — */
+.hero-fs {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-fs-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+.hero-fs-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(15, 10, 5, .52);
+}
+.hero-fs-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 32px;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.hero-fs-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  color: rgba(201, 169, 110, .75);
+  text-transform: uppercase;
+}
+.hero-fs-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 1.08;
+  color: #f5f1e8;
+  letter-spacing: -.02em;
+  margin: 0;
+}
+.hero-fs-title span { display: block; }
+.hero-fs-title em {
+  font-style: italic;
+  color: var(--gold, #c9a96e);
+  font-weight: 300;
+}
+.hero-fs-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(245, 241, 232, .55);
+  transition: color .3s;
+  margin-top: 16px;
+}
+.hero-fs-scroll:hover { color: var(--gold, #c9a96e); }
+.hero-fs-scroll-label {
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+.hero-fs-scroll-arrow {
+  font-size: 20px;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* — Sección 2: contenido debajo del fold — */
+.hero-content {
+  background: var(--paper, #f5f1e8);
+  padding: 80px 32px;
+  border-bottom: 1px solid var(--line, #ddd);
+}
+.hero-content-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 64px;
+  align-items: start;
+}
+.hero-content-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ink-2, #5a5248);
+  margin: 20px 0 32px;
+  max-width: 560px;
+}
+
+/* Accesibilidad: pausar animación si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  .hero-fs-scroll-arrow { animation: none; }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-fs-title { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+  .hero-content-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* ── 20. HERO FULLSCREEN VIDEO ────────────────────────── */
+.hero-fs {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-fs-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+.hero-fs-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(12, 8, 4, .54);
+}
+.hero-fs-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 40px;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.hero-fs-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .14em;
+  color: rgba(201, 169, 110, .7);
+  text-transform: uppercase;
+}
+.hero-fs-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: clamp(3rem, 7.5vw, 6rem);
+  line-height: 1.06;
+  color: #f5f1e8;
+  letter-spacing: -.025em;
+  margin: 0;
+}
+.hero-fs-title span { display: block; }
+.hero-fs-title em {
+  font-style: italic;
+  color: #c9a96e;
+  font-weight: 300;
+}
+.hero-fs-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: rgba(245, 241, 232, .45);
+  transition: color .3s;
+}
+.hero-fs-scroll:hover { color: #c9a96e; }
+.hero-fs-scroll-label {
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+.hero-fs-scroll-arrow {
+  font-size: 18px;
+  animation: hfsBounce 2.2s ease-in-out infinite;
+}
+@keyframes hfsBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
+.hero-content {
+  background: #f5f1e8;
+  padding: 88px 40px;
+  border-bottom: 1px solid #e0dbd0;
+}
+.hero-content-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 72px;
+  align-items: start;
+}
+.hero-content-desc {
+  font-size: 17px;
+  line-height: 1.72;
+  color: #5a5248;
+  margin: 20px 0 32px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-fs-scroll-arrow { animation: none; }
+}
+@media (max-width: 900px) {
+  .hero-fs-title { font-size: clamp(2.4rem, 9vw, 3.8rem); }
+  .hero-content-inner { grid-template-columns: 1fr; gap: 36px; }
+  .hero-content { padding: 64px 24px; }
+}
+@media (max-width: 600px) {
+  .hero-fs-title { font-size: clamp(2rem, 10vw, 3rem); }
+  .hero-fs-content { padding: 0 24px; }
 }
