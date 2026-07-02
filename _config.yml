@@ -19,7 +19,7 @@ author:
 # Contacto / CTA (WhatsApp, email de agendamiento, etc.)
 contact:
   whatsapp_numero: "56940059372"
-  whatsapp_mensaje: "Hola, quiero agendar un diagnóstico gratuito con DataShield"
+  whatsapp_mensaje: "Hola, quiero agendar un diagnóstico con DataShield"
   email_asunto: "Agendar Diagnóstico"
   email_cuerpo: "Nombre: \nEmpresa: \nTeléfono: \nMensaje: "
 
