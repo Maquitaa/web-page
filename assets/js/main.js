@@ -64,11 +64,18 @@
   `;
   document.head.appendChild(style);
 
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
   const targets = document.querySelectorAll(
     '.stat, .ley-card, .mod, .method-card, .why-card, .feat, .bp-cell'
   );
 
-  targets.forEach(el => el.classList.add('reveal'));
+  // Only hide elements that start below the initial viewport — never gate above-fold content
+  targets.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top > viewportHeight + 50) {
+      el.classList.add('reveal');
+    }
+  });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -102,76 +109,55 @@
   });
 })();
 
-/* ── 5. MÓDULOS: expand en móvil ──────────────────────── */
-(function initModules() {
-  if (window.innerWidth > 900) return; // Solo en móvil
-  const mods = document.querySelectorAll('.mod:not(.featured)');
-  mods.forEach(mod => {
-    const features = mod.querySelector('.mod-features');
-    const desc = mod.querySelector('.mod-desc');
-    if (!features && !desc) return;
-    // En móvil, las features están colapsadas por defecto
-    // (se manejan con CSS, este script solo añade accesibilidad)
-    mod.setAttribute('role', 'button');
-    mod.setAttribute('tabindex', '0');
+/* ── 5. SCROLL-SPY: resalta el link de nav activo ────── */
+(function initScrollSpy() {
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  if (!navLinks.length || !('IntersectionObserver' in window)) return;
+
+  const linkMap = {};
+  navLinks.forEach(link => {
+    const id = link.getAttribute('href').slice(1);
+    if (id) linkMap[id] = link;
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const link = linkMap[entry.target.id];
+      if (link) link.classList.toggle('active', entry.isIntersecting);
+    });
+  }, {
+    rootMargin: '-8% 0px -62% 0px',
+    threshold: 0
+  });
+
+  Object.keys(linkMap).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el);
   });
 })();
 
-/* ── 6. NÚMERO de nav móvil ───────────────────────────── */
+/* ── 6. MÓDULOS: expand en móvil ──────────────────────── */
+/* La expansión se maneja por .mod-detail-toggle (botones accesibles en el HTML) */
+/* No se añaden atributos aquí para no crear roles ARIA sin handlers de teclado */
+
+/* ── 6. NAV MÓVIL — hamburguesa (botón en HTML, CSS en main.css) ── */
 (function initMobileNav() {
-  const nav = document.querySelector('.nav');
-  if (!nav) return;
-
-  // Botón hamburguesa para móvil (inyectado)
-  const menuBtn = document.createElement('button');
-  menuBtn.className = 'nav-menu-btn';
-  menuBtn.setAttribute('aria-label', 'Abrir menú');
-  menuBtn.setAttribute('aria-expanded', 'false');
-  menuBtn.innerHTML = '<span></span><span></span><span></span>';
-
-  // Solo mostrar en móvil vía CSS
-  const style = document.createElement('style');
-  style.textContent = `
-    .nav-menu-btn {
-      display: none;
-      flex-direction: column;
-      gap: 4px;
-      padding: 8px;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    .nav-menu-btn span {
-      display: block;
-      width: 20px;
-      height: 2px;
-      background: var(--ink);
-      border-radius: 2px;
-      transition: .2s;
-    }
-    @media (max-width: 900px) {
-      .nav-menu-btn { display: flex; }
-      .nav-links {
-        display: none;
-        position: fixed;
-        top: 65px; left: 0; right: 0;
-        background: var(--paper);
-        border-bottom: 1px solid var(--line);
-        padding: 20px 32px;
-        flex-direction: column;
-        gap: 16px;
-        z-index: 49;
-      }
-      .nav-links.open { display: flex; }
-    }
-  `;
-  document.head.appendChild(style);
-
-  const navLinks = nav.querySelector('.nav-links');
-  nav.insertBefore(menuBtn, nav.querySelector('.nav-cta'));
+  const menuBtn = document.querySelector('.nav-menu-btn');
+  const navLinks = document.getElementById('primary-nav-links');
+  if (!menuBtn || !navLinks) return;
 
   menuBtn.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', isOpen);
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    menuBtn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+  });
+
+  // Cierra el menú al hacer clic en un enlace interno
+  navLinks.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.setAttribute('aria-label', 'Abrir menú');
+    });
   });
 })();

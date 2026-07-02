@@ -19,3 +19,9 @@ caja_items:
 
 cta_label: "Agendar sesión de diagnóstico →"
 cta_href: "#"
+
+## ─── FORMULARIO ─────────────────────────────────────────────────────────────
+## Ve a https://formspree.io, crea tu form gratis y pega el endpoint aquí.
+## Ejemplo: https://formspree.io/f/xbjnwpkz
+## Cuando lo configures, elimina la línea de arriba y usa este campo:
+form_action: "https://formspree.io/f/REEMPLAZA_ESTE_ID"

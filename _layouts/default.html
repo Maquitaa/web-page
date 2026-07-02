@@ -13,6 +13,9 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <!-- og:image: crea assets/img/og-image.jpg (1200×630) y descomenta la siguiente línea -->
+  <!-- <meta property="og:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}"> -->
 
   <!-- Seguridad via meta tags (complementa los headers HTTP) -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -22,7 +25,9 @@
   <!-- Tipografías: Fraunces + Inter + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="{{ '/assets/img/logo.png' | relative_url }}">
+  <link rel="dns-prefetch" href="//formspree.io">
 
   <!-- CSS principal -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -37,6 +42,8 @@
 </head>
 
 <body>
+
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
   {% include nav.html %}
 

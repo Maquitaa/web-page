@@ -17,7 +17,7 @@ dominio: "datashieldconsulting.cl"
 nav_links:
   - label: "Servicios"
     href: "#modulos"
-    dropdown: true
+    dropdown: false
   - label: "Cómo trabajamos"
     href: "#metodologia"
     dropdown: false
