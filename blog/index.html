@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Blog"
+description: "Noticias y análisis sobre protección de datos y la Ley 21.719"
+permalink: /blog/
+---
+<section class="section blog-listado">
+  <div class="section-header">
+    <span class="section-number">·</span>
+    <h2>Blog</h2>
+    <span class="mono">Noticias y análisis</span>
+  </div>
+
+  <div class="blog-grid">
+    {% for post in site.posts %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>
+
+{% include footer.html %}

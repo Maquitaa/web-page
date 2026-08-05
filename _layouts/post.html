@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="section post">
+  <header class="post-header">
+    <p class="mono">{% assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," %}
+        {% assign mes_num = page.date | date: "%-m" | minus: 1 %}
+        {{ page.date | date: "%-d" }} de {{ meses[mes_num] }}, {{ page.date | date: "%Y" }}</p>
+    <h1 class="serif">{{ page.title }}</h1>
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image">
+    {% endif %}
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+{% include footer.html %}

@@ -16,24 +16,27 @@ dominio: "datashieldconsulting.cl"
 
 nav_links:
   - label: "Servicios"
-    href: "#modulos"
+    href: "/#modulos"
     dropdown: false
   - label: "Cómo trabajamos"
-    href: "#metodologia"
+    href: "/#metodologia"
     dropdown: false
   - label: "Plataforma"
-    href: "#plataforma"
+    href: "/#plataforma"
     dropdown: false
   - label: "Ley 21.719"
-    href: "#ley"
+    href: "/#ley"
     dropdown: false
   - label: "Nosotros"
-    href: "#nosotros"
+    href: "/#nosotros"
+    dropdown: false
+  - label: "Blog"
+    href: "/blog/"
     dropdown: false
 
 cta_nav:
   label: "Conversemos →"
-  href: "#cta"
+  href: "/#cta"
 
 hero:
   pill: "● Temuco · La Araucanía · Chile"

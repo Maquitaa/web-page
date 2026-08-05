@@ -15,30 +15,31 @@
       <div class="footer-col">
         <div class="footer-col-title">Servicios</div>
         <ul>
-          <li><a href="#modulos">Assessment & Diagnóstico</a></li>
-          <li><a href="#modulos">Modernización de Procesos</a></li>
-          <li><a href="#modulos">Gobierno del Dato</a></li>
-          <li><a href="#modulos">IA Aplicada</a></li>
-          <li><a href="#modulos">Ciberseguridad</a></li>
-          <li><a href="#modulos">Cumplimiento Ley 21.719</a></li>
+          <li><a href="{{ '/' | relative_url }}#modulos">Assessment & Diagnóstico</a></li>
+          <li><a href="{{ '/' | relative_url }}#modulos">Modernización de Procesos</a></li>
+          <li><a href="{{ '/' | relative_url }}#modulos">Gobierno del Dato</a></li>
+          <li><a href="{{ '/' | relative_url }}#modulos">IA Aplicada</a></li>
+          <li><a href="{{ '/' | relative_url }}#modulos">Ciberseguridad</a></li>
+          <li><a href="{{ '/' | relative_url }}#modulos">Cumplimiento Ley 21.719</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <div class="footer-col-title">Empresa</div>
         <ul>
-          <li><a href="#nosotros">Quiénes somos</a></li>
-          <li><a href="#metodologia">Metodología</a></li>
-          <li><a href="#porque">Por qué DataShield</a></li>
+          <li><a href="{{ '/' | relative_url }}#nosotros">Quiénes somos</a></li>
+          <li><a href="{{ '/' | relative_url }}#metodologia">Metodología</a></li>
+          <li><a href="{{ '/' | relative_url }}#porque">Por qué DataShield</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
         </ul>
-      </div>
+      </div>      
 
       <div class="footer-col">
         <div class="footer-col-title">Contacto</div>
         <ul>
           <li><a href="mailto:{{ s.email }}">{{ s.email }}</a></li>
           <li><a href="tel:{{ s.telefono | remove: ' ' }}">{{ s.telefono }}</a></li>
-          <li><a href="#cta">Agendar diagnóstico →</a></li>
+          <li><a href="{{ '/' | relative_url }}#cta">Agendar diagnóstico →</a></li>
         </ul>
       </div>
 

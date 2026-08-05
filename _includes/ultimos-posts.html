@@ -1,0 +1,11 @@
+<section class="ultimos-posts">
+  <header>
+    <h2>Últimas publicaciones</h2>
+    <a href="{{ '/blog/' | relative_url }}">Ver todas →</a>
+  </header>
+  <div class="blog-grid">
+    {% for post in site.posts limit: 5 %}
+      {% include post-card.html post=post %}
+    {% endfor %}
+  </div>
+</section>

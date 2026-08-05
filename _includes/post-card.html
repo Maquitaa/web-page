@@ -1,0 +1,18 @@
+<article class="post-card">
+  <a href="{{ post.url | relative_url }}">
+    {% if post.image %}
+      <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="post-card-img">
+    {% endif %}
+    <div class="post-card-body">
+      <time datetime="{{ post.date | date_to_xmlschema }}">
+        {% assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," %}
+        {% assign mes_num = post.date | date: "%-m" | minus: 1 %}
+        {{ post.date | date: "%-d" }} de {{ meses[mes_num] }}, {{ post.date | date: "%Y" }}
+      </time>
+      <h3>{{ post.title }}</h3>
+      {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+      {% endif %}
+    </div>
+  </a>
+</article>

@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: maquitaa/web-page
+  branch: main
+  base_url: https://datashield-oauth.msotomellado.workers.dev
+  auth_endpoint: auth
+
+media_folder: "assets/img/posts"
+public_folder: "/assets/img/posts"
+
+collections:
+  - name: "posts"
+    label: "Publicaciones"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Imagen destacada", name: "image", widget: "image", required: false }
+      - { label: "Resumen", name: "excerpt", widget: "text", required: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
