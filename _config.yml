@@ -13,15 +13,17 @@ baseurl: ""
 # Autor / empresa
 author:
   name: "DataShield Consulting"
-  email: "contacto@datashieldconsulting.cl"
+  #email: "contacto@datashieldconsulting.cl"
+  email: "ricardo.soto@datashieldconsulting.cl"
   location: "Chile"
 
 # Contacto / CTA (WhatsApp, email de agendamiento, etc.)
 contact:
   whatsapp_numero: "56940059372"
   whatsapp_mensaje: "Hola, quiero agendar un diagnóstico con DataShield"
-  email_asunto: "Agendar Diagnóstico"
-  email_cuerpo: "Nombre: \nEmpresa: \nTeléfono: \nMensaje: "
+  email_cc: "macarena.soto@datashieldconsulting.cl"
+  email_asunto: "Solicitud de Diagnóstico"
+  email_cuerpo: "Hola equipo de DataShield Consulting,\n\nMe gustaría agendar un diagnóstico de cumplimiento para evaluar la situación de mi empresa frente a la Ley 21.719.\n\nMis datos de contacto:\n\nNombre: \nEmpresa: \nCargo: \nTeléfono: \nHorario preferente de contacto: \n\nMensaje adicional:\n\n\nSaludos cordiales."
 
 # Redes sociales
 social:

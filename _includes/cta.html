@@ -1,6 +1,6 @@
 {% assign c = site.data.cta %}
 {% assign wa_link = "https://wa.me/" | append: site.contact.whatsapp_numero | append: "?text=" | append: site.contact.whatsapp_mensaje | uri_escape %}
-{% assign mail_link = "mailto:" | append: site.author.email | append: "?subject=" | append: site.contact.email_asunto | append: "&body=" | append: site.contact.email_cuerpo | uri_escape %}
+{% assign mail_link = "mailto:" | append: site.author.email | append: "?cc=" | append: site.contact.email_cc | append: "&subject=" | append: site.contact.email_asunto | append: "&body=" | append: site.contact.email_cuerpo | uri_escape %}
 
 <section class="cta-section" id="cta">
   <div class="cta-box">
