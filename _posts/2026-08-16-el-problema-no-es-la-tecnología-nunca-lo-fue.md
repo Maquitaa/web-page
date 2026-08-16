@@ -2,7 +2,10 @@
 title: El problema no es la tecnología. Nunca lo fue.
 date: 2026-08-16T17:52:00.000-04:00
 layout: post
-image: /assets/img/posts/test.jpg
+image: /assets/img/posts/trazabilidad-pii.jpg
+excerpt: "La Ley 21.719 hace visible un problema que las empresas ya tenían: no
+  saben qué datos tienen ni dónde están. Más formularios no lo resuelven.
+  Arquitectura sí."
 ---
 La otra noche, hablando con amigos sobre una nueva semana laboral, terminamos en lo mismo: cómo se toman las decisiones arriba. Es como el meme: si hubiéramos sabido cómo se tomaban, no habríamos querido estar ahí.
 
