@@ -2,7 +2,7 @@
 title: El problema no es la tecnología. Nunca lo fue.
 date: 2026-08-16T17:52:00.000-04:00
 layout: post
-image: /assets/img/posts/test.jpg
+image: ""
 ---
 La otra noche, hablando con amigos sobre una nueva semana laboral, terminamos en lo mismo: cómo se toman las decisiones arriba. Es como el meme: si hubiéramos sabido cómo se tomaban, no habríamos querido estar ahí.
 
