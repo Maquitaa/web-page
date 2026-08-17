@@ -19,7 +19,7 @@ Guárdate esa escena, porque es toda la ley en miniatura.
 
 ## La palabra que importa no es “nombre”
 
-La Ley 21.719 define dato personal como toda información vinculada auna persona natural identificada o *identificable* (está en el artículo 2,para el que le gusta ir a la fuente). Léelo despacio: identificada *o identificable*. Identificada es lo obvio, tu nombre, tu RUT, tu foto; identificable es donde está toda la ley escondida.
+La Ley 21.719 define dato personal como toda información vinculada a una persona natural identificada o *identificable* (está en el artículo 2,para el que le gusta ir a la fuente). Léelo despacio: identificada *o identificable*. Identificada es lo obvio, tu nombre, tu RUT, tu foto; identificable es donde está toda la ley escondida.
 
 Identificable quiere decir que no hace falta que el dato te nombre. Basta con que, con él, se pueda llegar hasta ti. Igual que con la chaqueta roja.
 
@@ -39,7 +39,7 @@ Lo mismo se hacía en otros países, con el registro equivalente. Y ojo con esto
 
 El problema era juntarlo.
 
-Porque por separado, cada dato no decía casi nada. Pero al cruzarlos nació un perfil que ninguno de los dos sitios, por su cuenta, habría podido construir. El dato personal no siempre existe de antemano: *a veces se construye*.
+Porque por separado, cada dato no decía casi nada. Pero al cruzarlos nació un perfil que ninguno de los dos sitios, por su cuenta, habría podido construir. El dato personal no siempre existe de ante mano: *a veces se construye*.
 
 Y por supuesto, nadie usó esa base solo para vender autos. En algún momento alguien terminó jugando con ella, a ver quién tenía un Tesla, en Lo Barnechea, del año que fuera. Ese es el chiste negro de los datos: la mayoría de las veces no hace falta ninguna proeza técnica. Solo hay que ser ordenado.
 
