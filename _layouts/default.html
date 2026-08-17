@@ -7,17 +7,10 @@
   <!-- SEO básico -->
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
 
-  <!-- La descripción (meta description, og:description) y og:title/og:type/og:locale/og:url
-       las genera jekyll-seo-tag más abajo con {% seo %}. Ese tag resuelve la descripción con
-       esta prioridad: page.description → page.excerpt (campo "Resumen" del admin) →
-       site.description. No la dupliques manualmente aquí: si hay dos <meta name="description">
-       o dos <meta property="og:description">, los navegadores y los crawlers de redes
-       sociales suelen quedarse con la primera que encuentran en el <head>. -->
-
-  <!-- og:image / twitter:image: se define aquí explícitamente (en vez de dejarlo solo
-       en manos de {% seo %}) para poder declarar el ancho/alto junto a la imagen,
-       tal como recomienda Open Graph. Sale de page.image, que es el campo "Imagen
-       destacada" que se sube desde /admin/ y que Decap guarda en assets/img/posts/. -->
+  <!-- La descripción del post (resumen del admin) se agrega mas abajo, automaticamente por jekyll-seo-tag. -->
+ 
+  <!-- Imagen para compartir en redes (Facebook, WhatsApp, Twitter/X) -->
+  <!-- Usa la imagen destacada que se sube en el admin del blog -->  
   {% if page.image %}
   <meta property="og:image" content="{{ page.image | absolute_url }}">
   <meta property="og:image:width" content="1200">
