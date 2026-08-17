@@ -31,7 +31,7 @@ Una planilla de correos laborales. Un listado de patentes. El registro de quién
 
 
 
-## El scraper que no hackeó nada
+## El Programa que no hackeó nada
 
 Hace unos años armamos un programa que entraba al registro público de vehículos y sacaba quién era dueño de cada auto de cierta marca en el país. Cruzado con otro programa que sacaba de un portal de autos usados, salía una base completa: nombre, dirección, teléfono, de cada dueño.
 
@@ -39,7 +39,7 @@ Lo mismo se hacía en otros países, con el registro equivalente. Y ojo con esto
 
 El problema era juntarlo.
 
-Porque por separado, cada dato no decía casi nada. Pero al cruzarlos nació un perfil que ninguno de los dos sitios, por su cuenta, habría podido construir. El dato personal no siempre existe de ante mano: *a veces se construye*.
+Porque por separado, cada dato no decía casi nada. Pero al cruzarlos nació un perfil que ninguno de los dos sitios, por su cuenta, habría podido construir. El dato personal no siempre existe de antemano: *a veces se construye*.
 
 Y por supuesto, nadie usó esa base solo para vender autos. En algún momento alguien terminó jugando con ella, a ver quién tenía un Tesla, en Lo Barnechea, del año que fuera. Ese es el chiste negro de los datos: la mayoría de las veces no hace falta ninguna proeza técnica. Solo hay que ser ordenado.
 
@@ -87,11 +87,11 @@ La lista es esta: datos de salud, datos biométricos, origen étnico, opiniones 
 
 A veces el daño es el juicio: que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
 
-Pero a veces el daño no es que te juzguen: es que te expongan. Un resultado médico que implica algo grave es tuyo. Tú decides si se lo cuentas atu familia, a tus hijos, a tu pareja o a nadie. Si eso se filtra, nadie tuvo que discriminarte: te quitaron la decisión. Y eso ya es el daño.
+Pero a veces el daño no es que te juzguen: es que te expongan. Un resultado médico que implica algo grave es tuyo. Tú decides si se lo cuentas a tu familia, a tus hijos, a tu pareja o a nadie. Si eso se filtra, nadie tuvo que discriminarte: te quitaron la decisión. Y eso ya es el daño.
 
 Una precisión que importa: sensible no es una opinión, es una categoría legal. No basta con que a ti te parezca delicado un dato para que la ley lo trate distinto. Pero hay una pregunta que explica por qué esos datos específicos están en la lista, y que sirve para reconocerlos al tiro: ¿qué pasa si este dato se usa para juzgarte o para exponerte? Cada categoría está ahí porque la respuesta es “nada bueno”. Y cuando estás frente a una de ellas, la vara sube de inmediato.
 
-¿Cuánto sube? La regla general es el consentimiento expreso, no basta el clic genérico perdido entre cuarenta casillas, que es básicamente decorativo. Las excepciones existen, pero son pocas y están escritas una por una en la ley; esa discusión completa va en el capítulo de datos sensibles de esta serie. La idea de fondo, eso sí, es simple: no es “ten más cuidado”. Es necesitas una autorización de otro nivel, y si no la tienes, no lo hagas”.
+¿Cuánto sube? La regla general es el consentimiento expreso, no basta el clic genérico perdido entre cuarenta casillas, que es básicamente decorativo. Las excepciones existen, pero son pocas y están escritas una por una en la ley; esa discusión completa va en el capítulo de datos sensibles de esta serie. La idea de fondo, eso sí, es simple: no es “ten más cuidado”. Es "necesitas una autorización de otro nivel, y si no la tienes, no lo hagas".
 
 Lo del niño en el reporte del mall es doble, por cierto: es dato personal de un menor y, si además contiene información de salud u otra categoría especialmente protegida, puede ser también dato sensible. Ese otro tema da para un capítulo entero, así que hoy solo queda dicho que cuando el dato es de un menor, todo lo anterior se endurece todavía más.
 
@@ -111,7 +111,7 @@ Cualquiera puede verlo, sí. Pero fíjate en el salto que hay entre “este dato
 
 Esa pregunta queda abierta a propósito. Mientras tanto, vuelve al principio. La chaqueta roja, la calle, el martes. Nadie dijo un nombre, y sin embargo tú ya sabías de quién se hablaba.
 
-Así funciona el mundo de los datos: nadie te preguntó nada, y aun así saben quién eres. Porque casi nunca hace falta que alguien se robe tu identidad de una vez. Basta con juntar las pistas que tú y todos vamos dejando, la patente, el horario, la planilla, el me gusta y serordenado.
+Así funciona el mundo de los datos: nadie te preguntó nada, y aun así saben quién eres. Porque casi nunca hace falta que alguien se robe tu identidad de una vez. Basta con juntar las pistas que tú y todos vamos dejando, la patente, el horario, la planilla, el me gusta y ser ordenado.
 
 El dato personal casi nunca se roba: se junta.
 
