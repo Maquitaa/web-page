@@ -53,7 +53,7 @@ Las cámaras de un mall leen tu patente al entrar. No tu nombre: tu patente. ¿E
 
 Aplica el test. La patente, en el registro de vehículos, lleva a un dueño. El horario de entrada y salida dice cuándo estuviste. Ninguno de esos datos lleva tu nombre escrito, pero todos te señalan con el dedo. La ley los trata como lo que son: datos personales. Porque la identificabilidad no se mide por lo que el dato *dice*, sino por lo que el dato *permite saber*. Una patente es tu nombre con otro traje.
 
-A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo códigos”. Felicidades, guardas identificadores. Que esexactamente lo mismo con pasos extra.
+A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo códigos”. Felicidades, guardas identificadores. Que es exactamente lo mismo con pasos extra.
 
 
 
