@@ -105,8 +105,6 @@ Lo del niño en el reporte del mall es doble, por cierto: es dato personal de un
 
 Cualquiera puede verlo, sí. Pero fíjate en el salto que hay entre “este dato existe y yo puedo acceder a él” y “yo puedo *usar* este dato para decidir si te acepto, si te beco, si te miro distinto en una entrevista”. Son dos cosas distintas, y la ley las trata como dos cosas distintas.
 
-Me sigue pareciendo notable que haya que explicarlo, pero hay que explicarlo: tener el dato no te habilita a usarlo para lo que quieras. Que esté a la vista no lo convierte en tuyo. 
-
 
 
 ## La chaqueta roja, otra vez
