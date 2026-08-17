@@ -7,7 +7,7 @@ excerpt: "Ley 21.719 explicada de forma simple: qué son los datos personales,
   cómo se identifica a una persona mediante cruces de información y qué cambia
   con los datos sensibles."
 ---
-“Te cuento una cosa, pero no te puedodecir quién es, porque se va a enojar.”
+“Te cuento una cosa, pero no te puedo decir quién es, porque se va a enojar.”
 
 Y aun así te la cuentan. Que fue el martes pasado. Que en tal calle, a la salida del trabajo. Que llevaba puesta una chaqueta roja y el celular pegado a la oreja. Detalle tras detalle, mientras el nombre queda cuidadosamente guardado bajo llave.
 
