@@ -6,6 +6,11 @@
 title: "DataShield Consulting"
 tagline: "Cumplimiento modular para la nueva ley de datos."
 description: "Consultoría modular y plataforma de cumplimiento para empresas chilenas sujetas a la Ley 21.719 de Protección de Datos Personales."
+# Idioma/región para jekyll-seo-tag (og:locale). Sin esto, el plugin usa en_US
+# por defecto para og:locale, aunque el <html lang="es"> del layout diga otra cosa.
+lang: "es"
+locale: "es_CL"
+
 url: "https://datashieldconsulting.cl"
 baseurl: ""
 

@@ -6,16 +6,25 @@
 
   <!-- SEO básico -->
   <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_CL">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <!-- og:image: crea assets/img/og-image.jpg (1200×630) y descomenta la siguiente línea -->
-  <!-- <meta property="og:image" content="{{ '/assets/img/og-image.jpg' | absolute_url }}"> -->
+  <!-- La descripción (meta description, og:description) y og:title/og:type/og:locale/og:url
+       las genera jekyll-seo-tag más abajo con {% seo %}. Ese tag resuelve la descripción con
+       esta prioridad: page.description → page.excerpt (campo "Resumen" del admin) →
+       site.description. No la dupliques manualmente aquí: si hay dos <meta name="description">
+       o dos <meta property="og:description">, los navegadores y los crawlers de redes
+       sociales suelen quedarse con la primera que encuentran en el <head>. -->
+
+  <!-- og:image / twitter:image: se define aquí explícitamente (en vez de dejarlo solo
+       en manos de {% seo %}) para poder declarar el ancho/alto junto a la imagen,
+       tal como recomienda Open Graph. Sale de page.image, que es el campo "Imagen
+       destacada" que se sube desde /admin/ y que Decap guarda en assets/img/posts/. -->
+  {% if page.image %}
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
 
   <!-- Seguridad via meta tags (complementa los headers HTTP) -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff">

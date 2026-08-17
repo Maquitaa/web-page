@@ -18,6 +18,7 @@ collections:
       - { label: "Título", name: "title", widget: "string" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Imagen destacada", name: "image", widget: "image", required: false }
-      - { label: "Resumen", name: "excerpt", widget: "text", required: false }
+      - { label: "Imagen destacada", name: "image", widget: "image", required: false, hint: "Tamaño recomendado 1200×630 px (se usa como og:image / twitter:image al compartir el post)." }
+      - { label: "Resumen", name: "excerpt", widget: "text", required: false, hint: "Se usa como meta description y og:description si lo completas. Si lo dejas vacío, el sitio usa la descripción general del sitio." }  
       - { label: "Contenido", name: "body", widget: "markdown" }
+    
