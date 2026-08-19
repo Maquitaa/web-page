@@ -13,7 +13,7 @@ Y aun así te la cuentan. Que fue el martes pasado. Que en tal calle, a la salid
 
 Nunca te dieron el nombre. No hace falta: a la tercera frase tú ya sabes exactamente de quién se hablaba.
 
-Guárdate esa escena, porque es toda la Ley sobre Protección y Tratamiento de los Datos Personalesen miniatura.
+Guárdate esa escena, porque es toda la Ley sobre Protección y Tratamiento de los Datos Personales en miniatura.
 
 
 
@@ -31,7 +31,7 @@ Una planilla de correos laborales. Un listado de patentes. El registro de quién
 
 
 
-## El problema no era conseguir los datos. Era juntarlos.
+## El problema no es conseguir los datos. Es juntarlos.
 
 Hace unos años armamos un programa que entraba al registro público de vehículos y sacaba quién era dueño de cada auto de cierta marca en el país. Cruzado con otro programa que sacaba de un portal de autos usados, salía una base de datos completa: nombre, dirección, teléfono, de cada dueño.
 
