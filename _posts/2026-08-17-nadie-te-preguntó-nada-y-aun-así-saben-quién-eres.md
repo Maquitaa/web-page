@@ -13,7 +13,7 @@ Y aun así te la cuentan. Que fue el martes pasado. Que en tal calle, a la salid
 
 Nunca te dieron el nombre. No hace falta: a la tercera frase tú ya sabes exactamente de quién se hablaba.
 
-Guárdate esa escena, porque es toda la ley *Protección y el Tratamiento de los Datos Personales* en miniatura.
+Guárdate esa escena, porque es toda la Ley sobre Protección y Tratamiento de los Datos Personalesen miniatura.
 
 
 
