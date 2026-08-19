@@ -107,6 +107,8 @@ De esa experiencia me quedó grabado un punto clave: los datos sensibles no son 
 
 ## ¿Qué datos son sensibles y por qué la ley los protege distinto?
 
+Y hay datos con los que este problema se vuelve todavía más delicado.
+
 El listado es: datos de salud, datos biométricos, origen étnico, opiniones políticas o sindicales, convicciones religiosas o filosóficas, situación socioeconómica, vida sexual, orientación sexual o identidad de género. Mira el listado de nuevo y nota el patrón: no son solo datos que permiten saber quién eres. Son datos que pueden revelar aspectos especialmente íntimos, privados o sensibles de tu vida. Y por eso el daño potencial también es distinto.
 
 A veces el daño es el juicio: que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
