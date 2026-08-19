@@ -85,7 +85,7 @@ De esa experiencia me quedó grabado un punto clave: los datos sensibles no son 
 
 El listado es: datos de salud, datos biométricos, origen étnico o racial, afiliación política, sindical o gremial, convicciones ideológicas o filosóficas, creencias religiosas, situación socioeconómica, vida sexual, orientación sexual o identidad de género. Mira el listado de nuevo y nota el patrón: no son solo datos que permiten saber quién eres. Son datos que pueden revelar aspectos especialmente íntimos, privados o sensibles de tu vida. Y por eso el daño potencial también es distinto.
 
-A veces el daño es el juicio: que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
+Que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
 
 A veces el daño no es que te juzguen: es que te expongan. Un resultado médico que implica algo grave **es tuyo**. Tú decides si se lo cuentas a tu familia, a tus hijos, a tu pareja o a nadie. Si eso se filtra, nadie tuvo que discriminarte: te quitaron la decisión. Y eso ya es el daño.
 
