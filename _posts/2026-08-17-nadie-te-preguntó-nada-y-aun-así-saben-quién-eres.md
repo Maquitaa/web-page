@@ -83,7 +83,7 @@ Raya para la suma, dimos vuelta el análisis: en vez de decidir a quién ofrecer
 
 De esa experiencia me quedó grabado un punto clave: los datos sensibles no son peligrosos solo cuando alguien quiere hacerte daño. Son datos con los que se puede discriminar incluso queriendo ayudar. Por eso la ley les da una protección especial.
 
-El listado es: datos de salud, datos biométricos, origen étnico, opiniones políticas o sindicales, convicciones religiosas o filosóficas, situación socioeconómica, vida sexual, orientación sexual o identidad de género. Mira el listado de nuevo y nota el patrón: no son solo datos que permiten saber quién eres. Son datos que pueden revelar aspectos especialmente íntimos, privados o sensibles de tu vida. Y por eso el daño potencial también es distinto.
+El listado es: datos de salud, datos biométricos, origen étnico o racial, afiliación política, sindical o gremial, convicciones ideológicas o filosóficas, creencias religiosas, situación socioeconómica, vida sexual, orientación sexual o identidad de género. Mira el listado de nuevo y nota el patrón: no son solo datos que permiten saber quién eres. Son datos que pueden revelar aspectos especialmente íntimos, privados o sensibles de tu vida. Y por eso el daño potencial también es distinto.
 
 A veces el daño es el juicio: que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
 
