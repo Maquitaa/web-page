@@ -57,7 +57,7 @@ A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo 
 
 
 
-## El problema no siempre es el hacker.
+## Tu Excel también está regulado.
 
 Ahora bajemos del mundo de los programas informáticos y las cámaras al mundo real de la mayoría de las empresas chilenas: la planilla.
 
@@ -73,7 +73,27 @@ Eso no es un ciberataque. Es un martes.
 
 ## ¿Qué pasa cuando un dato puede cambiar cómo te tratan?
 
-Sigamos en el mall. Junto a las cámaras y las patentes, existen los reportes internos de accidentes: alguien se resbaló en el nivel dos, se golpeó con una puerta, se cayó de la escalera. Y en esos reportes a veces aparece el nombre completo de la persona accidentada. A veces, el de un niño. Ese detalle, por si acaso, cambia la magnitud del problema. 
+Sigamos en el mall. Junto a las cámaras y las patentes, existen los reportes internos de accidentes: alguien se resbaló en el nivel dos, se golpeó con una puerta, se cayó de la escalera. Y en esos reportes a veces aparece el nombre completo de la persona accidentada. A veces, el de un niño. Ese detalle, por si acaso, cambia la magnitud del problema.
+
+Ahora la historia que de verdad me explicó la magnitud y la diferencia no pasó en un mall. Pasó después de unos tornados, cuando trabajaba para un banco gringo.
+
+Me tocó un proyecto de no pago post-tornados: clientes en zonas destruidas que debían plata. Con la data que teníamos, sabíamos quién probablemente no iba a pagar ese mes. Y uno piensa lo obvio: fácil, se les baja la tasa, les damos un respiro. No se podía.
+
+Las leyes de protección de datos, cruzadas con las de no discriminación, te frenan en seco justo ahí: no puedes decidir a quién ayudar basándote en zona, edad o nivel socioeconómico, aunque la intención sea buena.
+
+Raya para la suma, dimos vuelta el análisis: en vez de decidir a quién ofrecerle qué, estimamos la cantidad de plata que se iba a recuperar y en cuánto tiempo. Mismo problema, resuelto sin pisar el palito.
+
+De esa experiencia me quedó grabado algo que para mí es clave: **un dato no solo puede decir quién eres. También puede cambiar cómo alguien decide tratarte.**
+
+Que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
+
+A veces el problema no es que el dato sea falso. Es que alguien lo use para decidir sobre ti.
+
+
+
+## ¿Qué pasa cuando un dato puede cambiar cómo te tratan?
+
+Sigamos en el mall. Junto a las cámaras y las patentes, existen los reportes internos de accidentes: alguien se resbaló en el nivel dos, se golpeó con una puerta, se cayó de la escalera. Y en esos reportes a veces aparece el nombre completo de la persona accidentada. A veces, el de un niño. Ese detalle, por si acaso, cambia la magnitud del problema.
 
 Ahora la historia que de verdad me explicó la magnitud y la diferencia no pasó en un mall. Pasó después de unos tornados, cuando trabajaba para un banco gringo.
 
@@ -83,11 +103,15 @@ Raya para la suma, dimos vuelta el análisis: en vez de decidir a quién ofrecer
 
 De esa experiencia me quedó grabado un punto clave: los datos sensibles no son peligrosos solo cuando alguien quiere hacerte daño. Son datos con los que se puede discriminar incluso queriendo ayudar. Por eso la ley les da una protección especial.
 
-El listado es: datos de salud, datos biométricos, origen étnico o racial, afiliación política, sindical o gremial, convicciones ideológicas o filosóficas, creencias religiosas, situación socioeconómica, vida sexual, orientación sexual o identidad de género. Mira el listado de nuevo y nota el patrón: no son solo datos que permiten saber quién eres. Son datos que pueden revelar aspectos especialmente íntimos, privados o sensibles de tu vida. Y por eso el daño potencial también es distinto.
 
-Que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
 
-A veces el daño no es que te juzguen: es que te expongan. Un resultado médico que implica algo grave **es tuyo**. Tú decides si se lo cuentas a tu familia, a tus hijos, a tu pareja o a nadie. Si eso se filtra, nadie tuvo que discriminarte: te quitaron la decisión. Y eso ya es el daño.
+## ¿Qué datos son sensibles y por qué la ley los protege distinto?
+
+El listado es: datos de salud, datos biométricos, origen étnico, opiniones políticas o sindicales, convicciones religiosas o filosóficas, situación socioeconómica, vida sexual, orientación sexual o identidad de género. Mira el listado de nuevo y nota el patrón: no son solo datos que permiten saber quién eres. Son datos que pueden revelar aspectos especialmente íntimos, privados o sensibles de tu vida. Y por eso el daño potencial también es distinto.
+
+A veces el daño es el juicio: que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
+
+A veces el daño no es que te juzguen: es que te expongan. Un resultado médico que implica algo grave **es tuyo**. Tú decides si se lo cuentas a tu familia, a tus hijos, a tu pareja o a nadie. Si eso se filtra, nadie tuvo que discriminarte: te quitaron la decisión. Y eso ya es el daño.
 
 Una precisión que importa: sensible no es una opinión, es una categoría legal. No basta con que a ti te parezca delicado un dato para que la ley lo trate distinto. Pero hay una pregunta que explica por qué esos datos específicos están en la lista, y que sirve para reconocerlos al tiro: ¿qué pasa si este dato se usa para juzgarte o para exponerte? Cada categoría está ahí porque la respuesta es “nada bueno”. Y cuando estás frente a una de ellas, la vara sube de inmediato.
 
@@ -97,9 +121,15 @@ Lo del niño en el reporte del mall es doble: es dato personal de un menor y, si
 
 
 
+
+
+
+
+
+
 ## Tener acceso a un dato ≠ tener permiso para usarlo como quieras.
 
-Última escena. Una universidad tiene tus notas, tu RUT, tu dirección, todo legítimo, todo necesario para que estudies. Pero algunas también revisan qué comentas o a qué le das “me gusta” en redes sociales: postulantes, alumnos, a veces sin fijarse siquiera en si la cuenta pertenece a alguien menor de edad.
+Una universidad tiene tus notas, tu RUT, tu dirección, todo legítimo, todo necesario para que estudies. Pero algunas también revisan qué comentas o a qué le das “me gusta” en redes sociales: postulantes, alumnos, a veces sin fijarse siquiera en si la cuenta pertenece a alguien menor de edad.
 
 Tu diras: ¿Y? El perfil es público, dirá más de uno. Cualquiera puede verlo.
 
