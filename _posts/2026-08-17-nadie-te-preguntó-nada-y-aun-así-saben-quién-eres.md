@@ -15,8 +15,6 @@ Nunca te dieron el nombre. No hace falta: a la tercera frase tú ya sabes exacta
 
 Guárdate esa escena, porque es toda la Ley sobre Protección y Tratamiento de los Datos Personales en miniatura.
 
-
-
 ## ¿Qué cuenta como dato personal según la Ley 21.719?
 
 La Ley 21.719 define dato personal como toda información vinculada a una persona natural identificada o *identificable* (está en el artículo 2, para el que le gusta ir a la fuente). Léelo despacio: identificada *o identificable*. Identificada es lo obvio, tu nombre, tu RUT, tu foto; identificable es donde está toda la ley escondida.
@@ -28,8 +26,6 @@ Y ahí va la primera herramienta, la que te puedes llevar a tu empresa esta mism
 El test de identificabilidad: ¿puedo llegar a una persona concreta con este dato, solo o cruzándolo con otra cosa? Si la respuesta es sí, es dato personal. Da lo mismo si se ve inofensivo.
 
 Una planilla de correos laborales. Un listado de patentes. El registro de quién entró a qué hora. Aplícale el test a cada cosa que tu empresa guarde y te vas a sorprender de cuántas respuestas son “sí”.
-
-
 
 ## El problema no es conseguir los datos. Es juntarlos.
 
@@ -45,8 +41,6 @@ Y por supuesto, nadie usó esa base solo para vender autos. En algún momento al
 
 Ahí va la segunda enseñanza, la que casi nadie internaliza: el riesgo no está en el dato, está en el cruce. Cuando evalúes qué guarda tu empresa, no mires cada planilla por separado. Míralas juntas, como las miraría alguien con tiempo y una hoja de cálculo.
 
-
-
 ## No se necesita tu nombre para saber quién eres.
 
 Las cámaras de un mall leen tu patente al entrar. No tu nombre: tu patente. ¿Es eso dato personal?
@@ -54,8 +48,6 @@ Las cámaras de un mall leen tu patente al entrar. No tu nombre: tu patente. ¿E
 Aplica el test. La patente, en el registro de vehículos, lleva a un dueño. El horario de entrada y salida dice cuándo estuviste. Ninguno de esos datos lleva tu nombre escrito, pero todos te señalan con el dedo. La ley los trata como lo que son: datos personales. Porque la identificabilidad no se mide por lo que el dato *dice*, sino por lo que el dato *permite saber*. Una patente es tu nombre con otro traje.
 
 A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo códigos”. Felicidades, guardas identificadores. Que es exactamente lo mismo con pasos extra.
-
-
 
 ## Tu Excel también está regulado.
 
@@ -77,33 +69,11 @@ Sigamos en el mall. Junto a las cámaras y las patentes, existen los reportes in
 
 Ahora la historia que de verdad me explicó la magnitud y la diferencia no pasó en un mall. Pasó después de unos tornados, cuando trabajaba para un banco gringo.
 
-Me tocó un proyecto de no pago post-tornados: clientes en zonas destruidas que debían plata. Con la data que teníamos, sabíamos quién probablemente no iba a pagar ese mes. Y uno piensa lo obvio: fácil, se les baja la tasa, les damos un respiro. No se podía.
-
-Las leyes de protección de datos, cruzadas con las de no discriminación, te frenan en seco justo ahí: no puedes decidir a quién ayudar basándote en zona, edad o nivel socioeconómico, aunque la intención sea buena.
-
-Raya para la suma, dimos vuelta el análisis: en vez de decidir a quién ofrecerle qué, estimamos la cantidad de plata que se iba a recuperar y en cuánto tiempo. Mismo problema, resuelto sin pisar el palito.
-
-De esa experiencia me quedó grabado algo que para mí es clave: **un dato no solo puede decir quién eres. También puede cambiar cómo alguien decide tratarte.**
-
-Que alguien decida quién eres antes de conocerte, que te cueste un trabajo, un seguro, un trato distinto. Cosas que no deberían cambiar cómo te tratan, y sin embargo lo cambian todos los días.
-
-A veces el problema no es que el dato sea falso. Es que alguien lo use para decidir sobre ti.
-
-
-
-## ¿Qué pasa cuando un dato puede cambiar cómo te tratan?
-
-Sigamos en el mall. Junto a las cámaras y las patentes, existen los reportes internos de accidentes: alguien se resbaló en el nivel dos, se golpeó con una puerta, se cayó de la escalera. Y en esos reportes a veces aparece el nombre completo de la persona accidentada. A veces, el de un niño. Ese detalle, por si acaso, cambia la magnitud del problema.
-
-Ahora la historia que de verdad me explicó la magnitud y la diferencia no pasó en un mall. Pasó después de unos tornados, cuando trabajaba para un banco gringo.
-
 Me tocó un proyecto de no pago post-tornados: clientes en zonas destruidas que debían plata. Con la data que teníamos, sabíamos quién probablemente no iba a pagar ese mes. Y uno piensa lo obvio: fácil, se les baja la tasa, les damos un respiro. No se podía. Las leyes de protección de datos, cruzadas con las de no discriminación, te frenan en seco justo ahí: no puedes decidir a quién ayudar basándote en zona, edad o nivel socioeconómico, aunque la intención sea buena.
 
 Raya para la suma, dimos vuelta el análisis: en vez de decidir a quién ofrecerle qué, estimamos la cantidad de plata que se iba a recuperar y en cuanto tiempo. Mismo problema, resuelto sin pisar el palito.
 
 De esa experiencia me quedó grabado un punto clave: los datos sensibles no son peligrosos solo cuando alguien quiere hacerte daño. Son datos con los que se puede discriminar incluso queriendo ayudar. Por eso la ley les da una protección especial.
-
-
 
 ## ¿Qué datos son sensibles y por qué la ley los protege distinto?
 
@@ -121,8 +91,6 @@ Una precisión que importa: sensible no es una opinión, es una categoría legal
 
 Lo del niño en el reporte del mall es doble: es dato personal de un menor y, si además contiene información de salud u otra categoría especialmente protegida, puede ser también dato sensible. Ese es otro tema que da para un capítulo entero, así que hoy solo queda dicho que cuando hablamos de niños, niñas y adolescentes, la ley agrega reglas especiales y pone el interés superior y la autonomía progresiva en el centro.
 
-
-
 ## Tener acceso a un dato ≠ tener permiso para usarlo como quieras.
 
 Una universidad tiene tus notas, tu RUT, tu dirección, todo legítimo, todo necesario para que estudies. Pero algunas también revisan qué comentas o a qué le das “me gusta” en redes sociales: postulantes, alumnos, a veces sin fijarse siquiera en si la cuenta pertenece a alguien menor de edad.
@@ -130,8 +98,6 @@ Una universidad tiene tus notas, tu RUT, tu dirección, todo legítimo, todo nec
 Tu diras: ¿Y? El perfil es público, dirá más de uno. Cualquiera puede verlo.
 
 Cualquiera puede verlo, sí. Pero fíjate en el salto que hay entre “este dato existe y yo puedo acceder a él” y “yo puedo *usar* este dato para decidir si te acepto, si te beco, si te miro distinto en una entrevista”. Son dos cosas distintas, y la ley las trata como dos cosas distintas.
-
-
 
 ## La chaqueta roja, otra vez
 
