@@ -121,12 +121,6 @@ Lo del niño en el reporte del mall es doble: es dato personal de un menor y, si
 
 
 
-
-
-
-
-
-
 ## Tener acceso a un dato ≠ tener permiso para usarlo como quieras.
 
 Una universidad tiene tus notas, tu RUT, tu dirección, todo legítimo, todo necesario para que estudies. Pero algunas también revisan qué comentas o a qué le das “me gusta” en redes sociales: postulantes, alumnos, a veces sin fijarse siquiera en si la cuenta pertenece a alguien menor de edad.
