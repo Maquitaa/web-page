@@ -57,7 +57,7 @@ A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo 
 
 
 
-## No necesitas un hacker para tener un problema de privacidad.
+## No se necesita un hacker para tener riesgos de privacidad.
 
 Ahora bajemos del mundo de los programas informáticos y las cámaras al mundo real de la mayoría de las empresas chilenas: la planilla.
 
