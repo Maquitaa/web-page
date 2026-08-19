@@ -47,7 +47,7 @@ Ahí va la segunda enseñanza, la que casi nadie internaliza: el riesgo no está
 
 
 
-## No se necesita tu nombre para saber quién eres.
+## No se necesitas tu nombre para saber quién eres.
 
 Las cámaras de un mall leen tu patente al entrar. No tu nombre: tu patente. ¿Es eso dato personal?
 
@@ -57,7 +57,7 @@ A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo 
 
 
 
-## Eso no es un ciberataque. Es un martes.
+## No necesitas un hacker para tener un problema de privacidad.
 
 Ahora bajemos del mundo de los programas informáticos y las cámaras al mundo real de la mayoría de las empresas chilenas: la planilla.
 
@@ -66,6 +66,8 @@ En cualquier trabajo existe un archivo con el RUT, la dirección y el horario de
 Aquí la enseñanza es corta y tajante: *el soporte no importa*. La ley no distingue entre un CRM enterprise de millones de dólares y ese Excel con fórmulas rotas. Si tiene datos personales, está igual de regulado. El papel también, por si acaso: esa carpeta con copias de contratos en la oficina es lo mismo que el Drive, solo que con olor a tinta.
 
 Y el riesgo no es el hacker de película, encapuchado frente a seis pantallas. He visto el riesgo y es mucho más aburrido: que el link del Drive esté con ***“cualquiera con el enlace puede ver”,*** y que lo vea quien no debe. Un ex trabajador que todavía tiene acceso. Un proveedor al que le compartieron la carpeta entera para pasarle un archivo.
+
+Eso no es un ciberataque. Es un martes.
 
 
 
