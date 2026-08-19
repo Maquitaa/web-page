@@ -47,7 +47,7 @@ Ahí va la segunda enseñanza, la que casi nadie internaliza: el riesgo no está
 
 
 
-## No necesitas tu nombre para saber quién eres.
+## No se necesita tu nombre para saber quién eres.
 
 Las cámaras de un mall leen tu patente al entrar. No tu nombre: tu patente. ¿Es eso dato personal?
 
