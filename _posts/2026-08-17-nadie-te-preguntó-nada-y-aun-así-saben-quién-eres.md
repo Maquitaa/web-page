@@ -47,7 +47,7 @@ Ahí va la segunda enseñanza, la que casi nadie internaliza: el riesgo no está
 
 
 
-## No se necesitas tu nombre para saber quién eres.
+## No se necesita tu nombre para saber quién eres.
 
 Las cámaras de un mall leen tu patente al entrar. No tu nombre: tu patente. ¿Es eso dato personal?
 
@@ -57,7 +57,7 @@ A mí me cargan las defensas tipo “es que nosotros no guardamos nombres, solo 
 
 
 
-## No se necesita un hacker para tener riesgos de privacidad.
+## El problema no siempre es el hacker.
 
 Ahora bajemos del mundo de los programas informáticos y las cámaras al mundo real de la mayoría de las empresas chilenas: la planilla.
 
