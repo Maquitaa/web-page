@@ -71,7 +71,7 @@ Eso no es un ciberataque. Es un martes.
 
 
 
-## No necesitas querer hacer daño para hacerlo con un dato.
+## ¿Qué pasa cuando un dato puede cambiar cómo te tratan?
 
 Sigamos en el mall. Junto a las cámaras y las patentes, existen los reportes internos de accidentes: alguien se resbaló en el nivel dos, se golpeó con una puerta, se cayó de la escalera. Y en esos reportes a veces aparece el nombre completo de la persona accidentada. A veces, el de un niño. Ese detalle, por si acaso, cambia la magnitud del problema. 
 
