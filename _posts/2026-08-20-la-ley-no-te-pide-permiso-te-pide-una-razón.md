@@ -309,4 +309,6 @@ Seis derechos que obligarán a muchas empresas a dejar de responder los correos 
 
 Porque a partir de ahí ya no basta con tener los datos.
 
-Hay que saber **dónde están, qué se hizo con ellos y cómo responder cuando su dueño pregunte por ellos.**
+Hay que saber **dónde están, qué se hizo con ellos y cómo responder cuando su dueño pregunte por ellos.**\
+\
+Si tu empresa no sabe responder esas preguntas para cada dato que tiene, escribeme: ricardo.soto@datashieldconsulting.cl
