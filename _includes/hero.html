@@ -24,7 +24,12 @@
 
   <div class="hero-fs-overlay" aria-hidden="true"></div>
 
-  <div class="hero-fs-content">
+  <button class="hero-fs-video-toggle" type="button" aria-label="Pausar video de fondo" aria-pressed="false">
+    <span class="pause-icon" aria-hidden="true">❚❚</span>
+    <span class="play-icon" aria-hidden="true" hidden>▶</span>
+  </button>
+
+  <div class="hero-fs-content">    
     <div class="hero-fs-meta" aria-hidden="true">
       {{ s.nombre }} {{ s.apellido }} · {{ s.ciudad }} · {{ s.ano }}
     </div>
@@ -54,7 +59,7 @@
     </div>
 
     <div class="hero-content-right">
-      <div class="mono" style="color:var(--gold);margin-bottom:20px;letter-spacing:.12em;font-size:10px;text-transform:uppercase;">Por qué confían en nosotros</div>
+      <div class="mono" style="color:var(--gold-text);margin-bottom:20px;letter-spacing:.12em;font-size:10px;text-transform:uppercase;">Por qué confían en nosotros</div>
       <div class="hero-trust">
         {% for item in h.trust_items %}
           <div class="trust-item">

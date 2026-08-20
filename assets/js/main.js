@@ -30,9 +30,10 @@
 
 /* ── 2. SMOOTH SCROLL para links ancla ────────────────── */
 (function initSmoothScroll() {
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+  document.querySelectorAll('a[href*="#"]').forEach(link => {
     link.addEventListener('click', e => {
-      const targetId = link.getAttribute('href').slice(1);
+      const targetId = link.hash ? link.hash.slice(1) : '';  
       if (!targetId) return;
       const target = document.getElementById(targetId);
       if (!target) return;
@@ -95,15 +96,23 @@
 /* ── 4. BLUEPRINT: highlight al hacer click ───────────── */
 (function initBlueprint() {
   const cells = document.querySelectorAll('.bp-cell');
+
+  function goToModulos() {
+    const modsSection = document.getElementById('modulos');
+    if (modsSection) {
+      const offset = 80;
+      const top = modsSection.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  }
+
   cells.forEach(cell => {
-    cell.addEventListener('click', () => {
-      const targetSection = cell.querySelector('.bp-cell-label span')?.textContent?.trim();
-      // Scroll suave a la sección de módulos
-      const modsSection = document.getElementById('modulos');
-      if (modsSection) {
-        const offset = 80;
-        const top = modsSection.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
+    cell.addEventListener('click', goToModulos);
+    // role="button" + tabindex requieren manejo manual de teclado (Enter y Espacio)
+    cell.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+        e.preventDefault();
+        goToModulos();
       }
     });
   });
@@ -111,12 +120,13 @@
 
 /* ── 5. SCROLL-SPY: resalta el link de nav activo ────── */
 (function initScrollSpy() {
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+  const navLinks = document.querySelectorAll('.nav-links a[href*="#"]');
   if (!navLinks.length || !('IntersectionObserver' in window)) return;
 
   const linkMap = {};
   navLinks.forEach(link => {
-    const id = link.getAttribute('href').slice(1);
+    // link.hash resuelve el fragmento aunque el href sea absoluto (/#modulos)
+    const id = link.hash ? link.hash.slice(1) : '';
     if (id) linkMap[id] = link;
   });
 
@@ -136,12 +146,29 @@
   });
 })();
 
+
+/* ── 5b. NAV: marca "Blog" activo fuera de la home ────── */
+/* El scroll-spy de arriba solo cubre anclas dentro de la misma página;
+   /blog/ y los posts individuales son páginas propias, así que el
+   estado activo se decide por ruta, no por scroll. */
+   (function initPageActiveNav() {
+  const path = window.location.pathname;
+  const isBlogArea = path === '/blog/' || path.startsWith('/blog/') ||
+  /^\/\d{4}\/\d{2}\/\d{2}\//.test(path); // patrón de URL de post individual
+  if (!isBlogArea) return;
+  
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    if (link.pathname === '/blog/' || link.getAttribute('href') === '/blog/') {
+      link.classList.add('active');
+    }
+  });
+})();
+ 
 /* ── 6. MÓDULOS: expand en móvil ──────────────────────── */
 /* La expansión se maneja por .mod-detail-toggle (botones accesibles en el HTML) */
 /* No se añaden atributos aquí para no crear roles ARIA sin handlers de teclado */
 
-/* ── 6. NAV MÓVIL — hamburguesa (botón en HTML, CSS en main.css) ── */
-(function initMobileNav() {
+/* ── 6. NAV MÓVIL — hamburguesa (botón en HTML, CSS en main.css) ── */(function initMobileNav() {
   const menuBtn = document.querySelector('.nav-menu-btn');
   const navLinks = document.getElementById('primary-nav-links');
   if (!menuBtn || !navLinks) return;
@@ -153,7 +180,7 @@
   });
 
   // Cierra el menú al hacer clic en un enlace interno
-  navLinks.querySelectorAll('a[href^="#"]').forEach(link => {
+  navLinks.querySelectorAll('a[href*="#"]').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('open');
       menuBtn.setAttribute('aria-expanded', 'false');

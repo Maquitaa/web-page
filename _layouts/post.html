@@ -2,7 +2,8 @@
 layout: default
 ---
 <article class="section post">
-  <header class="post-header">
+  <a href="{{ '/blog/' | relative_url }}" class="post-back-link">← Volver al blog</a>
+  <header class="post-header">  
     <p class="mono">{% assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," %}
         {% assign mes_num = page.date | date: "%-m" | minus: 1 %}
         {{ page.date | date: "%-d" }} de {{ meses[mes_num] }}, {{ page.date | date: "%Y" }}</p>

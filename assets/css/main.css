@@ -19,9 +19,10 @@
   --teal:      #2E7D52;
 
   /* Dorado / ocre (del logo) */
-  --gold:      #C49A3C;
-  --gold-deep: #9B7A2A;
-  --gold-soft: #ECD99A;
+--gold:      #C49A3C;
+--gold-deep: #9B7A2A;
+--gold-soft: #ECD99A;
+--gold-text: #7A5C18;
 
   /* Grises con matiz verde */
   --gray:      #4A5550;
@@ -162,7 +163,17 @@ p, li { text-wrap: pretty; }
 .nav--scrolled {
   box-shadow: 0 2px 16px rgba(0,0,0,.08);
 }
-
+/* Compensa el nav sticky al saltar a un ancla (#cta, #modulos, etc.),
+   incluso si el smooth-scroll de main.js no llega a interceptar el link */
+#modulos,
+#metodologia,
+#plataforma,
+#ley,
+#nosotros,
+#cta,
+[id^="mod-s"] {
+  scroll-margin-top: 90px;
+}
 /* Hamburger — static in DOM, visible only on mobile */
 .nav-menu-btn {
   display: none;
@@ -214,8 +225,8 @@ p, li { text-wrap: pretty; }
   font-size: 14px;
   color: var(--ink-2);
 }
-.nav-links a:hover { color: var(--gold-deep); }
-.nav-links a.active { color: var(--gold-deep); font-weight: 500; }
+.nav-links a:hover { color: var(--gold-text); }
+.nav-links a.active { color: var(--gold-text); font-weight: 500; }
 .nav-links a.has-dropdown::after { content: ' ▾'; opacity: .5; font-size: 11px; }
 .nav-cta {
   display: flex;
@@ -484,7 +495,8 @@ p, li { text-wrap: pretty; }
   border-bottom: 1px solid var(--line);
   margin-bottom: 56px;
 }
-.section-header h2 {
+.section-header h2,
+.section-header h1 {
   flex: 1 1 100%;
 }
 .section-number {
@@ -495,7 +507,8 @@ p, li { text-wrap: pretty; }
   color: var(--gold-deep);
   line-height: 1;
 }
-.section-header h2 {
+.section-header h2,
+.section-header h1 {
   font-family: 'Fraunces', serif;
   font-weight: 300;
   font-size: clamp(36px, 4vw, 56px);
@@ -503,7 +516,8 @@ p, li { text-wrap: pretty; }
   letter-spacing: -0.025em;
   max-width: 760px;
 }
-.section-header h2 em { font-style: italic; color: var(--gold-deep); }
+.section-header h2 em,
+.section-header h1 em { font-style: italic; color: var(--gold-deep); }
 .section-header .mono { color: var(--gray); }
 
 /* ── 10. SECCIÓN LEY ──────────────────────────────────── */
@@ -522,14 +536,14 @@ p, li { text-wrap: pretty; }
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   letter-spacing: 0.12em;
-  color: var(--gold-deep);
+  color: var(--gold-text);
   text-transform: uppercase;
 }
 .ley-card-num {
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-size: 18px;
-  color: var(--gold);
+  color: var(--gold-text);
   font-weight: 400;
 }
 .ley-card h3 {
@@ -601,6 +615,7 @@ p, li { text-wrap: pretty; }
   grid-template-columns: repeat(6, 1fr);
   gap: 16px;
   margin-top: 8px;
+  align-items: start;
 }
 .mod {
   background: #fff;
@@ -637,11 +652,32 @@ p, li { text-wrap: pretty; }
   background: var(--forest);
   color: var(--paper);
   border-color: var(--forest);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  column-gap: 48px;
+  row-gap: 28px;
+}
+.mod.oscuro .mod-body {
+  display: flex;
   flex-direction: row;
   gap: 48px;
-  align-items: center;
+  align-items: flex-start;
 }
 .mod.oscuro .mod-desc-wrap { flex: 1; }
+.mod.oscuro .mod-detail {
+  grid-column: 1 / -1;
+}
+.mod.oscuro .mod-features {
+  flex: 0 0 240px;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+.mod.oscuro .mod-detail-toggle {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  margin-top: 0;
+}
 
 .mod-top { display: flex; justify-content: space-between; margin-bottom: 24px; }
 .mod-code {
@@ -697,16 +733,16 @@ p, li { text-wrap: pretty; }
   padding-top: 18px;
   border-top: 1px solid var(--line);
 }
-.mod.dark .mod-features { border-top-color: rgba(255,255,255,.12); }
+.mod.oscuro .mod-features { border-top-color: rgba(255,255,255,.12); }
 .mod-features li {
   font-size: 13px;
-  color: var(--line);
+  color: var(--gray);
   display: flex;
   gap: 8px;
   align-items: flex-start;
   line-height: 1.4;
 }
-.mod.dark .mod-features li { color: rgba(255,255,255,.8); }
+.mod.oscuro .mod-features li { color: rgba(255,255,255,.8); }
 .mod-features li::before {
   content: '✓';
   color: var(--gold-deep);
@@ -1163,6 +1199,8 @@ footer {
   letter-spacing: -0.01em;
 }
 .nosotros-body {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: 1.7;
   color: var(--gray);
@@ -1221,9 +1259,9 @@ footer {
 /* ── 19. RESPONSIVE ───────────────────────────────────── */
 @media (max-width: 1100px) {
   .modules-grid { grid-template-columns: repeat(6, 1fr); }
-  .mod.oscuro { flex-direction: column; gap: 24px; }
+  .mod.oscuro { grid-template-columns: 1fr; row-gap: 24px; }
+  .mod.oscuro .mod-body { flex-direction: column; gap: 24px; }
 }
-
 @media (max-width: 900px) {
   .hero-grid,
   .ley-grid,
@@ -1239,7 +1277,8 @@ footer {
   .modules-grid { grid-template-columns: 1fr 1fr; }
   .mod.destacado, .mod.medio { grid-column: span 2; }
   .mod.angosto { grid-column: span 2; }
-  .mod.oscuro { grid-column: span 2; flex-direction: column; }
+  .mod.oscuro { grid-column: span 2; grid-template-columns: 1fr; }
+  .mod.oscuro .mod-body { flex-direction: column; gap: 24px; }
 
   .bp-grid { grid-template-columns: repeat(2, 1fr); }
   .bp-cell { grid-column: span 1 !important; }
@@ -1314,6 +1353,28 @@ footer {
   inset: 0;
   z-index: 1;
   background: rgba(10, 6, 2, .68);
+}
+.hero-fs-video-toggle {
+  position: absolute;
+  z-index: 2;
+  bottom: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(10, 6, 2, .45);
+  border: 1px solid rgba(245, 241, 232, .3);
+  color: #f5f1e8;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background .2s, border-color .2s;
+}
+.hero-fs-video-toggle:hover {
+  background: rgba(10, 6, 2, .65);
+  border-color: rgba(245, 241, 232, .55);
 }
 .hero-fs-content {
   position: relative;
@@ -1486,7 +1547,15 @@ footer {
 .post-card-desc { font-size: 13.5px; color: var(--gray); line-height: 1.55; }
 
 .post-header { max-width: 760px; margin: 0 auto 48px; }
-.post-header .mono { color: var(--gold-deep); margin-bottom: 16px; }
+.post-back-link {
+  display: block;
+  max-width: 760px;
+  margin: 0 auto 24px;
+  color: var(--gold-deep);
+  font-size: 13px;
+  font-weight: 500;
+}
+.post-back-link:hover { opacity: .75; }.post-header .mono { color: var(--gold-deep); margin-bottom: 16px; }
 .post-header h1 {
   font-family: 'Fraunces', serif;
   font-weight: 300;

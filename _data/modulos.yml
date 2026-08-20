@@ -23,7 +23,7 @@
     - "Evaluación de madurez tecnológica"
     - "Análisis de exposición legal Ley 21.719"
     - "Hoja de ruta priorizada con estimación de impacto"
-  cta: "Agendar diagnóstico →"
+  cta: "Ver más sobre el diagnóstico"  
   detalle_titulo: "¿Para qué sirve el diagnóstico?"
   detalle_descripcion: >
     Muchas empresas llegan a nosotros con soluciones en mente — un sistema nuevo, una herramienta de IA,
@@ -51,7 +51,7 @@
     - "Rediseño de flujos de trabajo críticos"
     - "Automatización de tareas repetitivas — sin programar nada tú"
     - "Integración entre sistemas y eliminación de silos de información"
-  cta: "Ver servicio →"
+  cta: "Ver más sobre este servicio"
   detalle_titulo: "¿Qué significa 'modernizar procesos'?"
   detalle_descripcion: >
     Imagina que hoy tienes a alguien copiando datos de un sistema a otro, o generando
@@ -77,7 +77,7 @@
     Sin datos confiables no hay buenas decisiones ni IA que funcione.
     Estructuramos, limpiamos y gobernamos la información para que
     sea un activo real, no una fuente de errores.
-  cta: "Ver servicio →"
+  cta: "Ver más sobre este servicio"
   detalle_titulo: "¿Qué es el gobierno del dato y por qué importa?"
   detalle_descripcion: >
     El gobierno del dato es la práctica de definir quién es responsable de qué información,
@@ -104,7 +104,7 @@
     Implementamos inteligencia artificial donde genera valor medible:
     análisis predictivo, automatización inteligente y asistentes internos.
     Con datos limpios, arquitectura correcta y casos de uso validados.
-  cta: "Ver servicio →"
+  cta: "Ver más sobre este servicio"
   detalle_titulo: "IA que hace algo real — no pilotos, no demos"
   detalle_descripcion: >
     La IA no es magia y no reemplaza a las personas — es una herramienta que,
@@ -129,7 +129,7 @@
     Evaluamos vulnerabilidades, definimos políticas de acceso y preparamos
     a los equipos para responder ante incidentes. Cumplimiento de la
     Ley 21.719 incluido.
-  cta: "Ver servicio →"
+  cta: "Ver más sobre este servicio"
   detalle_titulo: "Seguridad que no paraliza tu operación"
   detalle_descripcion: >
     Ciberseguridad no significa prohibir todo. Significa saber qué exponer,
