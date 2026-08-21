@@ -7,7 +7,7 @@ excerpt: '"Quick wins" no siempre significa valor rápido. A veces solo signific
   mover el mismo problema a un lugar diferente. Un test de 4 preguntas para
   saber la diferencia'
 ---
-No sé quién inventó "quick wins" pero le hizo un favor gigante a mucha gente que no sabe hacer arquitectura de datos. 
+Cada vez que alguien me dice 'esto va a ser un quick win', me pongo alerta. No porque los quick wins no existan, sino porque esa frase se volvió la excusa perfecta para vender rápido y resolver poco.
 
 La idea, en teoría, es buena: demostrar valor rápido para justificar una inversión. Te cuento el patrón que veo una y otra vez: 
 
@@ -21,9 +21,7 @@ A veces es peor: te conectan un agente de IA a esos mismos datos, con las pregun
 
 Y el costo real no es solo la plata que gastaste en el proyecto. 
 
-
-
-# El costo real no aparece en la factura 
+# El costo real no aparece en la factura
 
 El costo real es más silencioso y más caro. 
 
@@ -34,9 +32,7 @@ El costo real es más silencioso y más caro.
 
 Suma las cuatro y el "quick" del nombre empieza a hacerse un chiste: **rápido para entregar, lento para generar valor.**
 
-
-
-# Un test de cuatro preguntas 
+# Un test de cuatro preguntas
 
 No necesitas ser técnica para detectar un quick win falso. Cuando alguien te proponga uno, o cuando quieras evaluar el que ya te vendieron, pregúntate esto: 
 
@@ -47,9 +43,7 @@ No necesitas ser técnica para detectar un quick win falso. Cuando alguien te pr
 
 Si tu proyecto no pasa al menos dos de estas cuatro, probablemente no fue un quick win. **Fue un gasto rápido. Y no es lo mismo.**
 
-
-
-# Cómo se ve un quick win de verdad 
+# Cómo se ve un quick win de verdad
 
 Yo también estuve del otro lado del mostrador: Estuve años en consultora cloud y sé lo fácil que es armar una demo que brilla. Por eso me tomo esto en serio: los quick wins honestos sí existen. Solo que se parecen poco a una demo. 
 
