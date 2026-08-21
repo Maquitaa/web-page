@@ -79,7 +79,7 @@ Si tu proyecto no pasa al menos dos de estas cuatro, probablemente no fue un qui
 
 Yo también estuve del otro lado del mostrador: estuve años en una consultora cloud y sé lo fácil que es armar una demo que brilla. Por eso me tomo esto en serio: los quick wins honestos sí existen. Solo que se parecen poco a una demo. 
 
-
+![]()
 
 Te doy tres ejemplos reales, sin nombres: 
 
@@ -103,7 +103,7 @@ Que quede claro: la nube es buena. Power BI es buena herramienta. La IA, bien mo
 
 
 
-El orden correcto es aburrido y por eso nadie lo vende: diagnóstico primero, solución después. Entender qué pregunta necesitas responder, qué trabajo manual te está costando plata, qué dato está sucio. Recién ahí elegir la herramienta. En nuestra casa lo decimos así: no vendemos bazukas. A veces el diagnóstico dice que no necesitas nube todavía, que con ordenar dos planillas y un flujo ya ganaste más que con cualquier migración. Esa respuesta no deja comisión, pero es la honesta. 
+El orden correcto es aburrido y por eso nadie lo vende: diagnóstico primero, solución después. Entender qué pregunta necesitas responder, qué trabajo manual te está costando plata, qué dato está sucio. Recién ahí elegir la herramienta. En nuestra casa lo decimos así: no vendemos bazucas. A veces el diagnóstico dice que no necesitas nube todavía, que con ordenar dos planillas y un flujo ya ganaste más que con cualquier migración. Esa respuesta no deja comisión, pero es la honesta. 
 
 
 
