@@ -1,5 +1,5 @@
 ---
-title: '"Quick wins": la frase que le está costando plata a tu empresa.'
+title: '"Quick wins": cómo identificar el gasto que te venden como transformación'
 date: 2026-08-20T22:46:00.000-04:00
 layout: post
 image: /assets/img/posts/quick-wins-la-frase-que-le-está-costando-plata-a-tu-empresa..jpg
