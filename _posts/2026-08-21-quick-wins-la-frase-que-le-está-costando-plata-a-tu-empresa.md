@@ -63,4 +63,4 @@ El orden correcto es aburrido y por eso nadie lo vende: diagnóstico primero, so
 
 El quick win honesto existe. Pero no nace del catálogo del proveedor: nace de entender tu negocio. La diferencia entre uno y otro no se ve en la demo. Se ve cuando preguntas qué ganaste y la respuesta no necesita PowerPoint.
 
-*¿Te vendieron un "quick win" y hoy no sabes bien qué ganaste? Conversemos. Escríbeme y lo miramos juntos, sin compromiso y sin bazukas.*
+“¿Te vendieron un “quick win” y hoy no sabes bien qué ganaste? Conversemos. Escríbeme y lo miramos juntos, sin compromiso.”
