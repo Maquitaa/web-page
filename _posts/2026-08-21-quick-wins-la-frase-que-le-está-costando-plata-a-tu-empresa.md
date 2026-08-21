@@ -27,6 +27,8 @@ Y el costo real no es solo la plata que gastaste en el proyecto.
 
 # El costo real no aparece en la factura
 
+![evaluación del impacto técnico y operativo de los proyectos analíticos frente a soluciones superficiales.](/assets/img/posts/arquitectura-vs.-cosmética.jpg "Arquitectura vs. Cosmética: Diagnóstico Primero, Solución Después")
+
 El costo real es más silencioso y más caro. 
 
 1. **La falsa sensación de avance:** El directorio vio un dashboard bonito corriendo sobre "la nube" y concluyó que ya están digitalizados. Punto. Tema cerrado. Y cuando alguien propone invertir en ordenar los datos de verdad, la respuesta es "pero si eso ya lo hicimos". El falso quick win no solo no avanza: **te puede cerrar la puerta para hacer bien el trabajo después.**
@@ -41,6 +43,8 @@ El costo real es más silencioso y más caro.
 4. **Tu equipo no aprendió nada:** Vinieron, conectaron, mostraron, aplaudieron y se fueron. Ahí no transfirieron conocimiento. Te dejaron dependiendo de ellos. Tu gente sigue haciendo los mismos cruces manuales en Excel de siempre, solo que ahora al lado de un dashboard que nadie abre. 
 
 Suma las cuatro y el "quick" del nombre empieza a hacerse un chiste: **rápido para entregar, lento para generar valor.**
+
+
 
 # Un test de cuatro preguntas
 
