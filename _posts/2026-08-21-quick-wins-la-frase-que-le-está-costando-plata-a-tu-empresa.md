@@ -25,6 +25,8 @@ Y el costo real no es solo la plata que gastaste en el proyecto.
 
 
 
+
+
 # El costo real no aparece en la factura
 
 ![evaluación del impacto técnico y operativo de los proyectos analíticos frente a soluciones superficiales.](/assets/img/posts/arquitectura-vs.-cosmética.jpg "Arquitectura vs. Cosmética: Diagnóstico Primero, Solución Después")
@@ -46,16 +48,20 @@ Suma las cuatro y el "quick" del nombre empieza a hacerse un chiste: **rápido p
 
 
 
+
+
 # Un test de cuatro preguntas
 
 No necesitas ser técnica para detectar un quick win falso. Cuando alguien te proponga uno, o cuando quieras evaluar el que ya te vendieron, pregúntate esto: 
 
-1. ¿Esto me responde una pregunta que antes no podía responder? Si el reporte muestra lo mismo que ya veías, solo que con otro fondo de pantalla, no ganaste nada. 
+1. **¿Esto me responde una pregunta que antes no podía responder?** Si el reporte muestra lo mismo que ya veías, solo que con otro fondo de pantalla, no ganaste nada. 
 2. ¿Desapareció un trabajo manual que hoy hace una persona? Si alguien de tu equipo sigue bajando datos a Excel todos los viernes para cruzarlos a mano, la automatización no existe, por mucho que diga "nube" en la presentación. 
 3. ¿Si apago esto mañana, alguien lo echa de menos? Esta es la prueba de fuego. Apágalo mentalmente. Si la respuesta es "nah, nadie se daría cuenta", ya tienes tu diagnóstico. 
 4. ¿Quedó documentado y lo entiende mi equipo? Si solo lo entiende el proveedor, compraste una suscripción a la dependencia.
 
 Si tu proyecto no pasa al menos dos de estas cuatro, probablemente no fue un quick win. **Fue un gasto rápido. Y no es lo mismo.**
+
+
 
 
 
@@ -68,6 +74,10 @@ Te doy tres ejemplos reales, sin nombres:
 * **Automatizar una conciliación manual:** En un holding industrial, una persona pasaba dos días al mes cruzando datos entre sistemas para cerrar la conciliación. Dos días completos, todos los meses. Automatizamos ese cruce. La persona no quedó de más: quedó libre para analizar en vez de copiar. Eso es un quick win: barato, medible en horas, y nadie necesitó que le explicaran el valor con una presentación. 
 * **Unificar el dato de cliente:** En una empresa del sur, el mismo cliente vivía en tres sistemas distintos, con tres nombres levemente distintos. Preguntar "¿cuánto le vendimos a este cliente el año pasado?" gatillaba una tarde de llamados y planillas. Ordenamos esa ficha única, trabajo de arquitectura, no de herramienta, y la pregunta pasó a responderse en diez segundos. Diez. Eso cambia conversaciones comerciales enteras. 
 * **Eliminar una cadena de Excel:** En una operación industrial, parte del proceso dependía de descargar información de distintos sistemas, transformarla manualmente y consolidarla en Excel antes de poder analizarla. No empezamos comprando una herramienta nueva. Primero entendimos el flujo, eliminamos pasos innecesarios y automatizamos el cruce. El resultado no fue un dashboard rimbombante: fue un proceso crítico que dejó de depender de un copy/paste manual.
+
+
+
+
 
 # La nube nunca fue el problema. El orden, sí.
 
