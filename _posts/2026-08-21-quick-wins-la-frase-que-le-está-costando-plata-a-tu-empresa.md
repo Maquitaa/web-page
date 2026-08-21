@@ -47,7 +47,7 @@ Si tu proyecto no pasa al menos dos de estas cuatro, probablemente no fue un qui
 
 # Cómo se ve un quick win de verdad
 
-Yo también estuve del otro lado del mostrador: estuve años en consultora cloud y sé lo fácil que es armar una demo que brilla. Por eso me tomo esto en serio: los quick wins honestos sí existen. Solo que se parecen poco a una demo. 
+Yo también estuve del otro lado del mostrador: estuve años en una consultora cloud y sé lo fácil que es armar una demo que brilla. Por eso me tomo esto en serio: los quick wins honestos sí existen. Solo que se parecen poco a una demo. 
 
 Te doy tres ejemplos reales, sin nombres: 
 
