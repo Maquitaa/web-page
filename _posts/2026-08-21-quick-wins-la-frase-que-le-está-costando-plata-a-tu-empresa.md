@@ -57,6 +57,8 @@ No necesitas ser técnica para detectar un quick win falso. Cuando alguien te pr
 
 Si tu proyecto no pasa al menos dos de estas cuatro, probablemente no fue un quick win. **Fue un gasto rápido. Y no es lo mismo.**
 
+
+
 # Cómo se ve un quick win de verdad
 
 Yo también estuve del otro lado del mostrador: estuve años en una consultora cloud y sé lo fácil que es armar una demo que brilla. Por eso me tomo esto en serio: los quick wins honestos sí existen. Solo que se parecen poco a una demo. 
