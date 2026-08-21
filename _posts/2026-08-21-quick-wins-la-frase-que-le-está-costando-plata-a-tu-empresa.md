@@ -111,4 +111,4 @@ El quick win honesto existe. Pero no nace del catálogo del proveedor: nace de e
 
 
 
-“¿Te vendieron un “quick win” y hoy no sabes bien qué ganaste? Conversemos. Escríbeme y lo miramos juntos, sin compromiso.”
+¿Te vendieron un “quick win” y hoy no sabes bien qué ganaste? Conversemos. Escríbeme y lo miramos juntos, sin compromiso.
