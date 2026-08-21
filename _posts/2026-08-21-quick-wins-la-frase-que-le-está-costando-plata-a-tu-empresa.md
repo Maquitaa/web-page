@@ -3,7 +3,9 @@ title: '"Quick wins": la frase que le está costando plata a tu empresa.'
 date: 2026-08-20T22:46:00.000-04:00
 layout: post
 image: /assets/img/posts/quick-wins-la-frase-que-le-está-costando-plata-a-tu-empresa..jpg
-excerpt: ""
+excerpt: '"Quick wins" no siempre significa valor rápido. A veces solo significa
+  mover el mismo problema a un lugar diferente. Un test de 4 preguntas para
+  saber la diferencia'
 ---
 No sé quién inventó "quick wins" pero le hizo un favor gigante a mucha gente que no sabe hacer arquitectura de datos. 
 
