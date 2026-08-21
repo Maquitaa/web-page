@@ -91,8 +91,14 @@ Te doy tres ejemplos reales, sin nombres:
 
 Que quede claro: la nube es buena. Power BI es buena herramienta. La IA, bien montada, es una maravilla. No tengo nada contra las herramientas; tengo algo contra usarlas para simular transformación. 
 
+
+
 El orden correcto es aburrido y por eso nadie lo vende: diagnóstico primero, solución después. Entender qué pregunta necesitas responder, qué trabajo manual te está costando plata, qué dato está sucio. Recién ahí elegir la herramienta. En nuestra casa lo decimos así: no vendemos bazukas. A veces el diagnóstico dice que no necesitas nube todavía, que con ordenar dos planillas y un flujo ya ganaste más que con cualquier migración. Esa respuesta no deja comisión, pero es la honesta. 
 
+
+
 El quick win honesto existe. Pero no nace del catálogo del proveedor: nace de entender tu negocio. La diferencia entre uno y otro no se ve en la demo. Se ve cuando preguntas qué ganaste y la respuesta no necesita PowerPoint.
+
+
 
 “¿Te vendieron un “quick win” y hoy no sabes bien qué ganaste? Conversemos. Escríbeme y lo miramos juntos, sin compromiso.”
