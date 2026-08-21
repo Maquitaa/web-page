@@ -7,9 +7,11 @@ excerpt: '"Quick wins" no siempre significa valor rápido. A veces solo signific
   mover el mismo problema a un lugar diferente. Un test de 4 preguntas para
   saber la diferencia'
 ---
-Cada vez que alguien me dice 'esto va a ser un quick win', me pongo alerta. No porque los quick wins no existan, sino porque esa frase se volvió la excusa perfecta para vender rápido y resolver poco.
+Cada vez que alguien me dice "esto va a ser un quick win", me pongo alerta. No porque los quick wins no existan, sino porque esa frase se ha vuelto la excusa perfecta para vender rápido y resolver poco.
 
-La idea, en teoría, es buena: demostrar valor rápido para justificar una inversión. Te cuento el patrón que veo una y otra vez: 
+**En este artículo te explico por qué muchos de estos proyectos no generan valor real y te doy un test de 4 preguntas para identificar los que sí valen la pena.**
+
+La idea, en teoría, es buena: demostrar valor rápido para justificar una inversión. Pero en la práctica, el patrón que veo una y otra vez es el mismo.
 
 Te venden mover tus datos a la nube. Conectan el mismo Power BI que ya tenías funcionando, el mismo, no uno nuevo, solo que ahora apunta a un origen distinto. Y te lo presentan como si fuera una transformación espectacular. 
 
