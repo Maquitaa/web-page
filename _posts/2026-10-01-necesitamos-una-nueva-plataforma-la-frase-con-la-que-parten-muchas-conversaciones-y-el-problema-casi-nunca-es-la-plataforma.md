@@ -18,27 +18,15 @@ Muchas veces la conversación parte con **"necesitamos una nueva plataforma"**. 
 
 ## Cuando el problema es de arquitectura, no de software
 
-* En la 
+* En la **operación**: dos áreas pelean por cifras distintas y nadie sabe cuál es la correcta, porque cada una saca sus números de un lado distinto.
+* En el **riesgo**: nadie puede decir con certeza dónde está la información sensible, así que tampoco puede protegerla ni responder por ella.
+* En el **cumplimiento**: llega una solicitud, de un cliente, de un auditor, de la futura Agencia de Datos, y la respuesta depende de adivinar dónde vive esa información.Esto no es un asunto de área TI. 
 
-  **operación**
 
-  : dos áreas pelean por cifras distintas y nadie sabe cuál es la correcta, porque cada una saca sus números de un lado distinto.
-* En el 
-
-  **riesgo**
-
-  : nadie puede decir con certeza dónde está la información sensible, así que tampoco puede protegerla ni responder por ella.
-* En el 
-
-  **cumplimiento**
-
-  : llega una solicitud, de un cliente, de un auditor, de la futura Agencia de Datos, y la respuesta depende de adivinar dónde vive esa información.Esto no es un asunto de área TI. 
 
 ![Plataformas mal compradas](/assets/img/posts/desorden.png "Plataformas mal compradas")
 
 Cuando no existe un panorama claro de los datos, el efecto se siente en toda la empresa: Ahí es donde la arquitectura de datos deja de ser un tema técnico y empieza a tocar directamente la operación, el riesgo y el cumplimiento. No porque la tecnología sea mala, sino porque la falta de mapa se paga en todos lados.
-
-
 
 ## No se trata de comprar menos tecnología por principio
 
