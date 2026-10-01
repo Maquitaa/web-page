@@ -18,9 +18,9 @@ Muchas veces la conversación parte con **"necesitamos una nueva plataforma"**. 
 
 ## Cuando el problema es de arquitectura, no de software
 
-* En la **operación**: dos áreas pelean por cifras distintas y nadie sabe cuál es la correcta, porque cada una saca sus números de un lado distinto.
-* En el **riesgo**: nadie puede decir con certeza dónde está la información sensible, así que tampoco puede protegerla ni responder por ella.
-* En el **cumplimiento**: llega una solicitud, de un cliente, de un auditor, de la futura Agencia de Datos, y la respuesta depende de adivinar dónde vive esa información.Esto no es un asunto de área TI. 
+1. En la **operación**: dos áreas pelean por cifras distintas y nadie sabe cuál es la correcta, porque cada una saca sus números de un lado distinto.
+2. En el **riesgo**: nadie puede decir con certeza dónde está la información sensible, así que tampoco puede protegerla ni responder por ella.
+3. En el **cumplimiento**: llega una solicitud, de un cliente, de un auditor, de la futura Agencia de Datos, y la respuesta depende de adivinar dónde vive esa información.Esto no es un asunto de área TI. 
 
 
 
